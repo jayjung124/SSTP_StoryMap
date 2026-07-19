@@ -10,6 +10,8 @@ The canonical public presentation is now the custom longform GitHub Pages site:
 
 This route preserves the verified JavaScript interactives without an account or ArcGIS license boundary. The ArcGIS StoryMaps draft can remain saved and unpublished as an optional derivative. It is not required for the figures to function.
 
+The canonical site now uses a historical public-humanities sequence and source-bearing images. For current narrative copy and media placement, use `index.html` and `PUBLIC_HISTORY_SOURCES.md`; the older block-by-block ArcGIS script remains available only as a technically accurate derivative.
+
 ## Public host
 
 - Repository: <https://github.com/jayjung124/SSTP_StoryMap>

@@ -1,5 +1,7 @@
 # THE SHAPE OF MYTH
 
+> **STATUS NOTE — 19 July 2026.** The canonical custom publication has been redesigned as a historical public-humanities narrative. Its current copy, ordering, image credits, and figure placement live in `index.html`, with source and rights documentation in `PUBLIC_HISTORY_SOURCES.md`. The ArcGIS assembly script below remains a technically accurate earlier derivative, but its narrative order and “data-native media only” rule are superseded by the canonical site.
+
 ## Publication-ready ArcGIS StoryMaps master script
 
 **Author:** Jay Jung  

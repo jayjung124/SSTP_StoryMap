@@ -1,6 +1,6 @@
 # The Shape of Myth
 
-An interactive longform research publication comparing two network representations of 926 catalogue traditions and 2,138 recorded motifs.
+A historical public-humanities story about how living narratives became catalogue records, how those records became networks, and what survives when the same 926-record archive is read two ways.
 
 - **Public interactive story:** <https://jayjung124.github.io/SSTP_StoryMap/>
 - **Stand-alone figure index:** <https://jayjung124.github.io/SSTP_StoryMap/figures.html>
@@ -8,7 +8,9 @@ An interactive longform research publication comparing two network representatio
 
 ## Publication architecture
 
-The primary publication is a custom static scrollytelling site on GitHub Pages. This preserves the eight audited HTML interactives, makes them available without an account, and keeps prose, data extracts, source code, and revision history together. Same-origin borderless frames isolate each figure's JavaScript and CSS while presenting it inline in one continuous story. The previous ArcGIS StoryMaps version remains an unpublished working draft rather than the canonical publication.
+The primary publication is a custom static scrollytelling site on GitHub Pages. Its dramatic order is lived and material story → collection encounter → classification history → catalogue geography → paired network readings → shared backbone → principal divergence → contextual limits → bounded interpretation. Documentary photographs and museum objects come only from item-level Library of Congress and Metropolitan Museum records; no AI-generated or stock mythology imagery is used.
+
+The site preserves the eight audited HTML interactives, makes them available without an account, and keeps prose, data extracts, historical credits, source code, and revision history together. Same-origin borderless frames isolate each figure's JavaScript and CSS while presenting it inline in one continuous story. The previous ArcGIS StoryMaps version remains an unpublished working draft rather than the canonical publication.
 
 ## Central result
 
@@ -41,6 +43,7 @@ The publication payload passed 26/26 checks against the frozen network and parti
 See:
 
 - `METHODS_AND_PROVENANCE.md`
+- `PUBLIC_HISTORY_SOURCES.md`
 - `data/audit_manifest.json`
 - `data/canonical_core_specs.json`
 - `STORYMAP_MASTER_SCRIPT.md`
