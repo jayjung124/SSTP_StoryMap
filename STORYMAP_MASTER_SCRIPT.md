@@ -742,7 +742,7 @@ Every visualization in this story has a persistent text summary, an explicit den
 
 [EMBED — full width, suggested height 680 px]
 
-URL: <https://jayjung124.github.io/SSTP_StoryMap/index.html>
+URL: <https://jayjung124.github.io/SSTP_StoryMap/figures.html>
 
 Embed title: **Interactive gallery for The Shape of Myth**
 

@@ -1,9 +1,14 @@
 # The Shape of Myth
 
-Interactive research figures for a paired network analysis of 926 catalogue traditions and 2,138 recorded motifs.
+An interactive longform research publication comparing two network representations of 926 catalogue traditions and 2,138 recorded motifs.
 
-**Public gallery:** <https://jayjung124.github.io/SSTP_StoryMap/>  
-**ArcGIS StoryMap draft:** <https://storymaps.arcgis.com/stories/325d391715274077a3ff3d3a43d477bf/edit>
+- **Public interactive story:** <https://jayjung124.github.io/SSTP_StoryMap/>
+- **Stand-alone figure index:** <https://jayjung124.github.io/SSTP_StoryMap/figures.html>
+- **Versioned source:** <https://github.com/jayjung124/SSTP_StoryMap>
+
+## Publication architecture
+
+The primary publication is a custom static scrollytelling site on GitHub Pages. This preserves the eight audited HTML interactives, makes them available without an account, and keeps prose, data extracts, source code, and revision history together. Same-origin borderless frames isolate each figure's JavaScript and CSS while presenting it inline in one continuous story. The previous ArcGIS StoryMaps version remains an unpublished working draft rather than the canonical publication.
 
 ## Central result
 
@@ -22,7 +27,7 @@ This is a finding about representational sensitivity in a secondary catalogue. A
 7. `latitude_ridgelines.html` — latitude density by community
 8. `community_profiles.html` — full-community descriptive profiles
 
-Append `?embed=1` to any figure URL for the compact ArcGIS StoryMaps view.
+Append `?embed=1` to any figure URL for the compact inline view used by the longform story and compatible embed hosts.
 
 The matching files in `previews/` are verified static captures for StoryMaps
 accounts that cannot use external Embed blocks. Each preview should be paired

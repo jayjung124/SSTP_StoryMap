@@ -38,4 +38,23 @@
       el.setAttribute('aria-label',label);
     }
   };
+
+  if(params.get('embed')==='1'){
+    const reportHeight=()=>{
+      const root=document.documentElement;
+      const body=document.body;
+      if(!body)return;
+      const height=Math.max(body.scrollHeight,body.offsetHeight,root.scrollHeight,root.offsetHeight);
+      window.parent.postMessage({type:'shape-of-myth:height',height},window.location.origin);
+    };
+    window.addEventListener('load',reportHeight);
+    window.addEventListener('resize',reportHeight,{passive:true});
+    document.addEventListener('DOMContentLoaded',()=>{
+      reportHeight();
+      if('ResizeObserver' in window){
+        const observer=new ResizeObserver(reportHeight);
+        observer.observe(document.body);
+      }
+    });
+  }
 })();

@@ -1,16 +1,16 @@
 /* The Shape of Myth — editorial figure system
    Designed for full-page use and ArcGIS StoryMaps iframe embeds. */
 :root{
-  --paper:#f7f4ed;
-  --paper-deep:#eee8dc;
-  --white:#fffefd;
-  --ink:#20201e;
-  --muted:#5e5b55;
-  --rule:#cfc7b8;
-  --rule-dark:#8e877b;
-  --accent:#8f2d1d;
-  --accent-dark:#672014;
-  --focus:#0072b2;
+  --paper:#f3eddf;
+  --paper-deep:#e8deca;
+  --white:#fffdf7;
+  --ink:#292723;
+  --muted:#625e56;
+  --rule:#cbbfa9;
+  --rule-dark:#9f927d;
+  --accent:#b56318;
+  --accent-dark:#7b3f0d;
+  --focus:#007b78;
   --T2:#0072b2;
   --T4:#d55e00;
   --font-head:Georgia,"Times New Roman",serif;

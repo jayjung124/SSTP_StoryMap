@@ -3,79 +3,327 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Verified interactive figures for The Shape of Myth, a paired network analysis of 926 catalogue traditions and 2,138 recorded motifs.">
-  <title>The Shape of Myth | Interactive research figures</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .masthead{border-top:10px solid var(--accent);padding:34px 0 27px;border-bottom:1px solid var(--rule-dark)}
-    .masthead .eyebrow{margin:0 0 12px;color:var(--accent);font-size:.72rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
-    .masthead h1{max-width:850px;margin:0;font:600 clamp(2.2rem,6vw,4.8rem)/.96 var(--font-head);letter-spacing:-.035em}
-    .masthead .deck{max-width:820px;margin:20px 0 0;font:400 clamp(1.02rem,1.8vw,1.25rem)/1.55 var(--font-head);color:var(--muted)}
-    .finding{display:grid;grid-template-columns:minmax(180px,.7fr) minmax(0,2fr);gap:25px;padding:24px 0;border-bottom:1px solid var(--rule-dark)}
-    .finding h2,.section-title{margin:0;font:600 1.2rem/1.2 var(--font-head)}
-    .finding p{margin:0;font-size:.93rem;line-height:1.65}
-    .method{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:22px 0;border-bottom:1px solid var(--rule-dark)}
-    .lens{padding-left:14px;border-left:4px solid var(--accent)}
-    .lens h3{margin:0 0 4px;font:600 1.05rem var(--font-head)}
-    .lens p{margin:0;color:var(--muted);font-size:.8rem}
-    .versus{font-size:.66rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-    .figure-list{margin-top:24px;border-top:1px solid var(--rule-dark)}
-    .figure-link{display:grid;grid-template-columns:54px minmax(190px,.8fr) minmax(0,1.7fr) 18px;gap:15px;align-items:start;padding:16px 4px;border-bottom:1px solid var(--rule);color:inherit;text-decoration:none}
-    .figure-link:hover{background:var(--paper-deep)}
-    .figure-link .number{font:600 1.05rem var(--font-head);color:var(--accent)}
-    .figure-link h3{margin:0;font:600 1rem var(--font-head)}
-    .figure-link p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.45}
-    .figure-link .arrow{font-size:1.2rem}
-    .verification{margin-top:28px;padding:18px 0;border-top:5px solid var(--ink);border-bottom:1px solid var(--rule-dark);display:grid;grid-template-columns:minmax(150px,.6fr) minmax(0,2fr);gap:24px}
-    .verification strong{font:600 1.5rem var(--font-head)}
-    .verification p{margin:0;color:var(--muted);font-size:.82rem;line-height:1.55}
-    footer{padding:24px 0 40px;color:var(--muted);font-size:.76rem;line-height:1.55}
-    @media(max-width:700px){.masthead{padding-top:24px}.finding,.verification{grid-template-columns:1fr;gap:9px}.method{grid-template-columns:1fr}.versus{text-align:center}.figure-link{grid-template-columns:36px 1fr 18px}.figure-link p{grid-column:2/3}}
-  </style>
+  <meta name="description" content="The Shape of Myth: a verified interactive research story comparing exact-motif and semantic networks across 926 catalogue traditions and 2,138 recorded motifs.">
+  <meta name="theme-color" content="#f4eedf">
+  <title>The Shape of Myth | Interactive research story</title>
+  <link rel="stylesheet" href="story.css">
+  <script defer src="story.js"></script>
 </head>
 <body>
-<a class="skip-link" href="#figures">Skip to figures</a>
-<main class="wrap">
-  <header class="masthead">
-    <p class="eyebrow">Interactive research companion</p>
+<a class="skip-link" href="#main">Skip to the research story</a>
+<div class="reading-progress" aria-hidden="true"><span></span></div>
+
+<nav class="story-nav" aria-label="Story chapters">
+  <a class="wordmark" href="#top" aria-label="The Shape of Myth, return to top">The Shape of Myth</a>
+  <div class="chapter-links">
+    <a href="#archive">Archive</a>
+    <a href="#networks">Networks</a>
+    <a href="#backbone">Backbone</a>
+    <a href="#divergence">Divergence</a>
+    <a href="#context">Context</a>
+    <a href="#meaning">Meaning</a>
+  </div>
+  <a class="nav-action" href="figures.html">Figure index</a>
+</nav>
+
+<header class="story-hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Interactive computational folkloristics</p>
     <h1>The Shape of Myth</h1>
-    <p class="deck">Across 926 catalogue traditions and 2,138 recorded motifs, exact-motif and semantic-topic networks preserve a shared global backbone while reorganizing local communities.</p>
-  </header>
+    <p class="hero-deck">Tracing recurrence and divergence across <strong>926 catalogue traditions</strong> and <strong>2,138 recorded motifs</strong>.</p>
+    <p class="hero-byline">Yaejoon (Jay) Jung · Independent research project</p>
+    <div class="hero-thesis" role="note" aria-label="Central finding">
+      <span>Central finding</span>
+      <p>Exact-motif and semantic networks preserve a nonrandom global backbone while reorganizing local communities. Representation is not merely preprocessing—it helps define what can count as cultural similarity.</p>
+    </div>
+  </div>
+  <div class="hero-register" aria-label="Research scope">
+    <div><strong>926</strong><span>catalogue records</span></div>
+    <div><strong>2,138</strong><span>motif variables</span></div>
+    <div><strong>68,837</strong><span>recorded presences</span></div>
+    <div><strong>2</strong><span>representations</span></div>
+  </div>
+</header>
 
-  <section class="finding" aria-labelledby="finding-title">
-    <h2 id="finding-title">The central finding</h2>
-    <p>The two partitions agree more than expected under both fixed-margin and macroarea-restricted null models, but their agreement is partial rather than interchangeable. Binary community B1 is principally divided between topic communities T2 and T4, showing that the operational definition of “similarity” changes the local structure recovered from the same archive.</p>
-  </section>
-
-  <section class="method" aria-label="Paired representation design">
-    <article class="lens"><h3>Exact recorded motifs</h3><p>Jaccard similarity · all positive dyads · 358,966 weighted edges · Leiden γ=1.00</p></article>
-    <span class="versus">same 926 records</span>
-    <article class="lens"><h3>Semantic topic profiles</h3><p>Motif text → TF-IDF → NMF-15 → tradition profiles · cosine union-kNN k=12 · 8,854 edges · Leiden γ=0.75</p></article>
-  </section>
-
-  <section id="figures" aria-labelledby="figures-title" style="padding-top:26px">
-    <h2 class="section-title" id="figures-title">Explore the evidence</h2>
-    <div class="figure-list">
-      <a class="figure-link" href="map_traditions.html"><span class="number">01</span><h3>Catalogue locations</h3><p>All 926 reference points, recolored by macroarea or either partition.</p><span class="arrow" aria-hidden="true">→</span></a>
-      <a class="figure-link" href="network_explorer.html"><span class="number">02</span><h3>Paired network explorer</h3><p>Released layouts with analyzed topic links and a documented binary-edge display subset.</p><span class="arrow" aria-hidden="true">→</span></a>
-      <a class="figure-link" href="overlap_heatmap.html"><span class="number">03</span><h3>Partition overlap</h3><p>Counts, row and column shares, fixed-margin enrichment, and comparison metrics.</p><span class="arrow" aria-hidden="true">→</span></a>
-      <a class="figure-link" href="nmf_factors.html"><span class="number">04</span><h3>Theme contrasts</h3><p>The 15-factor profile of B1∩T2 versus B1∩T4, with explicit robustness levels.</p><span class="arrow" aria-hidden="true">→</span></a>
-      <a class="figure-link" href="geo_divergence.html"><span class="number">05</span><h3>Macroarea context</h3><p>Composition and residuals for the 310 records in the principal B1 split.</p><span class="arrow" aria-hidden="true">→</span></a>
-      <a class="figure-link" href="climate_scatter.html"><span class="number">06</span><h3>Modern climate context</h3><p>WorldClim BIO1/BIO12 at reference locations, with correct full-community scope.</p><span class="arrow" aria-hidden="true">→</span></a>
-      <a class="figure-link" href="latitude_ridgelines.html"><span class="number">07</span><h3>Latitude distributions</h3><p>Community density profiles with adjustable, documented smoothing.</p><span class="arrow" aria-hidden="true">→</span></a>
-      <a class="figure-link" href="community_profiles.html"><span class="number">08</span><h3>Community profiles</h3><p>Size, context, and verified high-prevalence motif titles for all nine groups.</p><span class="arrow" aria-hidden="true">→</span></a>
+<main id="main">
+  <section class="chapter chapter-question" id="question" aria-labelledby="question-title">
+    <div class="chapter-marker"><span>01</span><p>The recurrence question</p></div>
+    <div class="sidecar">
+      <div class="sidecar-copy">
+        <header class="chapter-heading">
+          <p class="kicker">A controlled comparison</p>
+          <h2 id="question-title">When stories recur, what kind of similarity are we seeing?</h2>
+        </header>
+        <article class="scroll-panel">
+          <h3>A resemblance is not an explanation</h3>
+          <p>Across a large comparative catalogue, related images, actions, beings, and narrative problems recur in records associated with distant communities. A resemblance may reflect historical contact, movement, shared ancestry, parallel response to an environment, recurring human concerns, a collector’s categories, uneven documentation, or several of these at once.</p>
+          <p><strong>The resemblance alone cannot choose among them.</strong></p>
+        </article>
+        <article class="scroll-panel">
+          <h3>Change the measurement</h3>
+          <p>This study holds the same 926 catalogue records constant and compares them twice: first through exact recorded-motif co-presence, then through broader semantic profiles. The question is which community patterns remain recognizable—and where the archive reorganizes.</p>
+        </article>
+        <article class="scroll-panel conclusion-panel">
+          <h3>The result in one sentence</h3>
+          <blockquote>Myths are neither simply universal nor purely local. Their recorded similarities remain recognizable at one scale and reorganize at another.</blockquote>
+        </article>
+      </div>
+      <figure class="interactive interactive-sticky" data-figure="map">
+        <div class="interactive-bar"><span>Interactive figure 01 · Catalogue locations</span><a href="map_traditions.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="map_traditions.html?embed=1" title="Interactive map of 926 catalogue tradition records" aria-describedby="caption-map" loading="eager"></iframe>
+        <figcaption id="caption-map">All three color modes use the same 926 points. Coordinates are catalogue reference locations—not origins, homelands, or bounded territories.</figcaption>
+        <details><summary>Text summary</summary><p>The map displays 926 reference points. Controls recolor the same records by sixteen macroareas, four binary communities, or five provisional semantic communities.</p></details>
+      </figure>
     </div>
   </section>
 
-  <section class="verification" aria-label="Verification status">
-    <strong>26 of 26 checks passed</strong>
-    <p>All node counts, labels, partitions, contingency cells, agreement metrics, theme values, macroarea values, climate means, graph specifications, and 90 community-profile motif records were checked against the frozen releases on 19 July 2026. <a href="data/audit_manifest.json">Read the manifest</a>.</p>
+  <section class="chapter" id="archive" aria-labelledby="archive-title">
+    <div class="chapter-marker"><span>02</span><p>The archive</p></div>
+    <div class="narrative narrow">
+      <header class="chapter-heading">
+        <p class="kicker">Recorded evidence, mediated evidence</p>
+        <h2 id="archive-title">What this archive is—and is not</h2>
+      </header>
+      <p class="lead">The source is the <a href="https://ruthenia.ru/folklore/berezkin/" target="_blank" rel="noopener">Berezkin–Duvakin Electronic Analytical Catalogue of Folklore and Mythological Motifs</a>, with an English-facing interface at <a href="https://mapsofmyths.com/" target="_blank" rel="noopener">Maps of Myths</a>. The frozen analytical release contains 926 catalogue records, 2,138 motif variables, and 68,837 recorded tradition–motif presences.</p>
+      <div class="fact-strip" aria-label="Archive facts">
+        <div><strong>926</strong><span>catalogue records</span></div>
+        <div><strong>2,138</strong><span>recorded motifs</span></div>
+        <div><strong>68,837</strong><span>recorded presences</span></div>
+        <div><strong>16</strong><span>audit macroareas</span></div>
+      </div>
+      <div class="prose-columns">
+        <div>
+          <h3>Analytical units, not cultural wholes</h3>
+          <p>A catalogue record is not a complete portrait of a living people, religion, or narrative tradition. Some labels aggregate named groups; some may be outdated or exonymic. A motif is a coded recurrence—not a full performance or a storyteller’s exact words.</p>
+          <p>A matrix zero means <em>not recorded here</em>. It should not automatically be treated as proof that a motif is culturally absent.</p>
+        </div>
+        <div>
+          <h3>Language enters the measurement</h3>
+          <p>The semantic pipeline depends on English motif titles and glosses. Of 2,138 motif documents, 2,052 include a gloss and 86 do not. One of those 86, <code>m29g1_9</code>, also lacks a descriptive title in the frozen dictionary and is shown transparently as missing rather than guessed.</p>
+          <p>Translation, editorial phrasing, documentation density, and catalogue design are therefore part of the research instrument.</p>
+        </div>
+      </div>
+      <blockquote class="pullquote">These networks organize a recorded catalogue. They do not classify cultures themselves.</blockquote>
+      <aside class="ethics-note" aria-labelledby="ethics-title">
+        <h3 id="ethics-title">Ethical position</h3>
+        <p>The public presentation draws guidance from Smithsonian Folklife work on <a href="https://folklife.si.edu/cultural-sustainability-research-group/smithsonian" target="_blank" rel="noopener">cultural sustainability</a> and <a href="https://folklife.si.edu/news-and-events/shared-stewardship-new-guidelines-for-ethical-archiving" target="_blank" rel="noopener">shared stewardship</a>: name provenance, preserve uncertainty, avoid cultural essences, and distinguish access from authority.</p>
+        <p>This remains secondary archive analysis—not community-led documentation or co-curation—and does not imply Smithsonian affiliation or endorsement.</p>
+      </aside>
+    </div>
   </section>
 
-  <footer>
-    <p><strong>Independent research project.</strong> Not affiliated with or endorsed by the Smithsonian Institution. The public presentation is informed by Smithsonian Folklife principles of rigorous scholarship, attribution, community authority, and transparent limits; this analysis is secondary catalogue research, not community co-curation.</p>
-    <p>Algorithmic similarity generates hypotheses. It does not by itself establish genealogy, migration, cultural borrowing, environmental causation, or universal human meaning.</p>
-  </footer>
+  <section class="chapter chapter-tinted" id="networks" aria-labelledby="networks-title">
+    <div class="chapter-marker"><span>03</span><p>Paired representations</p></div>
+    <div class="narrative">
+      <header class="chapter-heading narrow-heading">
+        <p class="kicker">Same records, different lenses</p>
+        <h2 id="networks-title">Two operational definitions of similarity</h2>
+        <p>Both pipelines hold the node universe and underlying catalogue constant. They change the feature space, similarity measure, graph rule, and Leiden setting.</p>
+      </header>
+      <div class="lens-comparison">
+        <article>
+          <span class="lens-number">Lens 1</span>
+          <h3>Exact recorded-motif co-presence</h3>
+          <p>Ordinary Jaccard similarity compares each pair of binary motif repertoires. Shared zeroes do not increase similarity. Every positive off-diagonal tie is retained.</p>
+          <dl><div><dt>Features</dt><dd>2,138 motif presences</dd></div><div><dt>Graph</dt><dd>358,966 weighted edges</dd></div><div><dt>Leiden</dt><dd>γ = 1.00 · four communities</dd></div></dl>
+        </article>
+        <div class="same-records"><span>same</span><strong>926</strong><span>records</span></div>
+        <article>
+          <span class="lens-number">Lens 2</span>
+          <h3>Broader semantic composition</h3>
+          <p>Motif title and gloss documents become sublinear, L2-normalized TF–IDF vectors, then 15 NMF factors. Aggregated tradition profiles are compared by cosine similarity.</p>
+          <dl><div><dt>Features</dt><dd>15 semantic factors</dd></div><div><dt>Graph</dt><dd>union-kNN k = 12 · 8,854 edges</dd></div><div><dt>Leiden</dt><dd>γ = 0.75 · five provisional communities</dd></div></dl>
+        </article>
+      </div>
+      <figure class="interactive" data-autofit>
+        <div class="interactive-bar"><span>Interactive figure 02 · Paired network explorer</span><a href="network_explorer.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="network_explorer.html?embed=1" title="Interactive explorer for exact-motif and semantic network layouts" aria-describedby="caption-networks" loading="lazy"></iframe>
+        <figcaption id="caption-networks">Switch representation and color by community or macroarea. The topic view draws all 8,854 released analyzed links. For legibility, the binary display draws a reproducible subset of 4,113 actual released edges. Screen position is a layout—not geography or calibrated distance.</figcaption>
+        <details><summary>Text summary</summary><p>The exact-motif graph yields four communities of 363, 123, 230, and 210 records. The provisional semantic graph yields five communities of 271, 204, 196, 164, and 91.</p></details>
+      </figure>
+      <div class="validation-grid">
+        <article><strong>0.9933</strong><h3>Binary mean seed stability</h3><p>Mean pairwise ARI across optimizer seeds; minimum 0.9832. The released overlay is stable and descriptive.</p></article>
+        <article><strong>0.8581</strong><h3>Topic mean seed stability</h3><p>Minimum 0.7118 across ten optimizer seeds; solutions ranged from four to five communities.</p></article>
+        <article><strong>0.0276</strong><h3>Topic NDCG@50 diagnostic</h3><p>Below the 0.1417 popularity baseline. T1–T5 remain provisional pending human semantic validation.</p></article>
+      </div>
+      <figure class="interactive" data-autofit>
+        <div class="interactive-bar"><span>Interactive figure 03 · Community profiles</span><a href="community_profiles.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="community_profiles.html?embed=1" title="Interactive profiles of all nine network communities" aria-describedby="caption-profiles" loading="lazy"></iframe>
+        <figcaption id="caption-profiles">Profiles use full-community denominators. Region and modern climate fields are contextual; prevalent motif labels reuse features involved in network construction and are descriptive, not independent validation.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="chapter" id="backbone" aria-labelledby="backbone-title">
+    <div class="chapter-marker"><span>04</span><p>Structural agreement</p></div>
+    <div class="narrative">
+      <header class="chapter-heading narrow-heading">
+        <p class="kicker">Nonrandom—and incomplete</p>
+        <h2 id="backbone-title">A shared backbone without interchangeable classifications</h2>
+        <p>Every one of the 926 node labels aligns, so the two partitions can be compared directly through one 4 × 5 contingency table.</p>
+      </header>
+      <figure class="interactive" data-autofit>
+        <div class="interactive-bar"><span>Interactive figure 04 · Partition overlap</span><a href="overlap_heatmap.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="overlap_heatmap.html?embed=1" title="Interactive overlap table for binary and semantic communities" aria-describedby="caption-overlap" loading="lazy"></iframe>
+        <figcaption id="caption-overlap">Switch among raw counts, binary-row shares, topic-column shares, and fixed-margin fold enrichment. Focusing or selecting a cell reports all values.</figcaption>
+        <details><summary>Text summary</summary><p>The largest cells are B3–T3 with 166 records, B1–T2 with 162, B4–T1 with 161, B1–T4 with 148, and B2–T5 with 64.</p></details>
+      </figure>
+      <div class="metric-strip" aria-label="Partition agreement metrics">
+        <div><strong>0.3549</strong><span>ARI</span><small>chance-adjusted pair agreement</small></div>
+        <div><strong>0.3888</strong><span>AMI</span><small>chance-adjusted shared information</small></div>
+        <div><strong>0.3916</strong><span>NMI</span><small>normalized, not chance-adjusted</small></div>
+        <div><strong>2.5226</strong><span>VI bits</span><small>information distance</small></div>
+      </div>
+      <div class="prose-columns evidence-columns">
+        <div>
+          <h3>Pair structure</h3>
+          <p>Among 428,275 unordered tradition pairs, 55,389 are grouped together by both partitions, 66,097 only by the binary partition, 38,473 only by the semantic partition, and 268,316 by neither.</p>
+          <p>The raw Rand index is 0.7558, but most pairs contribute because both partitions separate them. It is not “76% recovery.”</p>
+        </div>
+        <div>
+          <h3>Null models</h3>
+          <p>No fixed-margin permutation among 99,999 draws reaches the observed agreement (z-Rand 151.11; p = 0.00001). A macroarea-restricted null raises mean ARI to 0.2075, yet observed ARI remains higher (z = 17.52; p = 0.00001).</p>
+          <p>Broad geography supplies a substantial baseline but does not exhaust the shared structure.</p>
+        </div>
+      </div>
+      <div class="anchor-row" aria-label="Prominent community anchors">
+        <div><span>B3 ↔ T3</span><strong>166</strong><small>84.7% of T3</small></div>
+        <div><span>B4 ↔ T1</span><strong>161</strong><small>59.4% of T1</small></div>
+        <div><span>B2 ↔ T5</span><strong>64</strong><small>70.3% of T5</small></div>
+        <div class="split-anchor"><span>B1 → T2 / T4</span><strong>162 / 148</strong><small>the principal bifurcation</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter chapter-tinted" id="divergence" aria-labelledby="divergence-title">
+    <div class="chapter-marker"><span>05</span><p>Principal divergence</p></div>
+    <div class="narrative">
+      <header class="chapter-heading narrow-heading">
+        <p class="kicker">One community, two semantic profiles</p>
+        <h2 id="divergence-title">The largest binary community reorganizes</h2>
+        <p>Binary community B1 contains 363 records. Under the semantic partition, 162 enter T2 and 148 enter T4; the remaining 53 enter T1, T3, or T5. The two main branches account for 85.4% of B1—but neither is a complete topic community.</p>
+      </header>
+      <div class="scope-warning" role="note"><strong>Keep the denominators separate.</strong> Theme, motif, geography, and documentation comparisons below use B1∩T2, n = 162, versus B1∩T4, n = 148. Climate and latitude use full T2, n = 204, versus full T4, n = 164.</div>
+      <figure class="interactive" data-autofit>
+        <div class="interactive-bar"><span>Interactive figure 05 · Semantic-factor contrasts</span><a href="nmf_factors.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="nmf_factors.html?embed=1" title="Interactive comparison of fifteen semantic factors in the B1 split" aria-describedby="caption-factors" loading="lazy"></iframe>
+        <figcaption id="caption-factors">Mean factor shares for B1∩T2 and B1∩T4. Four factors—F3, F5, F9, and F10—remain Holm-significant under all three permutation schemes. Factors helped construct the topic partition, so this is post-clustering characterization.</figcaption>
+      </figure>
+      <div class="theme-balance">
+        <article class="t2"><span>T2-leaning core</span><h3>Celestial and world-structure factors</h3><ul><li><strong>16.0%</strong> Sun, Moon &amp; eclipses, versus 6.7% in T4</li><li><strong>15.8%</strong> sky, earth &amp; world structure, versus 8.0%</li></ul></article>
+        <article class="t4"><span>T4-leaning core</span><h3>Terrestrial and first-being factors</h3><ul><li><strong>17.8%</strong> first people, plants &amp; beings, versus 12.2% in T2</li><li><strong>7.1%</strong> trees, rocks &amp; climbing, versus 3.7%</li></ul></article>
+      </div>
+      <div class="motif-audit">
+        <h3>Aggregate themes persist more clearly than individual motifs</h3>
+        <p>Across 2,138 motifs, 232 differences pass an unstratified Benjamini–Hochberg screen. Eight survive macroarea restriction, all favoring T4. None survives simultaneous macroarea × recorded-repertoire-quartile restriction. Individual motif contrasts are therefore highly context-sensitive even while the aggregate factor composition persists.</p>
+      </div>
+      <figure class="interactive" data-autofit>
+        <div class="interactive-bar"><span>Interactive figure 06 · Geographic divergence</span><a href="geo_divergence.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="geo_divergence.html?embed=1" title="Interactive macroarea composition of the two B1 branches" aria-describedby="caption-geography" loading="lazy"></iframe>
+        <figcaption id="caption-geography">Branch shares sum to 100% on each side. Switch to adjusted Pearson residuals to see over- and under-representation. The values describe association with broad catalogue geography—not cultural origin.</figcaption>
+      </figure>
+      <div class="geo-result">
+        <strong>90 of 148</strong>
+        <p>B1∩T4 records are assigned to Amazonia and Northern South America (60.8%). Across the twelve represented macroareas, χ²(11) = 94.53, permutation p = 0.00001, Cramér’s V = 0.552, and Jensen–Shannon distance = 0.496.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="context" aria-labelledby="context-title">
+    <div class="chapter-marker"><span>06</span><p>Context audit</p></div>
+    <div class="narrative">
+      <header class="chapter-heading narrow-heading">
+        <p class="kicker">Interpretation changes with context</p>
+        <h2 id="context-title">Geography, documentation, language, and environment</h2>
+        <p>The right question is not whether context “explains away” the result, but how much contextual structure already enters what the semantic pipeline can resolve.</p>
+      </header>
+      <div class="audit-grid">
+        <article><span>Documentation depth</span><h3>35.3 vs 61.1 motifs</h3><p>B1∩T2 and B1∩T4 mean recorded repertoire sizes. The difference persists within macroareas (p = 0.00001; Cliff’s δ = −0.408).</p></article>
+        <article><span>Language metadata</span><h3>340 of 926 missing</h3><p>Only 586 records have a nonblank family label; the 97 observed labels cannot support a confirmatory historical claim without dedicated treatment.</p></article>
+        <article><span>Interpretive boundary</span><h3>Depth is not richness</h3><p>Recorded motif count indexes catalogue documentation. It is not a measure of a culture’s narrative complexity or importance.</p></article>
+      </div>
+      <figure class="interactive" data-autofit>
+        <div class="interactive-bar"><span>Interactive figure 07 · Modern climate context</span><a href="climate_scatter.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="climate_scatter.html?embed=1" title="Interactive temperature and precipitation context for all 926 records" aria-describedby="caption-climate" loading="lazy"></iframe>
+        <figcaption id="caption-climate">WorldClim v2.1 BIO1 and BIO12 values at 10-arc-minute resolution for catalogue reference coordinates. Highlighted T2 and T4 values use full communities. These present-day summaries are contextual and noncausal.</figcaption>
+      </figure>
+      <div class="climate-scope">
+        <article><span>Full T2 · n = 204</span><strong>21.1 °C</strong><small>mean BIO1</small><strong>1,496.8 mm</strong><small>mean BIO12</small></article>
+        <article><span>Full T4 · n = 164</span><strong>23.5 °C</strong><small>mean BIO1</small><strong>2,042.9 mm</strong><small>mean BIO12</small></article>
+        <p>Fifty-nine coordinates required nearby-grid imputation of up to seven pixels; Tuvalu and Rotuma used the nearest resolved tradition. These repairs preserve coverage but reduce local precision.</p>
+      </div>
+      <figure class="interactive" data-autofit>
+        <div class="interactive-bar"><span>Interactive figure 08 · Latitude distributions</span><a href="latitude_ridgelines.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <iframe src="latitude_ridgelines.html?embed=1" title="Interactive latitude distributions for every network community" aria-describedby="caption-latitudes" loading="lazy"></iframe>
+        <figcaption id="caption-latitudes">Toggle between all four binary and five provisional semantic communities. Curves summarize catalogue coordinates—not cultural territories, historical locations, or origins.</figcaption>
+      </figure>
+      <blockquote class="pullquote">The networks locate a phenomenon that requires explanation. They do not isolate the explanation.</blockquote>
+    </div>
+  </section>
+
+  <section class="chapter chapter-conclusion" id="meaning" aria-labelledby="meaning-title">
+    <div class="chapter-marker"><span>07</span><p>Meaning</p></div>
+    <div class="narrative narrow">
+      <header class="chapter-heading">
+        <p class="kicker">A bounded conclusion</p>
+        <h2 id="meaning-title">Neither universal sameness nor absolute isolation</h2>
+      </header>
+      <p class="lead">Exact recorded-motif co-presence and semantic-profile similarity preserve a nonrandom shared backbone while reorganizing local membership. Three prominent anchors persist, and the largest binary community divides into two semantically coherent—but context-entangled—branches.</p>
+      <div class="claims-grid">
+        <article class="supports">
+          <h3>The analysis supports</h3>
+          <ul><li>nonrandom but incomplete agreement;</li><li>three prominent one-to-one anchors;</li><li>a principal B1 subdivision into B1∩T2 and B1∩T4;</li><li>a persistent aggregate thematic contrast;</li><li>substantial covariation with geography and documentation;</li><li>representation and graph construction as substantive research choices.</li></ul>
+        </article>
+        <article class="limits">
+          <h3>The analysis does not establish</h3>
+          <ul><li>migration, borrowing, or transmission direction;</li><li>common ancestry or a date of divergence;</li><li>where a motif originated;</li><li>an environmental cause;</li><li>emic cultural categories;</li><li>the superiority of topic modeling;</li><li>a representative sample of all traditions or performances.</li></ul>
+        </article>
+      </div>
+      <blockquote class="final-thesis">The two methods observe different levels of the same recorded archive. Their disagreement is evidence about the measurement architecture.</blockquote>
+      <section class="next-evidence" aria-labelledby="next-title">
+        <p class="kicker">Next research direction</p>
+        <h2 id="next-title">From structural result to historical test</h2>
+        <ol>
+          <li><strong>Human semantic validation</strong><span>Area specialists, translators, folklorists, and—where feasible and invited—knowledge holders review wording, factor labels, and representative records.</span></li>
+          <li><strong>Historical and archaeological chronology</strong><span>Narrow motif families are tested against independent dates, movements, settlements, and exchange evidence.</span></li>
+          <li><strong>Language-aware models</strong><span>Missingness, relatedness, genealogy, contact, and multilingual naming are modeled explicitly.</span></li>
+          <li><strong>Spatial and ecological alternatives</strong><span>Nulls preserve local autocorrelation and sampling density; environmental variables require dated mechanisms.</span></li>
+          <li><strong>Documentation sensitivity</strong><span>Repertoire matching, source blocking, and down-sampling test which structures depend on catalogue depth.</span></li>
+          <li><strong>Model uncertainty</strong><span>NMF seeds, factor number, graph rules, Leiden resolution, and translation choices are propagated through the comparison.</span></li>
+        </ol>
+      </section>
+    </div>
+  </section>
+
+  <section class="chapter methods" id="methods" aria-labelledby="methods-title">
+    <div class="chapter-marker"><span>08</span><p>Methods &amp; data</p></div>
+    <div class="narrative narrow">
+      <header class="chapter-heading">
+        <p class="kicker">Auditability before interpretation</p>
+        <h2 id="methods-title">Reproduce the comparison</h2>
+      </header>
+      <p>Every interactive is backed by frozen release tables. The publication payload passed 26 of 26 checks covering node labels and order, community sizes, every contingency cell, independently recomputed agreement metrics, factor and macroarea values, climate means, motif-title integrity, graph specifications, and topic-partition status.</p>
+      <div class="resource-links">
+        <a href="METHODS_AND_PROVENANCE.md"><strong>Methods &amp; provenance</strong><span>Complete pipeline, field dictionary, null models, and claim boundaries</span></a>
+        <a href="data/audit_manifest.json"><strong>Audit manifest</strong><span>Machine-readable publication checks</span></a>
+        <a href="data/canonical_core_specs.json"><strong>Canonical specifications</strong><span>Frozen graph and partition settings</span></a>
+        <a href="figures.html"><strong>Figure index</strong><span>Open each interactive as a stand-alone research figure</span></a>
+        <a href="https://github.com/jayjung124/SSTP_StoryMap" target="_blank" rel="noopener"><strong>GitHub repository</strong><span>Versioned source, data extracts, and stable URLs</span></a>
+      </div>
+      <details class="reference-list"><summary>Selected references and data sources</summary>
+        <p>Berezkin, Yuri E., and Evgeny N. Duvakin. <a href="https://ruthenia.ru/folklore/berezkin/" target="_blank" rel="noopener">Electronic Analytical Catalogue of Folklore and Mythological Motifs</a>.</p>
+        <p>Traag, Vincent A., Ludo Waltman, and Nees Jan van Eck. 2019. “From Louvain to Leiden: Guaranteeing Well-Connected Communities.” <a href="https://doi.org/10.1038/s41598-019-41695-z" target="_blank" rel="noopener">Scientific Reports 9: 5233</a>.</p>
+        <p>Fick, Stephen E., and Robert J. Hijmans. 2017. “WorldClim 2: New 1-km Spatial Resolution Climate Surfaces for Global Land Areas.” <a href="https://doi.org/10.1002/joc.5086" target="_blank" rel="noopener">International Journal of Climatology 37</a>.</p>
+        <p>Smithsonian Center for Folklife and Cultural Heritage. <a href="https://folklife.si.edu/cultural-sustainability-research-group/smithsonian" target="_blank" rel="noopener">Cultural Sustainability</a> and <a href="https://folklife.si.edu/news-and-events/shared-stewardship-new-guidelines-for-ethical-archiving" target="_blank" rel="noopener">Shared Stewardship</a>.</p>
+      </details>
+    </div>
+  </section>
 </main>
+
+<footer class="story-footer">
+  <div><strong>The Shape of Myth</strong><p>An independent computational research project by Yaejoon (Jay) Jung.</p></div>
+  <p>Not affiliated with or endorsed by the Smithsonian Institution. Algorithmic similarity generates hypotheses; it does not by itself establish ancestry, migration, borrowing, environmental causation, or universal meaning.</p>
+  <a href="#top">Back to top ↑</a>
+</footer>
 </body>
 </html>

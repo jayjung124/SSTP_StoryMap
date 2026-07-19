@@ -1,9 +1,20 @@
 # Publish and embed guide
 
+## Primary publication
+
+The canonical public presentation is now the custom longform GitHub Pages site:
+
+- Interactive story: <https://jayjung124.github.io/SSTP_StoryMap/>
+- Stand-alone figure index: <https://jayjung124.github.io/SSTP_StoryMap/figures.html>
+- Repository and revision history: <https://github.com/jayjung124/SSTP_StoryMap>
+
+This route preserves the verified JavaScript interactives without an account or ArcGIS license boundary. The ArcGIS StoryMaps draft can remain saved and unpublished as an optional derivative. It is not required for the figures to function.
+
 ## Public host
 
 - Repository: <https://github.com/jayjung124/SSTP_StoryMap>
-- Figure gallery: <https://jayjung124.github.io/SSTP_StoryMap/>
+- Interactive story: <https://jayjung124.github.io/SSTP_StoryMap/>
+- Figure index: <https://jayjung124.github.io/SSTP_StoryMap/figures.html>
 - StoryMap draft: <https://storymaps.arcgis.com/stories/325d391715274077a3ff3d3a43d477bf/edit>
 
 The repository includes a GitHub Actions workflow at `.github/workflows/pages.yml`. A push to `main` redeploys the static site. If GitHub Pages has not yet been enabled, open **Repository Settings → Pages → Build and deployment → Source → GitHub Actions** once. Do not upload the source folder’s `node_modules`; it is not used by the published site.
