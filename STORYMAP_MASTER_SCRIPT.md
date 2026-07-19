@@ -168,7 +168,7 @@ The binary matrix records whether the catalogue links a motif to a tradition. A 
 
 [PUBLIC TEXT]
 
-The semantic pipeline also depends on English motif titles and glosses. Of the 2,138 motif documents in the frozen release, 2,052 include a gloss and 86 are represented by title only. Translation, editorial phrasing, and catalogue design are therefore part of the measurement system.
+The semantic pipeline also depends on English motif title fields and glosses. Of the 2,138 motif documents in the frozen release, 2,052 include a gloss and 86 lack one. One of those 86, `m29g1_9`, also lacks a descriptive title: its title field repeats the motif ID. Translation, editorial phrasing, missing description, and catalogue design are therefore part of the measurement system.
 
 [BUILDER] Insert a pull quote on a plain background.
 
