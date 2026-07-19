@@ -79,17 +79,36 @@ All excerpts below are 25 words or fewer.
 - **Rights:** the Library states that Geography and Map Division digitized content is free to use and reuse unless a contrary Rights Advisory is present; none is present for this item
 - **Interpretive use:** a historically situated early-modern European attempt to order the world. It is not presented as neutral geography. The surrounding personifications and costume images are part of the map’s representational history.
 
-### Zora Neale Hurston press portrait
+### Zora Neale Hurston, Rochelle French, and Gabriel Brown in Eatonville
 
-- **Title:** “[Zora Hurston, half-length portrait, standing, facing slightly left, beating the hountar, or mama drum]”
-- **Date:** 1937
-- **Creator:** photographer unidentified; New York World-Telegram & Sun staff photograph
+- **Current title:** “[Zora Neale Hurston, Rochelle French, and Gabriel Brown, Eatonville, Florida]”
+- **Date:** June 1935
+- **Creator:** Alan Lomax, photographer
 - **Holding institution:** Library of Congress, Prints and Photographs Division
-- **Item record:** <https://www.loc.gov/pictures/item/93513271/>
-- **Direct large JPEG:** <https://tile.loc.gov/storage-services/service/pnp/ds/16000/16025v.jpg>
-- **Local file:** `assets/history/zora-hurston-drum-1937.jpg`
-- **Rights:** “No known restrictions on publication for NYWT&S staff photographs.”
-- **Interpretive use:** placed beside Hurston’s definition of folklore to open with a named folklorist and expressive act. The caption states that this is a press portrait, not fieldwork documentation.
+- **Collection:** Lomax Collection, LOT 7414-C, no. N94
+- **Item record:** <https://www.loc.gov/pictures/item/2007660101/>
+- **Direct large JPEG:** <https://cdn.loc.gov/service/pnp/ppmsc/00300/00375v.jpg>
+- **Archival TIFF used for the local derivative:** <https://cdn.loc.gov/master/pnp/ppmsc/00300/00375u.tif>
+- **Local file:** `assets/history/zora-hurston-eatonville-1935.jpg`, cropped to the photographic image while retaining its original edges
+- **Rights:** “No known restrictions.”
+- **Cataloguing note:** the current title identifies Rochelle French; the record’s transcription of the handwriting on the print’s reverse reads “Rochelle Harris.” The site retains both forms instead of silently resolving the discrepancy.
+- **Context:** the Library states that this photograph was made during the Lomax-Hurston-Barnicle recording expedition to Georgia, Florida, and the Bahamas.
+- **Interpretive use:** placed beside Hurston’s definition of folklore to open with fieldwork as a relationship among named people rather than with a staged press portrait.
+
+### Children playing singing games in Eatonville
+
+- **Current title:** “[African American children playing singing games, Eatonville, Florida]”
+- **Date:** June 1935
+- **Creator:** Alan Lomax, photographer
+- **Holding institution:** Library of Congress, Prints and Photographs Division
+- **Collection:** Lomax Collection, LOT 7414-C, no. N104
+- **Item record:** <https://www.loc.gov/pictures/item/2007660111/>
+- **Direct large JPEG:** <https://cdn.loc.gov/service/pnp/ppmsc/00300/00385v.jpg>
+- **Archival TIFF used for the local derivative:** <https://cdn.loc.gov/master/pnp/ppmsc/00300/00385u.tif>
+- **Local file:** `assets/history/eatonville-singing-games-1935.jpg`, cropped to the photographic image
+- **Rights:** “No known restrictions.”
+- **Context:** the Library states that this photograph was made during the Lomax-Hurston-Barnicle recording expedition and describes its subject as children, play, and singing games.
+- **Interpretive use:** makes performance and informal transmission visible. It supports the prologue’s argument that expressive culture is learned and renewed through embodied participation before it becomes a catalogue description.
 
 ### Mountain Chief and Frances Densmore
 
