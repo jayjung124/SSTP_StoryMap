@@ -24,6 +24,11 @@ This is a finding about representational sensitivity in a secondary catalogue. A
 
 Append `?embed=1` to any figure URL for the compact ArcGIS StoryMaps view.
 
+The matching files in `previews/` are verified static captures for StoryMaps
+accounts that cannot use external Embed blocks. Each preview should be paired
+with a button linking to the corresponding live HTML figure; it is not a
+substitute for the interactive or its accessible text.
+
 ## Verification
 
 The publication payload passed 26/26 checks against the frozen network and partition-comparison releases on 19 July 2026. Checks cover row counts and ordering, partition sizes, all contingency cells, independently recomputed agreement metrics, factor and macroarea tables, climate means, motif-title integrity, graph specifications, and semantic-partition status.
