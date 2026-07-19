@@ -1,0 +1,5 @@
+pair_category,definition,count,is_rand_agreement,share_of_all_pairs
+same in both,same binary community and same topic community,55389,True,0.1293304535637149
+binary only,same binary community but different topic communities,66097,False,0.15433308038059657
+topic only,different binary communities but same topic community,38473,False,0.08983246745665752
+different in both,different communities in both partitions,268316,True,0.6265039985990309

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Paired network explorer | The Shape of Myth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storymap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <script src="mythdata.js"></script>
+  <script src="network_edges.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#network">Skip to figure</a>
+<main class="wrap">
+  <header class="figure-head">
+    <p class="kicker">Paired representations · Figure 2</p>
+    <h1 class="chart-title">The same records form two different graphs</h1>
+    <p class="chart-sub">The binary graph links entries that share exact recorded motifs. The topic graph links entries with similar 15-factor semantic profiles. The node set is held constant; representation, edge construction, and Leiden resolution are not.</p>
+  </header>
+
+  <section class="controls" aria-label="Network controls">
+    <div class="control-group">
+      <span class="control-label" id="representation-label">Representation</span>
+      <div class="seg" id="representation-controls" role="group" aria-labelledby="representation-label">
+        <button type="button" data-value="binary" aria-pressed="true">Exact-motif graph</button>
+        <button type="button" data-value="topic" aria-pressed="false">Semantic-topic graph</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="control-label" id="network-color-label">Color nodes by</span>
+      <div class="seg" id="network-color-controls" role="group" aria-labelledby="network-color-label">
+        <button type="button" data-value="community" aria-pressed="true">Community</button>
+        <button type="button" data-value="area" aria-pressed="false">Macroarea</button>
+      </div>
+    </div>
+    <div class="control-group"><span class="control-label">Display</span><label class="check"><input type="checkbox" id="edge-toggle" checked> analyzed links</label></div>
+  </section>
+
+  <p class="chart-sub" id="graph-spec" aria-live="polite"></p>
+  <figure class="figure-frame">
+    <div id="network" class="plot"></div>
+    <figcaption class="sr-only">Interactive layouts of the binary exact-motif graph and semantic-topic graph. Controls switch graph, node color, and analyzed links.</figcaption>
+  </figure>
+  <div class="legend" id="legend" aria-label="Network legend"></div>
+  <p class="figure-note"><strong>Display rule.</strong> The topic view draws all 8,854 released union-kNN links. The binary graph has 358,966 positive-Jaccard links and is too dense to draw legibly, so its view uses the reproducible union of each node’s six strongest incident links (4,113 released edges). Layout distance helps reveal structure but is not itself a similarity measure.</p>
+  <div class="data-row"><a href="data/traditions.csv" download>Download node attributes (CSV)</a><a href="data/audit_manifest.json">Read the verification manifest</a></div>
+  <details class="data-details"><summary>Network specifications and community sizes</summary><div class="table-wrap"><table class="data-table" id="network-table"><caption>Frozen graph specifications</caption><thead><tr><th>Graph</th><th>Edges</th><th>Construction</th><th>Leiden γ</th><th>Community sizes</th></tr></thead><tbody></tbody></table></div></details>
+</main>
+
+<script>
+'use strict';
+const D=window.MYTHDATA;
+const E=window.MYTHEDGES;
+const N=D.nodes;
+const CP=D.cpal;
+const AREA=D.areas;
+let representation='binary';
+let colorMode='community';
+
+function xy(node){return representation==='binary'?[node.bx,node.by]:[node.tx,node.ty];}
+function community(node){return representation==='binary'?`B${node.b}`:`T${node.t}`;}
+
+function nodeGroups(){
+  if(colorMode==='area') return Object.keys(AREA).map(key=>({label:AREA[key].name,hex:AREA[key].hex,test:d=>String(d.a)===key}));
+  const labels=representation==='binary'?['B1','B2','B3','B4']:['T1','T2','T3','T4','T5'];
+  return labels.map(label=>({label,hex:CP[label],test:d=>community(d)===label}));
+}
+
+function edgeTrace(){
+  const source=representation==='binary'?E.binaryDisplay:E.topic;
+  const x=[],y=[];
+  source.forEach(edge=>{
+    const a=xy(N[edge[0]]),b=xy(N[edge[1]]);
+    x.push(a[0],b[0],null);y.push(a[1],b[1],null);
+  });
+  return {type:'scattergl',mode:'lines',x,y,hoverinfo:'skip',showlegend:false,line:{width:representation==='binary'?.45:.38,color:representation==='binary'?'rgba(90,86,80,.26)':'rgba(90,86,80,.18)'}};
+}
+
+function draw(){
+  const groups=nodeGroups();
+  const traces=[];
+  if(document.getElementById('edge-toggle').checked) traces.push(edgeTrace());
+  groups.forEach(group=>{
+    const points=N.filter(group.test);
+    traces.push({type:'scattergl',mode:'markers',name:group.label,x:points.map(d=>xy(d)[0]),y:points.map(d=>xy(d)[1]),text:points.map(d=>`<b>${STORYMAP.escape(d.n)}</b><br>${STORYMAP.escape(AREA[d.a].name)}<br>Binary B${d.b} · Topic T${d.t}<br>${d.nm} recorded motifs`),hovertemplate:'%{text}<extra></extra>',marker:{size:7,color:group.hex,opacity:.86,line:{width:.4,color:'rgba(20,20,20,.55)'}}});
+  });
+  Plotly.react('network',traces,{height:STORYMAP.plotHeight(590,455),margin:{l:8,r:8,t:8,b:8},paper_bgcolor:'#fffefd',plot_bgcolor:'#fffefd',xaxis:{visible:false,zeroline:false},yaxis:{visible:false,zeroline:false,scaleanchor:'x'},showlegend:false,hoverlabel:{bgcolor:'#20201e',bordercolor:'#20201e',font:{color:'#fff',size:12}}},STORYMAP.plotConfig);
+  document.getElementById('legend').innerHTML=groups.map(g=>`<span class="it"><span class="sw" style="background:${g.hex}"></span>${STORYMAP.escape(g.label)}</span>`).join('');
+  const spec=D.release[representation];
+  document.getElementById('graph-spec').innerHTML=representation==='binary'?`<span class="scope-chip">Binary</span> 358,966 analyzed edges · displaying 4,113 actual strongest-edge links · Leiden γ=1.00 · four communities`:`<span class="scope-chip">Topic</span> 8,854 analyzed edges · displaying all 8,854 links · cosine union-kNN, k=12 · Leiden γ=0.75 · five provisional communities`;
+}
+
+STORYMAP.bindSegment(document.getElementById('representation-controls'),button=>{representation=button.dataset.value;draw();});
+STORYMAP.bindSegment(document.getElementById('network-color-controls'),button=>{colorMode=button.dataset.value;draw();});
+document.getElementById('edge-toggle').addEventListener('change',draw);
+
+document.querySelector('#network-table tbody').innerHTML=`<tr><td>Binary exact motif</td><td>358,966</td><td>All positive Jaccard dyads</td><td>1.00</td><td>363, 123, 230, 210</td></tr><tr><td>Semantic topic</td><td>8,854</td><td>Cosine union-kNN, k=12</td><td>0.75</td><td>271, 204, 196, 164, 91</td></tr>`;
+STORYMAP.ariaPlot('network','Interactive network layout comparison for 926 catalogue entries');
+draw();
+window.addEventListener('resize',draw,{passive:true});
+</script>
+</body>
+</html>

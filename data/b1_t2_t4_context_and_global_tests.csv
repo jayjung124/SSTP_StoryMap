@@ -1,0 +1,9 @@
+analysis,estimand_or_test,estimate,p_plus_one,multiplicity,notes
+B1_T2_vs_T4_macroarea_composition,Pearson chi-square,94.53124947337912,1e-05,not_applicable_single_global_test,df=11; Cramer's V=0.552213
+B1_T2_vs_T4_macroarea_composition,Jensen-Shannon distance (base 2),0.49588168128241605,,not_applicable_effect_size,Distance between group-specific macroarea distributions
+B1_T2_vs_T4_recorded_motif_count,mean difference T2 minus T4,-25.835335335335337,1e-05,not_applicable_single_test,Unrestricted fixed-size label permutation
+B1_T2_vs_T4_recorded_motif_count,mean difference T2 minus T4,-25.835335335335337,1e-05,not_applicable_single_test,Macroarea-restricted permutation
+B1_T2_vs_T4_recorded_motif_count,Cliff's delta T2 minus T4,-0.4079496162829496,,not_applicable_effect_size,Negative means a randomly selected T2 tradition tends to have fewer recorded motifs
+B1_T2_vs_T4_theme_composition,Aitchison centroid distance_unrestricted,1.6096570801090253,1e-05,not_applicable_single_global_test,99999 permutations; seed=20260719
+B1_T2_vs_T4_theme_composition,Aitchison centroid distance_macroarea_restricted,1.6096570801090253,1e-05,not_applicable_single_global_test,99999 permutations; seed=20260720
+B1_T2_vs_T4_theme_composition,Aitchison centroid distance_macroarea_documentation_quartile_restricted,1.6096570801090253,0.00015,not_applicable_single_global_test,99999 permutations; seed=20260721

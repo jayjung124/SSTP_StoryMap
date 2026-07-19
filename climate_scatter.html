@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Modern climate context | The Shape of Myth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storymap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <script src="mythdata.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#climate">Skip to figure</a>
+<main class="wrap">
+  <header class="figure-head">
+    <p class="kicker">Contextual audit · Figure 6</p>
+    <h1 class="chart-title">Modern climate context differs across the topic partition</h1>
+    <p class="chart-sub">At their catalogue reference locations, the <strong>full T2 community (n=204)</strong> has a mean of 21.1°C and 1,497 mm annual precipitation; the <strong>full T4 community (n=164)</strong> averages 23.5°C and 2,043 mm. These present-day covariates contextualize the classifications; they do not reconstruct the climate of a story’s formation.</p>
+  </header>
+
+  <section class="controls" aria-label="Climate chart controls">
+    <div class="control-group">
+      <span class="control-label" id="climate-highlight-label">Color</span>
+      <div class="seg" id="highlight-controls" role="group" aria-labelledby="climate-highlight-label">
+        <button type="button" data-value="t2t4" aria-pressed="true">Full T2 and T4</button>
+        <button type="button" data-value="topic" aria-pressed="false">All topic communities</button>
+        <button type="button" data-value="binary" aria-pressed="false">All binary communities</button>
+      </div>
+    </div>
+    <div class="control-group"><span class="control-label">Summary</span><label class="check"><input type="checkbox" id="mean-toggle" checked> show community means</label></div>
+  </section>
+
+  <figure class="figure-frame">
+    <div id="climate" class="plot"></div>
+    <figcaption class="sr-only">Scatterplot of annual mean temperature and annual precipitation for 926 catalogue reference locations, colored by selected communities.</figcaption>
+  </figure>
+  <div class="legend" id="legend" aria-label="Climate chart legend"></div>
+  <p class="figure-note"><strong>Provenance and limit.</strong> BIO1 and BIO12 are WorldClim v2.1 climate normals at 10-arc-minute resolution. Fifty-nine locations required nearby-grid imputation (up to seven pixels); Tuvalu and Rotuma use the nearest resolved tradition profile. The chart uses full T2/T4 communities, unlike the B1-only theme and macroarea figures. Contemporary climate at a catalogue point cannot establish historical environment, cultural origin, or causal influence.</p>
+  <div class="data-row"><a href="data/traditions.csv" download>Download plotted values (CSV)</a><a href="https://www.worldclim.org/data/bioclim.html" target="_blank" rel="noreferrer">WorldClim variable definitions</a></div>
+  <details class="data-details"><summary>Accessible table of community climate summaries</summary><div class="table-wrap"><table class="data-table" id="climate-table"><caption>Mean annual temperature and precipitation by community</caption><thead><tr><th>Community</th><th>Records</th><th>Mean BIO1</th><th>Mean BIO12</th><th>Median latitude</th></tr></thead><tbody></tbody></table></div></details>
+</main>
+
+<script>
+'use strict';
+const D=window.MYTHDATA;
+const POINTS=D.nodes.filter(d=>d.tmp!==null&&d.pcp!==null);
+let mode='t2t4';
+
+function groupTrace(label,color,test){
+  const points=POINTS.filter(test);
+  return {type:'scattergl',mode:'markers',name:label,x:points.map(d=>d.tmp),y:points.map(d=>d.pcp),text:points.map(d=>`<b>${STORYMAP.escape(d.n)}</b><br>${d.tmp.toFixed(1)}°C · ${Math.round(d.pcp)} mm/year<br>Binary B${d.b} · Topic T${d.t}`),hovertemplate:'%{text}<extra></extra>',marker:{size:7,color,opacity:.8,line:{width:.35,color:'rgba(25,25,25,.5)'}}};
+}
+function groups(){
+  if(mode==='t2t4') return [
+    {label:'T2 · full community',color:D.cpal.T2,test:d=>d.t===2,key:'T2'},
+    {label:'T4 · full community',color:D.cpal.T4,test:d=>d.t===4,key:'T4'}
+  ];
+  if(mode==='topic') return [1,2,3,4,5].map(k=>({label:`T${k}`,color:D.cpal[`T${k}`],test:d=>d.t===k,key:`T${k}`}));
+  return [1,2,3,4].map(k=>({label:`B${k}`,color:D.cpal[`B${k}`],test:d=>d.b===k,key:`B${k}`}));
+}
+function summaryFor(key){
+  if(key[0]==='T') return D.latStats[Number(key.slice(1))];
+  return D.binStats[key];
+}
+function draw(){
+  const selectedGroups=groups();
+  const traces=[];
+  const legend=[];
+  if(mode==='t2t4'){
+    const other=POINTS.filter(d=>d.t!==2&&d.t!==4);
+    traces.push({type:'scattergl',mode:'markers',name:'Other entries',x:other.map(d=>d.tmp),y:other.map(d=>d.pcp),hoverinfo:'skip',marker:{size:5,color:'rgba(125,121,113,.24)'}});
+    legend.push({label:`Other entries (n=${other.length})`,color:'rgba(125,121,113,.45)'});
+  }
+  selectedGroups.forEach(group=>{traces.push(groupTrace(group.label,group.color,group.test));legend.push(group);});
+  if(document.getElementById('mean-toggle').checked){
+    traces.push({type:'scattergl',mode:'markers+text',name:'Community means',x:selectedGroups.map(g=>summaryFor(g.key).temp),y:selectedGroups.map(g=>summaryFor(g.key).precip),text:selectedGroups.map(g=>g.key),textposition:'top center',textfont:{size:12,color:'#20201e',family:'Georgia'},marker:{size:14,color:selectedGroups.map(g=>g.color),symbol:'diamond',line:{width:2,color:'#fff'}},customdata:selectedGroups.map(g=>[g.key,summaryFor(g.key).temp,summaryFor(g.key).precip]),hovertemplate:'<b>%{customdata[0]} mean</b><br>%{customdata[1]:.1f}°C · %{customdata[2]:.0f} mm/year<extra></extra>',showlegend:false});
+  }
+  Plotly.react('climate',traces,{height:STORYMAP.plotHeight(580,460),margin:{l:window.matchMedia('(max-width:700px)').matches?58:72,r:16,t:8,b:54},paper_bgcolor:'#fffefd',plot_bgcolor:'#fffefd',xaxis:{title:'Annual mean temperature, BIO1 (°C)',gridcolor:'#e7e0d5',zeroline:false},yaxis:{title:'Annual precipitation, BIO12 (mm/year)',gridcolor:'#e7e0d5',zeroline:false,rangemode:'tozero'},showlegend:false,hoverlabel:{bgcolor:'#20201e',font:{color:'#fff'}}},STORYMAP.plotConfig);
+  document.getElementById('legend').innerHTML=legend.map(g=>`<span class="it"><span class="sw" style="background:${g.color}"></span>${STORYMAP.escape(g.label)}</span>`).join('');
+}
+
+STORYMAP.bindSegment(document.getElementById('highlight-controls'),button=>{mode=button.dataset.value;draw();});
+document.getElementById('mean-toggle').addEventListener('change',draw);
+const topicRows=[1,2,3,4,5].map(k=>({key:`T${k}`,...D.latStats[k]}));
+const binaryRows=[1,2,3,4].map(k=>({key:`B${k}`,...D.binStats[`B${k}`]}));
+document.querySelector('#climate-table tbody').innerHTML=topicRows.concat(binaryRows).map(row=>`<tr><td>${row.key}</td><td>${row.n}</td><td>${row.temp.toFixed(1)}°C</td><td>${Math.round(row.precip)} mm</td><td>${row.medLat>0?`${row.medLat.toFixed(1)}°N`:`${Math.abs(row.medLat).toFixed(1)}°S`}</td></tr>`).join('');
+STORYMAP.ariaPlot('climate','Interactive modern climate-context scatterplot for 926 catalogue entries');
+draw();
+window.addEventListener('resize',draw,{passive:true});
+</script>
+</body>
+</html>

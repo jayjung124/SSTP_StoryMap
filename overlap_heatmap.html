@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Partition overlap | The Shape of Myth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storymap.js"></script>
+  <script src="mythdata.js"></script>
+  <style>
+    .heatmap-wrap{overflow-x:auto;border-top:1px solid var(--rule-dark);border-bottom:1px solid var(--rule-dark);background:var(--white);padding:10px}
+    .heatmap{width:100%;min-width:610px;border-collapse:separate;border-spacing:5px;table-layout:fixed}
+    .heatmap th{font-family:var(--font-head);font-size:.82rem;font-weight:600;text-align:center;padding:8px 4px;color:#fff}
+    .heatmap .corner{background:transparent;color:var(--muted);font-family:var(--font-body);font-size:.65rem;text-transform:uppercase;letter-spacing:.06em}
+    .heatmap td{padding:0}
+    .heat-cell{position:relative;width:100%;min-height:76px;border:1px solid var(--rule);color:var(--ink);cursor:pointer;padding:7px 4px;background:var(--white)}
+    .heat-cell strong{display:block;font-family:var(--font-head);font-size:1.35rem;line-height:1.05;font-weight:600}
+    .heat-cell small{display:block;margin-top:4px;font-size:.67rem}
+    .heat-cell[data-split="true"]{box-shadow:inset 0 0 0 3px var(--accent)}
+    .heat-cell[data-split="true"]::after{content:"B1 split";position:absolute;right:3px;top:3px;background:var(--white);color:var(--accent-dark);border:1px solid var(--accent);padding:1px 3px;font-size:.52rem;font-weight:750;text-transform:uppercase}
+    .readout{min-height:45px;margin:10px 0 0;padding:8px 0;border-bottom:1px solid var(--rule);font-size:.79rem;color:var(--muted)}
+    .readout strong{color:var(--ink)}
+    .metric-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule-dark);margin-top:16px}
+    .metric{padding:10px 11px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+    .metric:nth-child(3n){border-right:0}
+    .metric dt{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .metric dd{margin:2px 0 0;font-family:var(--font-head);font-size:1.23rem;font-variant-numeric:tabular-nums}
+    @media(max-width:700px){.metric-list{grid-template-columns:repeat(2,minmax(0,1fr))}.metric:nth-child(3n){border-right:1px solid var(--rule)}.metric:nth-child(2n){border-right:0}}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#overlap-table">Skip to figure</a>
+<main class="wrap">
+  <header class="figure-head">
+    <p class="kicker">Structural comparison · Figure 3</p>
+    <h1 class="chart-title">Agreement has a backbone—and one principal divergence</h1>
+    <p class="chart-sub">Three dominant correspondences—B4↔T1, B3↔T3, and B2↔T5—anchor the shared structure. Binary community B1 is reorganized: 162 entries move to T2 and 148 to T4.</p>
+  </header>
+
+  <section class="controls" aria-label="Overlap controls">
+    <div class="control-group">
+      <span class="control-label" id="cell-value-label">Cell display</span>
+      <div class="seg" id="value-controls" role="group" aria-labelledby="cell-value-label">
+        <button type="button" data-value="count" aria-pressed="false">Count</button>
+        <button type="button" data-value="row" aria-pressed="true">Share of binary row</button>
+        <button type="button" data-value="column" aria-pressed="false">Share of topic column</button>
+        <button type="button" data-value="fold" aria-pressed="false">Fold enrichment</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="heatmap-wrap">
+    <table class="heatmap" id="overlap-table">
+      <caption class="sr-only">Cross-tabulation of four binary communities by five topic communities</caption>
+      <thead></thead><tbody></tbody>
+    </table>
+  </div>
+  <p class="readout" id="readout" aria-live="polite">Focus or select a cell for its count, row share, column share, expectation, and fold enrichment.</p>
+
+  <dl class="metric-list" aria-label="Partition comparison metrics">
+    <div class="metric"><dt>Adjusted Rand index</dt><dd>0.3549</dd></div>
+    <div class="metric"><dt>Adjusted mutual information</dt><dd>0.3888</dd></div>
+    <div class="metric"><dt>Normalized mutual information</dt><dd>0.3916</dd></div>
+    <div class="metric"><dt>Variation of information</dt><dd>2.523 bits</dd></div>
+    <div class="metric"><dt>z-Rand statistic</dt><dd>151.1</dd></div>
+    <div class="metric"><dt>Fixed-margin permutation</dt><dd>p = 0.00001</dd></div>
+  </dl>
+
+  <p class="figure-note"><strong>How to read the evidence.</strong> ARI and AMI are chance-adjusted agreement measures; NMI is normalized but not chance-adjusted; VI is a distance, so lower values indicate closer partitions. z-Rand is an unbounded standardized pair-count statistic, not a percentage or effect size. Across all 428,275 entry pairs, 55,389 are grouped together by both partitions. Under a macroarea-restricted null, mean ARI is 0.2075; observed ARI remains higher (z=17.52, p=0.00001), so broad geography explains part—but not all—of the agreement.</p>
+  <div class="data-row"><a href="data/traditions.csv" download>Download row-level assignments (CSV)</a><a href="data/audit_manifest.json">Read the verification manifest</a></div>
+</main>
+
+<script>
+'use strict';
+const D=window.MYTHDATA;
+const C=D.cont;
+const CP=D.cpal;
+let valueMode='row';
+const table=document.getElementById('overlap-table');
+
+function cellStats(i,j){
+  const count=C.matrix[i][j];
+  const row=C.rowTot[i];
+  const column=C.colTot[j];
+  const expected=row*column/D.stats.N;
+  return {count,rowShare:count/row,columnShare:count/column,expected,fold:count/expected};
+}
+
+function label(stats){
+  if(valueMode==='count') return [stats.count,'records'];
+  if(valueMode==='row') return [`${(stats.rowShare*100).toFixed(1)}%`,'of binary row'];
+  if(valueMode==='column') return [`${(stats.columnShare*100).toFixed(1)}%`,'of topic column'];
+  return [`${stats.fold.toFixed(2)}×`,'expected'];
+}
+
+function shade(stats){
+  if(valueMode==='fold'){
+    const magnitude=Math.min(1,Math.abs(Math.log2(Math.max(stats.fold,.05)))/2.4);
+    return stats.fold>=1?`rgba(143,45,29,${(.08+.82*magnitude).toFixed(3)})`:`rgba(0,114,178,${(.06+.64*magnitude).toFixed(3)})`;
+  }
+  const v=valueMode==='count'?stats.count/166:valueMode==='row'?stats.rowShare:stats.columnShare;
+  return `rgba(143,45,29,${(.035+.9*Math.min(1,v)).toFixed(3)})`;
+}
+
+function textColor(stats){
+  if(valueMode==='fold'){
+    const magnitude=Math.min(1,Math.abs(Math.log2(Math.max(stats.fold,.05)))/2.4);
+    const alpha=.08+(stats.fold>=1?.82:.64)*magnitude;
+    return STORYMAP.contrastText(stats.fold>=1?'#8f2d1d':'#0072b2',alpha);
+  }
+  const v=valueMode==='count'?stats.count/166:valueMode==='row'?stats.rowShare:stats.columnShare;
+  return STORYMAP.contrastText('#8f2d1d',.035+.9*Math.min(1,v));
+}
+
+function explain(i,j){
+  const s=cellStats(i,j),row=C.rows[i],column=C.cols[j];
+  document.getElementById('readout').innerHTML=`<strong>${row} ∩ ${column}: ${s.count} catalogue entries.</strong> ${(s.rowShare*100).toFixed(1)}% of ${row}; ${(s.columnShare*100).toFixed(1)}% of ${column}; ${s.expected.toFixed(1)} expected under fixed margins; ${s.fold.toFixed(2)}× expected.`;
+}
+
+function draw(){
+  table.querySelector('thead').innerHTML=`<tr><th class="corner" scope="col">Binary ↓ / Topic →</th>${C.cols.map((label,j)=>`<th scope="col" style="background:${CP[label]};color:${STORYMAP.contrastText(CP[label])}">${label}<br><small>n=${C.colTot[j]}</small></th>`).join('')}</tr>`;
+  table.querySelector('tbody').innerHTML=C.rows.map((row,i)=>`<tr><th scope="row" style="background:${CP[row]};color:${STORYMAP.contrastText(CP[row])}">${row}<br><small>n=${C.rowTot[i]}</small></th>${C.cols.map((column,j)=>{const s=cellStats(i,j),display=label(s),split=row==='B1'&&(column==='T2'||column==='T4');return `<td><button type="button" class="heat-cell" data-row="${i}" data-column="${j}" data-split="${split}" style="background:${shade(s)};color:${textColor(s)}" aria-label="${row} and ${column}: ${s.count} records, ${(s.rowShare*100).toFixed(1)} percent of ${row}, ${(s.columnShare*100).toFixed(1)} percent of ${column}, ${s.fold.toFixed(2)} times expected"><strong>${display[0]}</strong><small>${display[1]}</small></button></td>`;}).join('')}</tr>`).join('');
+  table.querySelectorAll('.heat-cell').forEach(button=>{
+    const handler=()=>explain(Number(button.dataset.row),Number(button.dataset.column));
+    button.addEventListener('focus',handler);button.addEventListener('mouseenter',handler);button.addEventListener('click',handler);
+  });
+}
+
+STORYMAP.bindSegment(document.getElementById('value-controls'),button=>{valueMode=button.dataset.value;draw();});
+draw();
+</script>
+</body>
+</html>

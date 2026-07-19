@@ -1,0 +1,91 @@
+{
+  "release_date": "2026-07-16",
+  "status": "canonical_core_network_handoff",
+  "shared_source": {
+    "traditions": 926,
+    "motifs": 2138,
+    "recorded_presences": 68837,
+    "binary_matrix_shape": [
+      926,
+      2138
+    ]
+  },
+  "binary_network": {
+    "representation": "binary tradition by motif presence",
+    "similarity": "Jaccard intersection divided by union with shared absences ignored",
+    "graph_construction": "all off-diagonal dyads with Jaccard similarity greater than zero",
+    "knn_used": false,
+    "weighted": true,
+    "nodes": 926,
+    "edges": 358966,
+    "components": 1,
+    "isolates": 0,
+    "optional_partition": {
+      "algorithm": "Leiden RBConfigurationVertexPartition",
+      "weighted": true,
+      "resolution_gamma": 1.0,
+      "released_medoid_seed": 1,
+      "communities": 4,
+      "status": "stable_descriptive_overlay"
+    }
+  },
+  "topic_representation": {
+    "document_unit": "one unique motif title-plus-gloss record",
+    "documents": 2138,
+    "preprocessing_profile": "motif_first_light_field_bigrams_df2",
+    "min_df": 2,
+    "max_df": 0.8,
+    "vectorization": "sublinear smoothed L2 TF-IDF",
+    "model": "NMF",
+    "factors": 15,
+    "released_seed": 42,
+    "aggregation_exact": "rowL1(X @ rowL1(W_motif))",
+    "human_semantic_validation": "pending"
+  },
+  "topic_network": {
+    "similarity": "cosine on row-normalized 15-factor tradition profiles",
+    "graph_construction": "weighted undirected union-kNN",
+    "k": 12,
+    "nodes": 926,
+    "edges": 8854,
+    "components": 1,
+    "isolates": 0,
+    "partition": {
+      "algorithm": "Leiden RBConfigurationVertexPartition",
+      "weighted": true,
+      "resolution_gamma": 0.75,
+      "released_medoid_seed": 42,
+      "communities": 5,
+      "community_sizes": [
+        271,
+        204,
+        196,
+        164,
+        91
+      ],
+      "status": "provisional_pending_human_semantic_validation"
+    },
+    "actual_widest_survivor_plateau": [
+      {
+        "k": 12,
+        "gamma": 0.75
+      },
+      {
+        "k": 15,
+        "gamma": 0.75
+      },
+      {
+        "k": 20,
+        "gamma": 0.75
+      }
+    ]
+  },
+  "interpretation_limit": "Similarity is not observed contact, chronology, migration, cultural ownership, origin, causation, or direction of transmission.",
+  "excluded": [
+    "representational-difference analysis",
+    "cross-network comparison tables",
+    "dyadic difference atlas",
+    "comparison report and workbook",
+    "comparison scripts and figures"
+  ]
+}

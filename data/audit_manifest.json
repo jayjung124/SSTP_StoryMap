@@ -1,0 +1,19 @@
+{
+  "audit_status": "passed",
+  "audit_date": "2026-07-19",
+  "checks": 26,
+  "source_release": "mythology_core_network_claude_export_2026_07_16",
+  "comparison_release": "final_partition_comparison_2026_07_17",
+  "repairs": [
+    "Joined all 90 profile rows to the canonical motif dictionary; one repeated motif ID has no descriptive title or gloss in the frozen source.",
+    "Added full multiple-testing fields for the 15 theme contrasts.",
+    "Added canonical graph-construction and scope metadata.",
+    "Replaced layout-neighbor scaffolds with released topic edges and a documented binary-edge display subset."
+  ],
+  "known_limits": [
+    "Topic communities remain provisional pending human semantic validation.",
+    "Catalogue coordinates are reference locations, not cultural origins or homelands.",
+    "Theme and motif contrasts are post-clustering descriptions, not independent validation.",
+    "Language-family data are missing for 340 of 926 records."
+  ]
+}

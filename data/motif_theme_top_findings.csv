@@ -1,0 +1,25 @@
+finding_type,group_or_anchor,item_id,item_label,effect,effect_unit,unadjusted_q_BH,macroarea_q_BH,macroarea_documentation_q_BH
+B1_split_motif,T2,a32_2,Figure on lunar disc,0.30814147480814147,absolute_prevalence_difference,1.6333691935034985e-06,0.14391031829671902,0.1068625852229099
+B1_split_motif,T2,a3_1,Male sun and female moon,0.22330663997330663,absolute_prevalence_difference,0.0025852471500117068,0.17177137681896784,0.46291154218173924
+B1_split_motif,T2,b2a_3,The female earth,0.20995995995995997,absolute_prevalence_difference,0.000784458297818042,0.6607424788844731,0.7337707049097241
+B1_split_motif,T2,a12_1,Eclipses: a monster’s attack,0.2041207874541208,absolute_prevalence_difference,0.0030972196231238217,0.36930811507502975,0.8924730661505891
+B1_split_motif,T2,i8e_3,Four supports of the world,0.179346012679346,absolute_prevalence_difference,0.0007260254921901706,0.14391031829671902,0.20430731022265622
+B1_split_motif,T2,b3a_3,Primeval waters,0.1414748081414748,absolute_prevalence_difference,0.0398955073230888,0.7508379136168998,1.0
+B1_split_motif,T2,b77_3,Primeval sky close to earth,0.13947280613947277,absolute_prevalence_difference,0.08569350606241011,0.6703549989547717,0.3759382945142281
+B1_split_motif,T2,a32d_2,Man in the Moon,0.13496830163496829,absolute_prevalence_difference,0.01699426480717973,0.6390762848729036,0.8689740357394748
+B1_split_motif,T4,d4a_3,Theft of fire,0.3279946613279946,absolute_prevalence_difference,1.6333691935034985e-06,0.008918290136138898,0.8924730661505891
+B1_split_motif,T4,m8_10,Breaking the obstacle,0.2834501167834501,absolute_prevalence_difference,1.7681648226923687e-07,0.06601662422531195,1.0
+B1_split_motif,T4,e5a_5,Mankind ascends from the underworld,0.2566733400066733,absolute_prevalence_difference,2.5864887219056203e-05,0.04667818512164038,0.4529889229129226
+B1_split_motif,T4,f38_5,Women and sacred knowledge,0.2517517517517518,absolute_prevalence_difference,2.1743190261784138e-08,0.006355265637160581,0.6169608953843146
+B1_split_motif,T4,a31_2,The incestuous Moon ,0.24466132799466134,absolute_prevalence_difference,9.219119122417003e-06,0.49844520318997326,1.0
+B1_split_motif,T4,f51_5,Clandestine lover,0.24290957624290957,absolute_prevalence_difference,4.356648688879034e-06,0.6944837059788043,1.0
+B1_split_motif,T4,a35_2,Spots on the lunar disc,0.23665331998665332,absolute_prevalence_difference,0.0004566773303819477,0.873994710840903,1.0
+B1_split_motif,T4,i14_8,No-anus people,0.23289956623289956,absolute_prevalence_difference,5.396469692748722e-05,0.07099815717872568,1.0
+B1_split_theme,T2,F3,"Sun, Moon & eclipses",0.8806982965398775,absolute_CLR_mean_difference,5e-05,7.500000000000001e-05,0.000675
+B1_split_theme,T2,F5,"sky, earth & world structure",0.8274094934352608,absolute_CLR_mean_difference,5e-05,7.500000000000001e-05,0.0034000000000000002
+B1_split_theme,T4,F10,"trees, rocks & climbing",0.8254493906634925,absolute_CLR_mean_difference,5e-05,0.0001,0.0087
+B1_split_theme,T4,F2,tricksters & antisocial deception,0.3970989883624805,absolute_CLR_mean_difference,0.26890714285714284,0.5998333333333333,0.8105538461538462
+B1_split_theme,T4,F14,"women, birth & children",0.316936892364556,absolute_CLR_mean_difference,0.01578,0.10728,0.0055125
+B1_split_theme,T4,F9,"first people, plants & beings",0.23719061705960276,absolute_CLR_mean_difference,0.0118125,0.001875,0.000675
+B1_split_theme,T4,F13,"water, fish & aquatic beings",0.19886035544498715,absolute_CLR_mean_difference,0.075975,0.126675,0.020175000000000002
+B1_split_theme,T2,F11,"Ursa Major, Pleiades & stars",0.18986230637217116,absolute_CLR_mean_difference,0.34223333333333333,0.5998333333333333,0.3772

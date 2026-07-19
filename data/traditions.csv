@@ -1,0 +1,927 @@
+tradition,latitude,longitude,world_region,binary_community,topic_community,language_family,n_motifs,annual_mean_temp_C,annual_precip_mm,is_T2,is_T4,B1_split
+Bushmen,-26.0,20.0,Sub-Saharan Africa,B1,T5,,54,19.8,197,other,other,other
+Khoikhoi,-32.0,21.0,Sub-Saharan Africa,B2,T5,,61,14.2,209,other,other,other
+Xhosa,-32.5,26.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,56,15.9,588,other,other,other
+"Zulu,Swasi",-28.5,30.5,Sub-Saharan Africa,B2,T1,Atlantic-Congo,46,17.9,759,other,other,other
+"Sotho, Tswana",-27.5,26.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,58,17.5,580,other,other,other
+"Tonga, Ndebele",-23.0,32.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,66,23.6,409,other,other,other
+Shona,-18.0,31.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,73,18.5,776,other,other,other
+"Bemba,Kaonde,Lamba",-11.5,28.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,81,20.7,1129,other,other,other
+"Tsonga,Soli,Sala,Lenje",-17.0,28.0,Sub-Saharan Africa,B2,T5,,30,24.4,709,other,other,other
+Ila,-15.5,27.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,38,21.2,833,other,other,other
+Malawi,-15.0,34.0,Sub-Saharan Africa,B2,T5,,50,22.2,945,other,other,other
+Nyungwe,-16.7,33.0,Sub-Saharan Africa,B2,T5,,10,24.6,617,other,other,other
+"Yao, Macua",-12.5,37.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,25,25.7,1171,other,other,other
+Herrero,-21.5,18.0,Sub-Saharan Africa,B2,T4,Atlantic-Congo,15,18.8,427,other,T4,other
+"Lozi,Rotse,Lui,Subia",-15.0,22.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,23,21.8,951,other,other,other
+"Mbundu, Owambo",-13.5,17.5,Sub-Saharan Africa,B2,T3,Atlantic-Congo,66,19.6,1095,other,other,other
+"Chokwe,Luchazi",-12.0,22.0,Sub-Saharan Africa,B2,T1,Atlantic-Congo,24,20.9,1212,other,other,other
+Lunda,-10.0,23.0,Sub-Saharan Africa,B1,T2,Atlantic-Congo,14,22.7,1329,T2,other,B1→T2
+Kongo,-6.5,14.0,Sub-Saharan Africa,B2,T1,Atlantic-Congo,108,23.6,1092,other,other,other
+Sakata,-3.4,18.0,Sub-Saharan Africa,B2,T1,Atlantic-Congo,61,25.5,1530,other,other,other
+"Kuba,Dengese",-4.0,21.5,Sub-Saharan Africa,B1,T2,Atlantic-Congo,16,24.9,1683,T2,other,B1→T2
+Lingala,2.0,19.0,Sub-Saharan Africa,B2,T2,Atlantic-Congo,29,25.0,1700,T2,other,other
+Soko,1.0,24.0,Sub-Saharan Africa,B2,T2,Atlantic-Congo,5,25.2,1804,T2,other,other
+"Kete,Luba-Kasai,Kaniok",-7.0,22.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,47,23.4,1565,other,other,other
+"Luba,Bena,Tabwa",-7.0,26.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,76,22.7,1210,other,other,other
+"Lega, Bangubangu",-3.0,27.0,Sub-Saharan Africa,B2,T4,Atlantic-Congo,6,24.0,1820,other,T4,other
+Songe,-5.5,25.5,Sub-Saharan Africa,B1,T5,Atlantic-Congo,26,24.3,1295,other,other,other
+Yaka,-7.0,17.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,15,23.5,1424,other,other,other
+"Boa,Komo,Nyanga",0.0,27.0,Sub-Saharan Africa,B2,T1,Atlantic-Congo,19,23.0,1786,other,other,other
+"Mongo,Tetela,Kuba,Nkundu",-2.0,22.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,41,24.3,1963,other,other,other
+"Rwanda,Shi,Rundi",-3.0,29.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,46,21.8,1229,other,other,other
+"Ganda,Nyoro",0.0,31.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,49,21.4,957,other,other,other
+"Niamwesi,Sumbwa",-5.0,33.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,31,23.1,913,other,other,other
+"Nyaturu,Isanzu,Nilamba",-5.0,34.8,Sub-Saharan Africa,B2,T1,Atlantic-Congo,52,20.3,641,other,other,other
+"Sukuma,Gusii,Kumbi",-3.0,33.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,60,23.1,869,other,other,other
+"Fipa,Bende,Iramba",-7.0,31.0,Sub-Saharan Africa,B2,T4,Atlantic-Congo,12,24.8,925,other,T4,other
+Kamba,-2.0,39.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,46,26.3,658,other,other,other
+Kikuyu,-1.0,37.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,51,20.1,838,other,other,other
+"Chagga, Digo",-4.0,38.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,56,22.6,690,other,other,other
+"Gogo,Zaramo,Kaguru",-7.0,38.0,Sub-Saharan Africa,B2,T3,Atlantic-Congo,84,26.5,1335,other,other,other
+"Ngonde,Safwa.Mkulwe,Kinga",-9.0,33.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,51,18.8,1234,other,other,other
+"Konde,Matumbi,Pangwe",-9.0,37.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,29,24.2,1289,other,other,other
+Swahili,-5.0,40.0,Sub-Saharan Africa,B3,T3,,85,25.7,1271,other,other,other
+Comoros Islands,-12.0,44.0,Sub-Saharan Africa,B2,T5,,30,26.0,1819,other,other,other
+"Duala,Basa,Kwiri",5.0,10.0,Sub-Saharan Africa,B2,T3,Atlantic-Congo,42,24.6,2589,other,other,other
+"Makaa, Kaka",4.0,14.0,Sub-Saharan Africa,B2,T4,,13,23.7,1565,other,T4,other
+"Fang,Bube,Bulu,Tanga",3.0,12.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,88,23.5,1626,other,other,other
+"Mpongwe,Nkomi,Mindumu",-2.0,12.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,48,22.5,1925,other,other,other
+"Aka,Baka a.o.Western Pygmies",2.0,17.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,48,25.0,1679,other,other,other
+"Yambasa, Banen",4.4,11.0,Sub-Saharan Africa,B2,T3,Atlantic-Congo,28,25.3,1803,other,other,other
+"Tiv,Jukun,Bete,Wute",7.0,10.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,79,25.3,1761,other,other,other
+"Efik, Ibibio, Ikom",5.5,8.0,Sub-Saharan Africa,B2,T1,Atlantic-Congo,30,26.5,2267,other,other,other
+Igbo; Isoko,5.5,7.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,55,26.3,2293,other,other,other
+"Yoruba,Nupe,Bini",8.0,4.5,Sub-Saharan Africa,B2,T1,Atlantic-Congo,70,25.6,1281,other,other,other
+Ijaw,5.0,6.5,Sub-Saharan Africa,B1,T2,Ijoid,18,26.4,2662,T2,other,B1→T2
+Hausa,12.0,7.0,Sub-Saharan Africa,B3,T3,Afro-Asiatic,143,25.9,853,other,other,other
+Biu-Mandara,10.0,13.0,Sub-Saharan Africa,B2,T5,,79,25.9,977,other,other,other
+"Lele, Tobanga",9.5,16.0,Sub-Saharan Africa,B1,T2,,6,27.7,959,T2,other,B1→T2
+Buduma,12.8,14.4,Sub-Saharan Africa,B2,T4,Afro-Asiatic,3,27.6,343,other,T4,other
+"Bole, Tangale",10.3,10.8,Sub-Saharan Africa,B2,T3,Afro-Asiatic,34,26.7,925,other,other,other
+"Baule, Nzema, Agni",7.5,-4.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,58,26.2,1065,other,other,other
+"Akan,Ashanti,Akwapim,Tvi",6.5,-1.5,Sub-Saharan Africa,B2,T1,Atlantic-Congo,61,25.3,1365,other,other,other
+Krache; Ga,8.0,0.0,Sub-Saharan Africa,B2,T2,Atlantic-Congo,29,27.8,1291,T2,other,other
+Fon,7.0,2.0,Sub-Saharan Africa,B2,T1,Atlantic-Congo,62,27.1,990,other,other,other
+Ewe,6.0,1.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,61,27.0,908,other,other,other
+"Akposo,Akebu,Santrokofi",7.0,0.5,Sub-Saharan Africa,B2,T4,,19,24.8,1473,other,T4,other
+Northern Gur (Oti-Volta),13.0,-0.5,Sub-Saharan Africa,B2,T5,,130,28.2,626,other,other,other
+Southern Gur,11.0,-4.0,Sub-Saharan Africa,B2,T5,,33,27.5,984,other,other,other
+Lobi,10.5,-3.4,Sub-Saharan Africa,B2,T5,Atlantic-Congo,13,27.1,1010,other,other,other
+Senufo,10.5,-5.5,Sub-Saharan Africa,B2,T3,Atlantic-Congo,23,27.2,1108,other,other,other
+Dogon,15.0,-4.0,Sub-Saharan Africa,B2,T2,Dogon,34,27.8,378,T2,other,other
+Songhai,16.5,0.0,Sub-Saharan Africa,B2,T3,Songhay,37,30.1,167,other,other,other
+"Fulbe,Wolof,Serer",11.0,-13.0,Sub-Saharan Africa,B2,T3,Atlantic-Congo,56,26.1,2133,other,other,other
+"Manjak, Balant, Papel,Felupe",12.5,-16.0,Sub-Saharan Africa,B2,T3,Atlantic-Congo,23,26.4,1285,other,other,other
+"Tenda, Biafada, Nalu",12.5,-13.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,44,27.4,1300,other,other,other
+Temne,8.5,-12.5,Sub-Saharan Africa,B2,T5,Atlantic-Congo,42,26.3,2797,other,other,other
+Limba,9.5,-11.8,Sub-Saharan Africa,B2,T5,,10,25.8,2486,other,other,other
+Gola,7.4,-10.7,Sub-Saharan Africa,B2,T3,Atlantic-Congo,12,25.5,2788,other,other,other
+Kissi,8.4,-10.2,Sub-Saharan Africa,B1,T2,Atlantic-Congo,4,25.2,2557,T2,other,B1→T2
+Kru,6.0,-8.0,Sub-Saharan Africa,B2,T5,Kru,53,25.5,2073,other,other,other
+"Vai, Kone",7.0,-11.5,Sub-Saharan Africa,B2,T3,Mande,33,26.4,4022,other,other,other
+"Kpelle, Kono",8.0,-9.0,Sub-Saharan Africa,B2,T5,Mande,58,24.4,1947,other,other,other
+"Mende,Bandi,Loma",8.0,-12.0,Sub-Saharan Africa,B2,T5,Mande,55,26.6,2511,other,other,other
+"Manden,Bamana,Malinke,Diula",13.0,-8.0,Sub-Saharan Africa,B2,T5,Mande,106,27.4,831,other,other,other
+Susu,9.8,-13.5,Sub-Saharan Africa,B2,T3,Mande,8,27.5,3369,other,other,other
+Soninke,14.4,-12.2,Sub-Saharan Africa,B2,T3,Mande,31,28.8,622,other,other,other
+"Bozo,Sorko",14.0,-5.0,Sub-Saharan Africa,B2,T1,Mande,6,27.4,532,other,other,other
+Bobo,11.5,-4.5,Sub-Saharan Africa,B2,T1,Mande,13,28.0,925,other,other,other
+"Dan,Guro,Mano,Sapa,Ngere",9.0,-7.0,Sub-Saharan Africa,B2,T5,Mande,63,25.5,1280,other,other,other
+Nuba,21.0,30.0,Sub-Saharan Africa,B3,T3,,68,26.0,3,other,other,other
+Arabs: Sudan,15.0,30.0,Sub-Saharan Africa,B3,T3,,109,27.5,165,other,other,other
+"Nuer,Dinka",8.0,30.5,Sub-Saharan Africa,B1,T4,Nilotic,37,27.4,838,other,T4,B1→T4
+"Anuak, Shilluk",7.5,33.5,Sub-Saharan Africa,B2,T5,Nilotic,52,27.1,976,other,other,other
+"Bari, Kakwa",5.5,31.0,Sub-Saharan Africa,B2,T5,Nilotic,13,27.1,1009,other,other,other
+Nyangi,3.0,33.0,Sub-Saharan Africa,B2,T5,,4,23.7,1226,other,other,other
+Bongo,7.5,28.0,Sub-Saharan Africa,B2,T5,Central Sudanic,6,27.1,941,other,other,other
+Uduk,5.5,35.4,Sub-Saharan Africa,B2,T2,,7,24.4,1278,T2,other,other
+Nyimang,12.3,30.8,Sub-Saharan Africa,B1,T2,Nyimang,6,27.4,502,T2,other,B1→T2
+"Murle, Me'en, Didinga",11.0,35.0,Sub-Saharan Africa,B1,T4,,22,26.6,1070,other,T4,B1→T4
+"Turkana, Toposa",2.8,36.8,Sub-Saharan Africa,B2,T2,Nilotic,2,27.4,214,T2,other,other
+"Acoli,Alur,Lango",2.7,32.5,Sub-Saharan Africa,B2,T5,Nilotic,43,23.5,1363,other,other,other
+Dholuo,-0.2,34.6,Sub-Saharan Africa,B2,T5,Nilotic,40,22.6,1162,other,other,other
+Masai,-5.0,37.0,Sub-Saharan Africa,B2,T5,Nilotic,54,20.8,678,other,other,other
+"Kalenjin,Nande,Arusha",1.0,35.0,Sub-Saharan Africa,B2,T5,,33,18.3,1096,other,other,other
+Irakw,-4.5,35.2,Sub-Saharan Africa,B2,T1,,17,18.9,690,other,other,other
+"Mangbetu,Lugbara,Madi",3.0,29.0,Sub-Saharan Africa,B2,T5,Central Sudanic,27,24.0,1753,other,other,other
+Mbuti & Efe Pigmies,1.0,29.5,Sub-Saharan Africa,B1,T4,Central Sudanic,26,22.2,1482,other,T4,B1→T4
+"Banda,Gbaya,Ngbandi,Manja",7.0,20.0,Sub-Saharan Africa,B1,T2,Atlantic-Congo,17,24.2,1297,T2,other,B1→T2
+"Zande,Nzakara",4.5,25.0,Sub-Saharan Africa,B2,T1,Atlantic-Congo,51,24.0,1654,other,other,other
+"Mbum,Mundang",9.5,14.0,Sub-Saharan Africa,B2,T5,Atlantic-Congo,35,27.4,926,other,other,other
+Maba,14.0,21.0,Sub-Saharan Africa,B2,T3,,4,28.0,370,other,other,other
+Sara,10.0,18.0,Sub-Saharan Africa,B2,T5,Central Sudanic,14,27.8,899,other,other,other
+Zaghawa,16.0,22.0,Sub-Saharan Africa,B2,T3,,17,26.7,124,other,other,other
+Kanuri,13.0,13.0,Sub-Saharan Africa,B2,T3,Saharan,5,28.4,356,other,other,other
+Teda,18.0,21.0,Sub-Saharan Africa,B1,T2,,8,26.6,28,T2,other,B1→T2
+Hadza,-3.6,34.8,Sub-Saharan Africa,B1,T2,,20,20.7,702,T2,other,B1→T2
+Sandawe,-5.3,35.5,Sub-Saharan Africa,B2,T5,,36,22.1,604,other,other,other
+Malagasy,-19.0,47.0,Madagascar,B3,T3,Austronesian,103,17.7,1437,other,other,other
+Ancient Egypt,27.5,30.7,North Africa & Near East,B1,T2,Afro-Asiatic,45,22.2,2,T2,other,B1→T2
+Arabs: Egypt,31.0,31.0,North Africa & Near East,B3,T3,,170,20.0,53,other,other,other
+Arabs: Libya,30.0,17.0,North Africa & Near East,B3,T3,,52,19.3,67,other,other,other
+Tunisia Berber,33.3,9.5,North Africa & Near East,B2,T2,,8,21.2,139,T2,other,other
+Kabyle,36.2,3.3,North Africa & Near East,B3,T3,Afro-Asiatic,204,15.7,548,other,other,other
+"Berber (Morocco,SW Algeria)",35.0,-5.0,North Africa & Near East,B3,T3,,98,16.2,832,other,other,other
+Western Sahara & Mauritania,21.0,-16.0,North Africa & Near East,B3,T3,,42,24.2,33,other,other,other
+Morocco Arabs,33.5,-8.0,North Africa & Near East,B3,T3,,156,17.5,380,other,other,other
+Algeria Arabs,35.0,2.0,North Africa & Near East,B3,T3,,131,15.1,298,other,other,other
+Tunisia Arabs,36.5,10.0,North Africa & Near East,B3,T3,,171,17.9,496,other,other,other
+Tuareg,21.0,5.0,North Africa & Near East,B2,T1,Afro-Asiatic,44,25.7,33,other,other,other
+Kunama,15.0,37.3,North Africa & Near East,B2,T2,,4,27.2,512,T2,other,other
+Bedja,19.5,36.5,North Africa & Near East,B3,T3,Afro-Asiatic,1,25.2,66,other,other,other
+"Saho, Afar",13.0,41.0,North Africa & Near East,B3,T3,Afro-Asiatic,40,30.5,166,other,other,other
+Bilin,15.5,38.0,North Africa & Near East,B2,T3,Afro-Asiatic,19,27.8,399,other,other,other
+Somali,4.0,46.0,North Africa & Near East,B3,T3,Afro-Asiatic,54,28.0,304,other,other,other
+Sanye,-3.0,39.9,North Africa & Near East,B2,T5,,8,25.2,884,other,other,other
+Amhara,11.5,38.0,North Africa & Near East,B3,T3,Afro-Asiatic,52,17.7,1140,other,other,other
+"Tigre, Tigrigna",15.0,39.0,North Africa & Near East,B3,T5,Afro-Asiatic,38,20.6,640,other,other,other
+Tsamai,5.5,37.0,North Africa & Near East,B2,T5,Afro-Asiatic,10,22.7,681,other,other,other
+"Oromo,Konso,Sidamo",6.0,38.0,North Africa & Near East,B2,T4,Afro-Asiatic,31,21.0,912,other,T4,other
+Omotic,6.6,36.5,North Africa & Near East,B2,T2,,12,19.6,1485,T2,other,other
+Spain,39.3,-4.5,North Africa & Near East,B3,T3,,264,14.4,440,other,other,other
+"Portugal,Galicia",40.5,-8.0,North Africa & Near East,B3,T3,Indo-European,230,14.6,1367,other,other,other
+Catalonia,41.3,2.0,North Africa & Near East,B3,T3,,208,15.8,636,other,other,other
+Aragon,42.2,0.0,North Africa & Near East,B3,T3,,42,12.4,657,other,other,other
+Basque,43.0,-1.5,North Africa & Near East,B3,T3,,174,10.3,972,other,other,other
+Italians,44.0,11.5,North Africa & Near East,B3,T3,Indo-European,242,11.4,1374,other,other,other
+Sicilia,37.5,14.0,North Africa & Near East,B3,T3,Indo-European,136,16.1,459,other,other,other
+"Sardinia, Corsica",40.0,9.0,North Africa & Near East,B3,T3,Indo-European,81,13.9,733,other,other,other
+Romansh,46.6,9.6,North Africa & Near East,B3,T3,Indo-European,35,1.7,1287,other,other,other
+Maltese,36.0,14.2,North Africa & Near East,B3,T3,,90,18.7,500,other,other,other
+Bretagne,48.5,-4.0,North Africa & Near East,B3,T3,,89,10.5,1155,other,other,other
+France,47.0,2.0,North Africa & Near East,B3,T3,,281,11.3,716,other,other,other
+Ireland,53.0,-8.0,North Africa & Near East,B3,T3,,190,9.4,1014,other,other,other
+Wales,52.0,-4.0,North Africa & Near East,B3,T3,,33,9.5,1346,other,other,other
+Scotland,57.0,-4.0,North Africa & Near East,B3,T3,,133,4.7,1759,other,other,other
+England,52.5,-1.0,North Africa & Near East,B3,T3,,102,9.2,647,other,other,other
+"Dutch, Flemish, Frisians",52.0,4.5,North Africa & Near East,B3,T3,Indo-European,152,9.9,858,other,other,other
+Germans,51.0,10.0,North Africa & Near East,B3,T3,Indo-European,316,8.4,707,other,other,other
+Ancient Greece,37.5,24.0,North Africa & Near East,B3,T1,Indo-European,173,18.1,381,other,other,other
+Ancient Italy,42.0,13.5,North Africa & Near East,B1,T5,,34,10.0,844,other,other,other
+Greek (modern),39.0,23.0,North Africa & Near East,B3,T3,Indo-European,313,15.7,527,other,other,other
+Bulgaria,42.5,25.0,North Africa & Near East,B3,T3,Indo-European,420,10.8,591,other,other,other
+Macedonia,41.7,22.0,North Africa & Near East,B3,T3,Indo-European,181,12.7,449,other,other,other
+Albanians,41.5,20.0,North Africa & Near East,B3,T3,Indo-European,189,8.9,1114,other,other,other
+Serbs,44.0,20.5,North Africa & Near East,B3,T3,Indo-European,221,10.0,756,other,other,other
+Bosnia Muslims,44.0,18.0,North Africa & Near East,B3,T3,,62,9.4,1015,other,other,other
+Croatians,44.5,15.5,North Africa & Near East,B3,T3,Indo-European,123,8.5,1204,other,other,other
+Slovenians,46.0,14.0,North Africa & Near East,B3,T3,Indo-European,146,7.7,2097,other,other,other
+Hungary,47.0,19.5,North Africa & Near East,B3,T3,,239,10.4,522,other,other,other
+Romanians,46.0,27.0,North Africa & Near East,B3,T3,Indo-European,332,9.8,524,other,other,other
+Gagauz,46.2,28.7,North Africa & Near East,B3,T3,Turkic,142,10.0,528,other,other,other
+Cyprus  Greeks,34.8,33.0,North Africa & Near East,B1,T2,,5,18.2,511,T2,other,B1→T2
+Poles,52.0,21.0,Eastern Europe,B3,T3,,221,8.2,524,other,other,other
+Kashubians,54.3,18.0,Eastern Europe,B3,T1,Indo-European,22,7.0,672,other,other,other
+Sorbs,51.5,14.4,Eastern Europe,B3,T3,,65,9.2,638,other,other,other
+Czech,49.8,15.0,Eastern Europe,B3,T3,Indo-European,208,8.3,530,other,other,other
+Slovakians,48.7,19.5,Eastern Europe,B3,T3,Indo-European,159,5.9,797,other,other,other
+Ukrainians,49.0,29.0,Eastern Europe,B3,T3,,407,7.0,612,other,other,other
+Byelorussians,53.0,27.0,Eastern Europe,B3,T3,Indo-European,296,6.4,596,other,other,other
+Russians,57.5,40.0,Eastern Europe,B3,T3,,426,3.5,593,other,other,other
+"Edda,Saxo Grammaticus",65.0,-20.0,Eastern Europe,B1,T2,,68,-1.8,943,T2,other,B1→T2
+"Norwegians,Islanders",62.0,5.0,Eastern Europe,B3,T3,Indo-European,210,6.1,2655,other,other,other
+Danes,56.0,10.0,Eastern Europe,B3,T3,,163,7.8,615,other,other,other
+Swedes,59.0,16.0,Eastern Europe,B3,T3,,193,6.0,603,other,other,other
+Western Sami,66.0,18.0,Eastern Europe,B3,T3,Uralic,173,-0.6,575,other,other,other
+Eastern Sami,68.0,33.0,Eastern Europe,B3,T1,,102,-0.7,489,other,other,other
+Finns,61.0,24.0,Eastern Europe,B3,T3,Uralic,269,4.1,636,other,other,other
+Karelians,62.0,32.0,Eastern Europe,B3,T3,Uralic,184,2.1,653,other,other,other
+Vepsians,60.5,35.5,Eastern Europe,B3,T3,Uralic,98,2.3,697,other,other,other
+Ingrians,59.5,30.0,Eastern Europe,B3,T1,Uralic,15,4.1,668,other,other,other
+Wotians,59.8,28.5,Eastern Europe,B3,T3,,54,4.6,673,other,other,other
+Estonians,58.7,25.0,Eastern Europe,B3,T3,Uralic,316,5.5,709,other,other,other
+Setu,57.5,27.35,Eastern Europe,B3,T3,Uralic,135,5.1,644,other,other,other
+Livonians,57.7,22.6,Eastern Europe,B3,T3,Uralic,135,6.4,605,other,other,other
+Latvians,56.5,23.5,Eastern Europe,B3,T3,Indo-European,294,6.8,587,other,other,other
+Lithuanians,55.3,24.0,Eastern Europe,B3,T3,Indo-European,352,6.6,589,other,other,other
+Prussians,54.5,20.4,Eastern Europe,B3,T2,,6,7.1,761,T2,other,other
+Komi,63.0,55.0,Eastern Europe,B3,T3,Uralic,214,-1.1,650,other,other,other
+Udmurt,57.5,52.5,Eastern Europe,B3,T3,Uralic,190,2.2,573,other,other,other
+Mari,57.0,48.0,Eastern Europe,B3,T3,Uralic,262,3.1,533,other,other,other
+Mordvins,53.0,45.0,Eastern Europe,B3,T3,Uralic,218,4.6,521,other,other,other
+Chuvash,55.0,47.5,Eastern Europe,B3,T3,Turkic,223,3.7,466,other,other,other
+Volga (Kazan) Tatars,55.0,51.0,Eastern Europe,B3,T3,Turkic,268,3.6,552,other,other,other
+Astrakhan Tatars and Nogai,47.0,47.5,Eastern Europe,B3,T5,,15,9.4,223,other,other,other
+Bashkir,54.0,57.0,Eastern Europe,B3,T3,Turkic,335,2.2,639,other,other,other
+Kalmyk,47.0,45.5,Caucasus & Central Asia,B3,T3,Mongolic-Khitan,183,9.7,261,other,other,other
+Crimea Tatars,45.0,34.0,Caucasus & Central Asia,B3,T3,,91,10.8,544,other,other,other
+Abkhaz,43.2,40.8,Caucasus & Central Asia,B3,T3,Abkhaz-Adyge,242,7.7,1560,other,other,other
+"Adyghe, Kabardin",44.0,42.5,Caucasus & Central Asia,B3,T3,Abkhaz-Adyge,221,6.5,645,other,other,other
+Abaza (Abazins),44.2,42.0,Caucasus & Central Asia,B3,T3,,153,9.1,615,other,other,other
+"Karachays,Balkar",44.0,42.0,Caucasus & Central Asia,B3,T3,,203,5.5,712,other,other,other
+Ossetians,43.0,44.0,Caucasus & Central Asia,B3,T3,Indo-European,262,6.4,971,other,other,other
+Stavropol Turkmen,45.0,43.0,Caucasus & Central Asia,B3,T3,,27,9.2,469,other,other,other
+Nogai,44.5,46.0,Caucasus & Central Asia,B3,T3,,122,11.4,274,other,other,other
+Kumyk,43.0,47.2,Caucasus & Central Asia,B3,T3,Turkic,163,11.2,406,other,other,other
+Ingush,43.3,45.0,Caucasus & Central Asia,B3,T3,,166,10.1,576,other,other,other
+Chechen,43.0,46.0,Caucasus & Central Asia,B3,T3,Nakh-Daghestanian,101,7.0,576,other,other,other
+"Avar,Andi,Akhvakh",42.4,46.7,Caucasus & Central Asia,B3,T3,,182,5.8,614,other,other,other
+"Dido,Khvarshi,Hunzib",42.2,45.9,Caucasus & Central Asia,B3,T3,,26,3.0,792,other,other,other
+Dargin (Dargwa),42.2,47.6,Caucasus & Central Asia,B3,T3,,132,7.0,545,other,other,other
+Laks,42.1,47.1,Caucasus & Central Asia,B3,T3,,106,3.3,679,other,other,other
+"Lezgians,Kiurin; Archin",41.4,47.6,Caucasus & Central Asia,B3,T3,,140,4.8,603,other,other,other
+"Rutul, Tsahur",41.6,47.2,Caucasus & Central Asia,B3,T3,,70,1.7,692,other,other,other
+"Tabasaran, Agul",41.95,47.8,Caucasus & Central Asia,B3,T3,,57,4.6,606,other,other,other
+Udin,41.0,47.5,Caucasus & Central Asia,B3,T3,,22,12.7,596,other,other,other
+Tats,41.0,48.4,Caucasus & Central Asia,B3,T3,,47,5.0,576,other,other,other
+Georgians,42.0,44.0,Caucasus & Central Asia,B3,T3,Kartvelian,373,9.4,717,other,other,other
+Mingrelians,42.3,42.3,Caucasus & Central Asia,B3,T1,,62,14.7,1681,other,other,other
+Svan,42.8,42.8,Caucasus & Central Asia,B3,T1,Kartvelian,37,6.6,1268,other,other,other
+Armenians,40.5,43.5,Caucasus & Central Asia,B3,T3,Indo-European,307,7.8,382,other,other,other
+Azerbaijan,39.0,48.0,Caucasus & Central Asia,B3,T3,Turkic,187,8.6,468,other,other,other
+Turks,38.0,34.0,Caucasus & Central Asia,B3,T3,Turkic,295,11.0,350,other,other,other
+Talysh,38.0,48.5,Caucasus & Central Asia,B3,T1,,48,6.1,363,other,other,other
+Kurd,35.0,46.0,Caucasus & Central Asia,B3,T3,Indo-European,172,15.7,736,other,other,other
+"Hittite, Hurrit",39.0,38.0,Caucasus & Central Asia,B1,T2,Indo-European,16,9.2,518,T2,other,B1→T2
+Old Testament,32.5,35.5,Caucasus & Central Asia,B2,T1,,34,20.8,333,other,other,other
+"Ugarit, Phoenicia",33.0,35.0,Caucasus & Central Asia,B1,T2,Afro-Asiatic,22,19.7,576,T2,other,B1→T2
+Sumer,31.5,46.5,Caucasus & Central Asia,B1,T2,,23,24.2,135,T2,other,B1→T2
+"Akkad,Assiria,Babylon",33.0,44.0,Caucasus & Central Asia,B1,T2,Afro-Asiatic,38,23.4,121,T2,other,B1→T2
+Syria (Aramaic),33.5,36.5,Caucasus & Central Asia,B3,T3,,53,16.7,155,other,other,other
+1001 nights,32.0,40.0,Caucasus & Central Asia,B3,T3,,40,19.8,100,other,other,other
+"Arabs: Palestine,Syria,Lebanon",34.0,36.5,Caucasus & Central Asia,B3,T3,Afro-Asiatic,241,12.3,266,other,other,other
+"Arabs: Iraq, Kuwait",32.0,46.0,Caucasus & Central Asia,B3,T3,,190,24.5,139,other,other,other
+Saudia,24.0,44.0,Caucasus & Central Asia,B3,T3,,60,26.2,141,other,other,other
+Yemen,14.0,46.0,Caucasus & Central Asia,B3,T3,Afro-Asiatic,92,25.7,130,other,other,other
+"Mehri,Jibbali,Harsusi",17.0,52.2,Caucasus & Central Asia,B3,T3,Afro-Asiatic,79,23.0,98,other,other,other
+Soqotri,12.4,53.8,Caucasus & Central Asia,B3,T3,Afro-Asiatic,47,24.8,112,other,other,other
+Avesta; Pekhlevi texts,36.0,61.0,Caucasus & Central Asia,B1,T2,,52,16.1,281,T2,other,B1→T2
+Persians,34.0,54.0,Caucasus & Central Asia,B3,T3,,277,20.1,115,other,other,other
+"Luri, Bakhtiari",33.0,48.5,Caucasus & Central Asia,B3,T3,Indo-European,42,18.7,428,other,other,other
+"Ormuzd strait, Saheli",27.0,55.0,Caucasus & Central Asia,B4,T4,,2,26.4,206,other,T4,other
+Tajik,38.0,69.5,Caucasus & Central Asia,B3,T3,Indo-European,225,16.3,605,other,other,other
+Highland Tajik,38.5,71.5,Caucasus & Central Asia,B3,T3,Indo-European,91,2.4,526,other,other,other
+Baluch,28.0,63.0,Caucasus & Central Asia,B3,T3,,83,25.1,56,other,other,other
+Pashto,33.0,67.0,Caucasus & Central Asia,B3,T3,Indo-European,46,4.7,302,other,other,other
+Bukhara Arabs,39.8,64.5,Caucasus & Central Asia,B3,T3,,49,15.0,142,other,other,other
+Uzbek,39.0,66.0,Caucasus & Central Asia,B3,T3,,185,15.8,297,other,other,other
+Khwarezm Uzbek,41.7,60.5,Caucasus & Central Asia,B3,T3,Turkic,19,12.5,103,other,other,other
+Turkmen,39.0,60.0,Caucasus & Central Asia,B3,T3,Turkic,146,16.5,121,other,other,other
+Yaghnobi,39.3,69.0,Caucasus & Central Asia,B3,T3,,74,0.0,506,other,other,other
+"Shughni,Rushani",38.0,72.0,Caucasus & Central Asia,B3,T3,Indo-European,94,-5.1,617,other,other,other
+Yazguliami,38.4,71.6,Caucasus & Central Asia,B3,T3,,54,2.4,526,other,other,other
+Sarikoli,36.8,75.8,Caucasus & Central Asia,B3,T3,,49,-6.4,103,other,other,other
+"Wahki,Ishkashimi,Munji",37.0,73.0,Caucasus & Central Asia,B3,T3,,90,-2.7,280,other,other,other
+Kafirs,35.5,70.5,Caucasus & Central Asia,B3,T1,Indo-European,39,-2.2,988,other,other,other
+Dards,35.8,74.5,Caucasus & Central Asia,B3,T3,Indo-European,63,12.7,251,other,other,other
+Burusho,36.6,75.0,Caucasus & Central Asia,B4,T3,,27,-4.9,159,other,other,other
+Brahui,29.0,66.0,Caucasus & Central Asia,B3,T3,Dravidian,4,17.4,157,other,other,other
+Kazakh,48.0,69.0,Caucasus & Central Asia,B3,T3,Turkic,349,5.0,171,other,other,other
+Kara Kalpak,43.0,60.0,Caucasus & Central Asia,B3,T3,,90,11.4,112,other,other,other
+Kirghiz,41.5,75.0,Caucasus & Central Asia,B3,T3,Turkic,165,4.9,261,other,other,other
+Uyghur,41.0,86.0,Caucasus & Central Asia,B3,T3,,127,11.9,43,other,other,other
+Yogur,39.0,100.0,Caucasus & Central Asia,B3,T3,,40,4.3,265,other,other,other
+Dungan,37.0,107.0,Caucasus & Central Asia,B3,T3,,107,8.2,365,other,other,other
+"India, literary sources",26.0,78.0,Caucasus & Central Asia,B3,T2,,136,25.6,928,T2,other,other
+"Hindi, Chhattisgarhi",24.0,78.0,Caucasus & Central Asia,B3,T3,Indo-European,163,25.9,1138,other,other,other
+"Kumaoni,Pahari",29.7,80.0,Caucasus & Central Asia,B3,T3,Indo-European,73,19.1,1774,other,other,other
+Dhanwar,17.3,74.7,Caucasus & Central Asia,B1,T5,,13,24.8,801,other,other,other
+Balahi,21.8,76.5,Caucasus & Central Asia,B1,T2,,10,27.0,1061,T2,other,B1→T2
+"Bhil, Barela-Bhilala",23.4,74.4,Caucasus & Central Asia,B1,T2,Indo-European,22,26.4,966,T2,other,B1→T2
+Warli,20.2,73.0,Caucasus & Central Asia,B1,T2,,26,26.7,2620,T2,other,B1→T2
+"Nepali, Tharu",28.0,83.0,Caucasus & Central Asia,B3,T3,Indo-European,87,18.8,1476,other,other,other
+Kashmiri,33.5,75.5,Caucasus & Central Asia,B3,T3,Indo-European,71,9.4,1142,other,other,other
+Panjabi,31.0,72.0,Caucasus & Central Asia,B3,T3,Indo-European,106,24.5,198,other,other,other
+Sindhi,25.5,68.5,Caucasus & Central Asia,B3,T3,Indo-European,46,26.8,158,other,other,other
+Gujarati,22.0,72.0,Caucasus & Central Asia,B3,T2,Indo-European,21,27.5,561,T2,other,other
+Marathi,20.0,75.0,Caucasus & Central Asia,B3,T3,Indo-European,75,25.9,662,other,other,other
+Rajasthani,27.0,75.0,Caucasus & Central Asia,B3,T3,,11,25.6,433,other,other,other
+Bengali,23.0,89.0,Caucasus & Central Asia,B3,T3,Indo-European,93,26.2,1688,other,other,other
+Assamese,25.0,91.0,Caucasus & Central Asia,B3,T3,Indo-European,38,24.9,2806,other,other,other
+Konkani,15.0,74.2,Caucasus & Central Asia,B3,T3,,23,26.1,3401,other,other,other
+Oriya,20.0,86.0,Caucasus & Central Asia,B3,T3,Indo-European,44,26.8,1433,other,other,other
+Sinhalese,7.5,80.5,Caucasus & Central Asia,B3,T3,Indo-European,139,24.8,2202,other,other,other
+Telugu,16.0,79.5,Caucasus & Central Asia,B3,T5,Dravidian,23,28.7,714,other,other,other
+Malayali,9.0,77.0,Caucasus & Central Asia,B3,T2,,7,26.1,1870,T2,other,other
+Kannada; Tulu,13.5,76.5,Caucasus & Central Asia,B1,T2,Dravidian,12,24.4,528,T2,other,B1→T2
+Tamil,12.0,79.0,Caucasus & Central Asia,B3,T3,Dravidian,77,28.5,1026,other,other,other
+"Toda,Kota,Pulaya,Nayar,Kadar",10.0,76.5,Caucasus & Central Asia,B1,T2,Dravidian,34,27.3,3312,T2,other,B1→T2
+"Santali,Turi",24.0,87.0,South & Southeast Asia,B3,T3,Austroasiatic,131,26.1,1295,other,other,other
+Korku,22.0,77.0,South & Southeast Asia,B1,T4,,10,25.9,1428,other,T4,B1→T4
+"Mundari,Ho,Asur,Birhor",22.5,85.3,South & Southeast Asia,B3,T1,Austroasiatic,103,25.7,1337,other,other,other
+"Baiga,Bhuiya,Bhumiya",23.0,81.0,South & Southeast Asia,B3,T2,Indo-European,99,23.9,1295,T2,other,other
+Kharia,21.4,86.1,South & Southeast Asia,B1,T5,,25,25.8,1559,other,other,other
+Juang,23.25,85.25,South & Southeast Asia,B1,T2,,23,23.8,1385,T2,other,B1→T2
+"Bondo,Didayi,Gadaba",18.25,82.18,South & Southeast Asia,B1,T2,,59,24.6,1374,T2,other,B1→T2
+Sora,19.5,85.0,South & Southeast Asia,B1,T2,Austroasiatic,66,26.8,1258,T2,other,B1→T2
+Chero,22.5,87.0,South & Southeast Asia,B4,T2,,8,26.7,1367,T2,other,other
+"Dhoba,Ahir,Halba,Lohar,etc.",21.0,79.0,Caucasus & Central Asia,B1,T2,,17,27.0,1202,T2,other,B1→T2
+Oraon (Kurukh),22.4,85.0,South & Southeast Asia,B3,T3,Dravidian,59,26.0,1360,other,other,other
+"Kond, Kui",20.8,84.0,South & Southeast Asia,B1,T2,Dravidian,69,27.3,1413,T2,other,B1→T2
+Gondi,21.4,79.5,South & Southeast Asia,B3,T1,,90,26.5,1119,other,other,other
+"Muria,Maria,Pardhan",18.5,81.0,South & Southeast Asia,B3,T1,Dravidian,129,27.2,1434,other,other,other
+Tibet (U-Tsang),31.0,92.0,South & Southeast Asia,B3,T3,,159,-4.6,486,other,other,other
+Tibetans: Amdo,36.0,98.0,South & Southeast Asia,B3,T3,,127,0.5,228,other,other,other
+Tibetans: Kham,30.0,97.0,South & Southeast Asia,B3,T3,,38,-0.6,633,other,other,other
+"Lavrung,Jiarong,Qiang",31.5,103.0,South & Southeast Asia,B2,T3,Sino-Tibetan,32,5.0,745,other,other,other
+Tibetans: Ladakh,34.1,77.34,South & Southeast Asia,B3,T3,,7,0.3,119,other,other,other
+Mustang,28.5,84.0,South & Southeast Asia,B3,T3,,70,8.6,1045,other,other,other
+Lepcha,27.1,83.7,South & Southeast Asia,B3,T1,,102,24.8,1376,other,other,other
+"Kirati (Rai,Limbu,Newar)",27.2,87.0,South & Southeast Asia,B3,T3,Sino-Tibetan,49,17.0,1794,other,other,other
+Khasi,25.0,92.0,South & Southeast Asia,B1,T2,Austroasiatic,39,24.6,3802,T2,other,B1→T2
+"Abor,Gallong,Tani",28.5,95.0,South & Southeast Asia,B1,T2,Sino-Tibetan,154,18.5,2115,T2,other,B1→T2
+"Tawang,Miji,Aka,Sherdukpen",27.2,94.5,South & Southeast Asia,B1,T2,,50,23.6,2774,T2,other,B1→T2
+"Chin-Naga(Rengma,Ao,Angami etc",26.0,95.0,South & Southeast Asia,B1,T5,Sino-Tibetan,126,13.5,1945,other,other,other
+Northern Naga (Konyak etc.),27.0,95.5,South & Southeast Asia,B1,T2,,36,16.6,2356,T2,other,B1→T2
+"Garo,Bodo,Hami,Riga",24.8,92.5,South & Southeast Asia,B1,T2,Sino-Tibetan,89,24.6,2884,T2,other,B1→T2
+"Chin,Lakher,Mizo,Lushei",23.0,93.0,South & Southeast Asia,B1,T1,Sino-Tibetan,85,20.9,2548,other,other,other
+Mikir,26.3,93.0,South & Southeast Asia,B1,T2,Sino-Tibetan,8,23.9,1673,T2,other,B1→T2
+Kachin,26.0,97.5,South & Southeast Asia,B1,T2,Sino-Tibetan,84,21.3,2625,T2,other,B1→T2
+"Rawang, Anong, Drung",28.0,98.0,South & Southeast Asia,B1,T2,Sino-Tibetan,22,9.1,1339,T2,other,B1→T2
+"Burmese,Intha,Arakan",20.0,95.0,South & Southeast Asia,B3,T3,Sino-Tibetan,109,27.3,784,other,other,other
+Karen,18.0,97.0,South & Southeast Asia,B2,T1,Sino-Tibetan,55,24.6,2792,other,other,other
+"Shan,Khampti",22.0,98.0,South & Southeast Asia,B3,T5,,76,21.7,1420,other,other,other
+Thai (Thailand),15.0,101.0,South & Southeast Asia,B3,T3,Tai-Kadai,78,27.5,1144,other,other,other
+Lao,17.0,104.8,South & Southeast Asia,B3,T3,Tai-Kadai,38,26.1,1704,other,other,other
+"Tai,Zhuang,Nung,Kho",22.5,105.5,South & Southeast Asia,B1,T2,,87,21.5,1631,T2,other,B1→T2
+Khmer,13.0,104.0,South & Southeast Asia,B2,T5,Austroasiatic,71,27.4,1220,other,other,other
+"Banar,Moi,Sedang",16.0,108.5,South & Southeast Asia,B2,T5,,50,24.8,1932,other,other,other
+"Stieng,Chrau,Sre",11.5,107.0,South & Southeast Asia,B1,T4,Austronesian,25,25.6,2452,other,T4,B1→T4
+"Katu, Bru",16.2,107.4,South & Southeast Asia,B2,T2,,13,24.2,2349,T2,other,other
+Mon,16.5,96.5,South & Southeast Asia,B3,T3,,29,27.2,3315,other,other,other
+Khmu,20.0,102.0,South & Southeast Asia,B3,T5,,56,24.3,1373,other,other,other
+Palaung,22.0,97.0,South & Southeast Asia,B2,T5,Austroasiatic,26,22.5,1507,other,other,other
+"Wa, Bulang",23.0,99.5,South & Southeast Asia,B2,T2,Sino-Tibetan,32,17.9,1457,T2,other,other
+"Tjam,Ede,Jarai",13.0,108.5,South & Southeast Asia,B3,T2,,65,24.6,1317,T2,other,other
+Viets,20.7,107.5,South & Southeast Asia,B3,T3,,136,22.7,2034,other,other,other
+Andaman,12.0,92.5,South & Southeast Asia,B1,T2,Jarawa-Onge,29,26.3,2617,T2,other,B1→T2
+Nicobar,7.5,93.0,South & Southeast Asia,B1,T4,Austroasiatic,13,26.9,2581,other,T4,B1→T4
+"Semang,Senoi",5.0,102.0,South & Southeast Asia,B1,T2,Austroasiatic,69,25.4,2571,T2,other,B1→T2
+Muslim Malay,2.3,103.3,South & Southeast Asia,B1,T2,,69,26.2,2463,T2,other,B1→T2
+Aceh,5.3,95.6,South & Southeast Asia,B3,T1,,23,24.5,2592,other,other,other
+Batak; Gayo,2.3,98.9,South & Southeast Asia,B1,T2,Austronesian,54,19.7,2086,T2,other,B1→T2
+Minangkabau,-2.0,101.5,South & Southeast Asia,B1,T2,Austronesian,16,20.2,2298,T2,other,B1→T2
+Lampung,-5.0,105.0,South & Southeast Asia,B3,T3,Austronesian,9,26.5,2320,other,other,other
+Kubu,-2.5,103.5,South & Southeast Asia,B1,T2,Austronesian,7,26.5,2670,T2,other,B1→T2
+"Nias,Simeulue",1.5,97.2,South & Southeast Asia,B1,T4,Austronesian,58,26.4,3387,other,T4,B1→T4
+Mentawai,-2.5,99.5,South & Southeast Asia,B1,T2,Austronesian,53,25.9,3489,T2,other,B1→T2
+Ngaju,-3.0,114.5,South & Southeast Asia,B1,T4,Austronesian,49,27.5,2469,other,T4,B1→T4
+"Kayan,Kenya,Bahau",0.0,116.0,South & Southeast Asia,B1,T4,Austronesian,35,27.7,2636,other,T4,B1→T4
+"Murut,Dusun,Tombonuvo,Bajau",5.0,117.0,South & Southeast Asia,B1,T2,Austronesian,74,24.4,2384,T2,other,B1→T2
+Other Dayak,1.0,111.0,South & Southeast Asia,B1,T2,Austronesian,74,26.4,3316,T2,other,B1→T2
+Palawan,9.0,117.7,South & Southeast Asia,B1,T2,Austronesian,13,24.2,1794,T2,other,B1→T2
+Yava,-8.0,110.0,South & Southeast Asia,B3,T1,,90,26.3,2184,other,other,other
+"Bali, Lombok",-9.0,115.0,South & Southeast Asia,B3,T1,Austronesian,66,26.2,1778,other,other,other
+"Toradja, Mori",-3.0,122.0,South & Southeast Asia,B1,T5,Austronesian,144,24.9,2283,other,other,other
+Minahasa,1.0,125.0,South & Southeast Asia,B3,T1,,66,26.2,2615,other,other,other
+"Balantak,Loinang,Banggai",-1.0,122.5,South & Southeast Asia,B1,T2,Austronesian,18,24.1,1587,T2,other,B1→T2
+"Bugi, Macassar",-5.0,119.7,South & Southeast Asia,B1,T2,Austronesian,31,24.8,2582,T2,other,B1→T2
+Northern Luzon,17.0,121.0,South & Southeast Asia,B1,T1,,133,20.3,3006,other,other,other
+Southern Luzon,14.0,120.7,South & Southeast Asia,B1,T2,,43,27.1,2058,T2,other,B1→T2
+Luzon Negritos,14.0,123.0,South & Southeast Asia,B1,T2,,17,25.5,2988,T2,other,B1→T2
+Central islands Philippines,12.0,122.5,South & Southeast Asia,B1,T2,,49,27.6,2663,T2,other,B1→T2
+Mindanao,8.0,125.0,South & Southeast Asia,B1,T2,,100,25.8,2585,T2,other,B1→T2
+"Sulu, Mapun",6.0,120.0,South & Southeast Asia,B1,T2,Austronesian,11,27.3,1653,T2,other,B1→T2
+Yami,22.0,121.5,South & Southeast Asia,B1,T4,Austronesian,14,25.8,2537,other,T4,B1→T4
+Sumbawa,-9.0,118.0,South & Southeast Asia,B1,T2,Austronesian,12,25.9,1372,T2,other,B1→T2
+Sumba,-9.0,120.0,South & Southeast Asia,B1,T2,Austronesian,13,25.9,1548,T2,other,B1→T2
+Flores,-9.0,122.0,South & Southeast Asia,B1,T1,Austronesian,36,26.3,1145,other,other,other
+"Timor,Leti,Lomblen",-9.0,125.5,South & Southeast Asia,B1,T2,Timor-Alor-Pantar,125,24.7,1942,T2,other,B1→T2
+Roti,-10.9,123.0,South & Southeast Asia,B1,T1,Austronesian,22,27.3,1255,other,other,other
+Bunak,-9.3,125.2,South & Southeast Asia,B1,T1,,12,24.7,1681,other,other,other
+Fataluku,-8.4,127.0,South & Southeast Asia,B1,T4,,5,24.8,1406,other,T4,B1→T4
+"Alor, Solor",-8.3,124.0,South & Southeast Asia,B1,T2,Timor-Alor-Pantar,34,26.9,1180,T2,other,B1→T2
+Sangir Islands,3.6,125.5,South & Southeast Asia,B3,T1,Austronesian,35,25.4,2641,other,other,other
+Halmahera,1.0,128.4,South & Southeast Asia,B3,T1,,63,26.2,2259,other,other,other
+Ceram,-3.3,128.0,South & Southeast Asia,B1,T4,,30,25.1,2261,other,T4,B1→T4
+"Kei,Tanimbar,Babar,Watubela",-7.0,132.5,South & Southeast Asia,B1,T2,Austronesian,28,27.2,1920,T2,other,B1→T2
+"Numfoor,Warope",-1.5,135.0,South & Southeast Asia,B1,T4,Austronesian,16,25.5,2906,other,T4,B1→T4
+Trans New Guinea West,-4.0,137.0,Melanesia & Oceania,B1,T4,,78,9.9,3441,other,T4,B1→T4
+Trans New Guinea East,-7.0,143.0,Melanesia & Oceania,B1,T4,,170,26.1,4204,other,T4,B1→T4
+Torricelli Papuans,-3.7,142.5,Melanesia & Oceania,B1,T4,,79,26.1,2190,other,T4,B1→T4
+Sepik-Ramu Papuans,-4.3,143.0,Melanesia & Oceania,B1,T4,,52,27.0,2577,other,T4,B1→T4
+Torres Strait Islands,-10.0,142.5,Melanesia & Oceania,B1,T4,,32,26.9,1724,other,T4,B1→T4
+North New Guinea Melanesians,-6.0,146.0,Melanesia & Oceania,B1,T4,,90,23.6,2065,other,T4,B1→T4
+SE New Guinea Melanesians,-10.0,148.0,Melanesia & Oceania,B1,T4,,57,25.9,2000,other,T4,B1→T4
+Massim district,-10.0,154.0,Melanesia & Oceania,B1,T4,,51,27.1,3471,other,T4,B1→T4
+"N.Britain,N.Ireland",-5.0,152.0,Melanesia & Oceania,B1,T4,,66,24.1,2582,other,T4,B1→T4
+Admiralty islands,-2.0,147.0,Melanesia & Oceania,B1,T2,,31,26.4,3579,T2,other,B1→T2
+"Buka, Bougenville",-6.0,155.0,Melanesia & Oceania,B1,T4,Austronesian,28,24.0,3309,other,T4,B1→T4
+Central Solomons,-8.0,157.0,Melanesia & Oceania,B1,T1,,45,25.9,3470,other,other,other
+Southern Solomons,-9.5,161.0,Melanesia & Oceania,B1,T2,,59,26.4,3200,T2,other,B1→T2
+Santa-Cruz islands,-11.0,166.0,Melanesia & Oceania,B1,T2,Austronesian,19,27.3,4614,T2,other,B1→T2
+"Banks, Torres islands",-13.0,167.5,Melanesia & Oceania,B1,T4,,30,26.8,3684,other,T4,B1→T4
+Central Vanuatu,-15.0,167.5,Melanesia & Oceania,B1,T1,,70,24.1,3024,other,other,other
+Southern Vanuatu,-19.4,169.5,Melanesia & Oceania,B1,T1,,24,24.8,1837,other,other,other
+New Caledonia,-21.5,164.5,Melanesia & Oceania,B1,T1,,27,23.3,1392,other,other,other
+Loyalty,-21.0,167.2,Melanesia & Oceania,B1,T2,Austronesian,21,23.0,1548,T2,other,B1→T2
+Fiji,-17.5,178.5,Melanesia & Oceania,B1,T2,Austronesian,20,24.6,2757,T2,other,B1→T2
+Kapingamarangi,1.4,154.5,Melanesia & Oceania,B4,T3,Austronesian,19,28.1,2689,other,other,other
+"Ontong Java, Nukumanu",-5.16,159.21,Melanesia & Oceania,B1,T1,Austronesian,28,27.9,2785,other,other,other
+Tuvalu (Ellice),-7.5,173.8,Melanesia & Oceania,B1,T2,,62,28.2,1692,T2,other,B1→T2
+Tokelau,-9.5,-172.0,Melanesia & Oceania,B1,T1,Austronesian,18,28.2,2796,other,other,other
+Samoa,-13.3,-172.0,Melanesia & Oceania,B1,T2,Austronesian,45,26.4,3488,T2,other,B1→T2
+Tonga,-20.5,-174.0,Melanesia & Oceania,B1,T2,,29,24.9,1959,T2,other,B1→T2
+Rotuma,-2.5,-177.2,Melanesia & Oceania,B1,T2,,21,28.2,1692,T2,other,B1→T2
+Niue,-19.1,-169.2,Melanesia & Oceania,B1,T4,Austronesian,22,24.8,2296,other,T4,B1→T4
+"Wallis, Futuna",-13.0,-178.0,Melanesia & Oceania,B1,T2,,8,26.2,2846,T2,other,B1→T2
+"Rennel,Tikopia,Taku,etc.",-12.0,-163.0,Melanesia & Oceania,B1,T4,,55,28.0,2570,other,T4,B1→T4
+"Maori,Moriori",-40.0,175.0,Melanesia & Oceania,B1,T2,Austronesian,64,13.2,1057,T2,other,B1→T2
+"Tahiti, Society islands",-17.0,-152.0,Melanesia & Oceania,B1,T2,Austronesian,40,25.8,1845,T2,other,B1→T2
+Cook islands northern,-10.0,-160.0,Melanesia & Oceania,B1,T2,,9,28.3,2244,T2,other,B1→T2
+Cook islands southern,-20.0,-158.3,Melanesia & Oceania,B1,T2,,48,25.0,1990,T2,other,B1→T2
+Tuamotu,-17.0,-141.0,Melanesia & Oceania,B1,T2,,37,26.3,1467,T2,other,B1→T2
+Mangareva,-23.0,-135.0,Melanesia & Oceania,B1,T2,Austronesian,19,23.9,1642,T2,other,B1→T2
+Marquesas,-9.0,-140.0,Melanesia & Oceania,B1,T2,Austronesian,33,24.6,1866,T2,other,B1→T2
+Hawaii,21.0,-157.0,Melanesia & Oceania,B1,T2,Austronesian,48,22.8,1156,T2,other,B1→T2
+Easter Island,-27.0,-110.0,Melanesia & Oceania,B1,T2,Austronesian,14,20.2,1201,T2,other,B1→T2
+Chamorro,15.0,145.5,Melanesia & Oceania,B1,T1,Austronesian,5,27.4,2053,other,other,other
+Palau,6.54,134.8,Melanesia & Oceania,B1,T2,Austronesian,44,26.4,3402,T2,other,B1→T2
+Yap,9.31,138.6,Melanesia & Oceania,B1,T2,Austronesian,52,27.4,2756,T2,other,B1→T2
+"Meriri, Pulo Anna",4.5,131.6,Melanesia & Oceania,B2,T5,Austronesian,4,27.0,2807,other,other,other
+"Ulithi, Ngulu",10.5,138.5,Melanesia & Oceania,B4,T1,,40,27.4,2756,other,other,other
+"Ifaluk, Lamotrek, Satawan",6.5,144.0,Melanesia & Oceania,B4,T2,Austronesian,31,28.4,2908,T2,other,other
+Truk district,6.0,151.0,Melanesia & Oceania,B4,T1,,46,29.0,3424,other,other,other
+Ponape district,6.3,159.0,Melanesia & Oceania,B1,T1,,24,28.2,3971,other,other,other
+Marshal Islands,9.0,168.0,Melanesia & Oceania,B1,T1,,58,28.2,2526,other,other,other
+"Gilbert,Nauru,Banaba",-2.0,177.0,Melanesia & Oceania,B1,T2,,67,28.2,1692,T2,other,B1→T2
+Tasmania,-42.0,146.5,Australia,B1,T2,Western Tasmanian,5,7.2,1102,T2,other,B1→T2
+SE Australia,-34.0,145.0,Australia,B1,T4,,75,17.5,372,other,T4,B1→T4
+Arnham Land,-14.0,133.0,Australia,B1,T2,,61,26.7,1099,T2,other,B1→T2
+Kimberley Plateau,-16.0,126.0,Australia,B1,T2,,9,25.4,983,T2,other,B1→T2
+Queensland,-17.0,143.0,Australia,B1,T2,,15,26.5,912,T2,other,B1→T2
+Central Australia,-23.5,133.0,Australia,B1,T4,,37,21.2,349,other,T4,B1→T4
+Southern Australia,-32.0,134.0,Australia,B1,T2,,20,17.8,272,T2,other,B1→T2
+Western Australia,-27.0,117.0,Australia,B1,T4,,33,21.8,248,other,T4,B1→T4
+Altai (Southern),50.0,88.0,Southern Siberia,B3,T1,Turkic,234,-6.2,266,other,other,other
+"Kumandin,Chelkan,Tubalar,Teleut",52.0,86.0,Southern Siberia,B3,T1,,105,2.2,703,other,other,other
+Chulym Turks,57.0,86.0,Southern Siberia,B3,T1,,51,0.3,481,other,other,other
+Siberian Tatars,54.0,80.0,Southern Siberia,B3,T1,,66,1.2,351,other,other,other
+Shor,53.0,88.5,Southern Siberia,B3,T1,,77,-0.4,769,other,other,other
+Khakas,53.5,90.0,Southern Siberia,B3,T1,Turkic,172,-1.0,619,other,other,other
+Tuvinians,51.0,94.0,Southern Siberia,B3,T3,Turkic,203,-6.1,433,other,other,other
+Tuvinians South Altai,48.7,88.5,Southern Siberia,B3,T3,Turkic,86,-6.2,190,other,other,other
+Tofa,53.0,99.0,Southern Siberia,B3,T1,Turkic,79,-7.7,458,other,other,other
+Buryat,52.0,107.0,Southern Siberia,B3,T1,Mongolic-Khitan,285,-2.4,344,other,other,other
+Darkhad,51.0,100.0,Southern Siberia,B3,T1,,79,-8.0,363,other,other,other
+Oirat,49.0,92.0,Southern Siberia,B3,T5,,101,-1.2,143,other,other,other
+Mongols (Khalkha),49.0,107.0,Southern Siberia,B3,T3,,289,-1.5,329,other,other,other
+Mongols (Inner Mongolia),40.0,108.0,Southern Siberia,B3,T5,,96,7.4,251,other,other,other
+Dahur,50.5,125.0,Southern Siberia,B3,T3,,97,-1.3,513,other,other,other
+Dongxiang,36.0,103.0,Southern Siberia,B2,T3,,18,7.2,438,other,other,other
+"Monguor,Shirongol",37.2,100.2,Southern Siberia,B3,T3,Mongolic-Khitan,84,0.2,383,other,other,other
+Mansi,63.0,64.0,Southern Siberia,B3,T1,Uralic,199,-2.4,529,other,other,other
+Hanty,61.0,75.0,Southern Siberia,B3,T1,Uralic,199,-2.1,562,other,other,other
+"Ket, Yug",66.0,88.0,Southern Siberia,B3,T1,Yeniseian,123,-6.6,555,other,other,other
+Southern Sel'kup,58.5,116.0,Southern Siberia,B3,T1,,146,-6.4,403,other,other,other
+Northern Sel'kup,64.7,82.0,Southern Siberia,B3,T1,,132,-6.1,536,other,other,other
+Forest Nenets,64.0,73.0,Southern Siberia,B4,T2,Uralic,51,-4.5,522,T2,other,other
+Tundra Nenets,68.0,67.0,Southern Siberia,B3,T1,Uralic,172,-6.9,425,other,other,other
+Enets,71.0,83.0,Southern Siberia,B4,T1,,81,-10.7,384,other,other,other
+Nganasan,72.0,94.0,Southern Siberia,B3,T1,Uralic,121,-12.6,332,other,other,other
+Yakut,65.0,127.0,Southern Siberia,B3,T1,Turkic,238,-11.3,347,other,other,other
+Dolgan,71.5,102.0,Southern Siberia,B3,T1,Turkic,72,-13.0,271,other,other,other
+Western Evenki,64.0,100.0,Southern Siberia,B3,T1,Tungusic,181,-9.0,386,other,other,other
+Sym Evenki,60.5,88.5,Southern Siberia,B4,T1,Tungusic,82,-2.8,576,other,other,other
+Baikal Evenki,55.0,115.0,Southern Siberia,B3,T1,Tungusic,159,-6.6,393,other,other,other
+Far East Evenki,54.0,132.0,Southern Siberia,B3,T1,,107,-4.4,556,other,other,other
+Evenki of China,51.5,123.0,Southern Siberia,B3,T2,,36,-4.9,546,T2,other,other
+Evens (Lamuts),63.0,144.0,Southern Siberia,B3,T1,,149,-15.5,282,other,other,other
+Kamchatka Evens,55.7,158.6,Southern Siberia,B4,T1,,17,-5.4,598,other,other,other
+Nanai,47.4,135.0,Southern Siberia,B3,T1,Tungusic,203,1.5,758,other,other,other
+Olcha,52.3,140.2,Southern Siberia,B4,T1,Tungusic,42,-1.5,535,other,other,other
+Udihe,45.0,134.5,Southern Siberia,B3,T1,Tungusic,170,0.5,734,other,other,other
+Oroch,48.0,138.0,Southern Siberia,B4,T1,Tungusic,124,-1.1,868,other,other,other
+Uilta,51.0,142.0,Southern Siberia,B3,T1,Tungusic,34,0.3,651,other,other,other
+Negidals,52.5,138.0,Southern Siberia,B3,T1,Tungusic,80,-3.2,537,other,other,other
+Nivkh,53.0,141.5,Southern Siberia,B3,T1,Nivkh,125,-1.7,624,other,other,other
+Manchu,45.5,127.0,Southern Siberia,B1,T1,Tungusic,26,3.7,557,other,other,other
+"Atayal,Sedeq,Saisiyat",24.4,121.4,Taiwan & Insular Southeast Asia,B1,T4,Austronesian,51,11.5,3133,other,T4,B1→T4
+"Bunun,Tsou,Kanabu",23.4,121.0,Taiwan & Insular Southeast Asia,B1,T2,Austronesian,48,11.1,3201,T2,other,B1→T2
+"Paiwan,Puyuma,Rukay",22.5,120.8,Taiwan & Insular Southeast Asia,B1,T4,Austronesian,69,20.0,3846,other,T4,B1→T4
+Ami,23.4,121.35,Taiwan & Insular Southeast Asia,B1,T4,Austronesian,30,21.9,2185,other,T4,B1→T4
+Ancient China,34.0,110.0,Taiwan & Insular Southeast Asia,B1,T2,,115,11.5,739,T2,other,B1→T2
+Chinese folklore,32.0,112.0,Taiwan & Insular Southeast Asia,B3,T3,,171,15.9,978,other,other,other
+"Lisu, Lolo,Naxi,Yi,Achang",26.0,101.0,Taiwan & Insular Southeast Asia,B3,T5,Sino-Tibetan,108,16.0,762,other,other,other
+"Lahu,Sani,Hani,Nasu,Jino",23.0,102.0,Taiwan & Insular Southeast Asia,B3,T5,Sino-Tibetan,107,17.6,1296,other,other,other
+"Namuzi, Pumi",27.0,102.0,Taiwan & Insular Southeast Asia,B2,T1,Sino-Tibetan,34,17.5,880,other,other,other
+"Miao,Yao (South China)",25.0,109.0,Taiwan & Insular Southeast Asia,B3,T2,Hmong-Mien,144,19.7,1577,T2,other,other
+"Meo,Dao,Man (Vietnam,Laos)",19.0,103.0,Taiwan & Insular Southeast Asia,B2,T2,Tai-Kadai,49,18.9,1448,T2,other,other
+"Li,Dong,Maonan",19.0,109.5,Taiwan & Insular Southeast Asia,B4,T3,Tai-Kadai,15,22.3,1592,other,other,other
+Korea,38.0,127.5,Taiwan & Insular Southeast Asia,B3,T3,Koreanic,178,9.3,1281,other,other,other
+Ainu,43.0,143.0,Taiwan & Insular Southeast Asia,B4,T5,Ainu,125,6.2,1094,other,other,other
+Japan,35.0,135.0,Taiwan & Insular Southeast Asia,B3,T1,Japonic,236,14.2,1413,other,other,other
+Northern Ryukyu; Awami Islands,30.0,130.0,Taiwan & Insular Southeast Asia,B3,T3,,56,18.8,2928,other,other,other
+"Okinawa,Miyako,Yaeyama",26.5,127.5,Taiwan & Insular Southeast Asia,B1,T2,Japonic,55,22.6,2100,T2,other,B1→T2
+Yukaghir,67.0,154.0,Northeast Siberia & Arctic,B3,T1,Yukaghir,151,-12.4,233,other,other,other
+Chukchi,67.0,-179.0,Northeast Siberia & Arctic,B4,T1,Chukotko-Kamchatkan,211,-10.3,433,other,other,other
+Reindeer Koryak,63.0,165.0,Northeast Siberia & Arctic,B4,T1,Chukotko-Kamchatkan,76,-9.0,375,other,other,other
+Maritime Koryak,60.0,165.0,Northeast Siberia & Arctic,B4,T1,Chukotko-Kamchatkan,80,-4.3,515,other,other,other
+Kerek,62.6,178.0,Northeast Siberia & Arctic,B4,T1,,21,-5.0,575,other,other,other
+Kamchadal,53.0,158.0,Northeast Siberia & Arctic,B4,T1,Chukotko-Kamchatkan,61,-1.6,957,other,other,other
+Russkoye Ustie,71.08,149.17,Northeast Siberia & Arctic,B4,T1,,18,-15.2,200,other,other,other
+Markovo,64.5,170.0,Northeast Siberia & Arctic,B4,T2,,29,-8.7,399,T2,other,other
+AsiaticEskimo,65.0,-173.0,Northeast Siberia & Arctic,B4,T1,,117,-5.8,571,other,other,other
+St.Lawrence Eskimo,63.0,-170.0,Northeast Siberia & Arctic,B4,T1,,44,-3.4,411,other,other,other
+Aleut,54.0,-170.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,59,3.6,1257,other,other,other
+Central Yupiq,60.0,-160.0,Northeast Siberia & Arctic,B4,T1,,95,-0.5,670,other,other,other
+Nunivak,60.1,-167.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,33,-0.8,702,other,other,other
+Kodiak,57.5,-154.5,Northeast Siberia & Arctic,B4,T1,,66,3.3,1207,other,other,other
+Chugach,60.2,-148.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,47,4.7,1110,other,other,other
+Bering Strait Inupiat,65.5,-166.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,96,-4.8,401,other,other,other
+North Alaskan Inupiat,68.0,-161.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,172,-5.9,223,other,other,other
+Mackenzie Delta Eskimo,69.5,-135.0,Northeast Siberia & Arctic,B4,T1,,49,-10.3,202,other,other,other
+Copper Eskimo,68.5,-108.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,69,-13.1,137,other,other,other
+Netsilik,68.5,-97.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,81,-8.7,129,other,other,other
+Caribou,65.0,-97.0,Northeast Siberia & Arctic,B4,T3,Eskimo-Aleut,45,-12.2,238,other,other,other
+Iglulik,69.5,-84.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,88,-14.1,226,other,other,other
+Baffin Land Eskimo,65.0,-66.0,Northeast Siberia & Arctic,B4,T1,,67,-8.7,636,other,other,other
+Labrador Eskimo,59.0,-70.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,56,-5.1,430,other,other,other
+Polar Eskimo,77.5,-68.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,77,-14.6,147,other,other,other
+West Greenland Eskimo,67.0,-53.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,86,-5.1,464,other,other,other
+Eest Greenland Eskimo,66.0,-37.0,Northeast Siberia & Arctic,B4,T1,Eskimo-Aleut,38,-3.4,951,other,other,other
+Ingalik,62.0,-160.0,Western North America & Subarctic,B4,T2,Athabaskan-Eyak-Tlingit,45,-1.5,470,T2,other,other
+Kolchan,62.5,-155.0,Western North America & Subarctic,B4,T1,,56,-2.6,449,other,other,other
+Koyukon,65.6,-154.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,114,-3.9,440,other,other,other
+Tanana,64.5,-147.5,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,53,-2.6,344,other,other,other
+Dena'ina,61.5,-152.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,89,-1.3,693,other,other,other
+Kutchin,68.0,-141.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,135,-9.9,217,other,other,other
+Han,62.8,-142.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,45,-4.8,312,other,other,other
+Athna,62.0,-145.0,Western North America & Subarctic,B4,T1,,65,-2.8,356,other,other,other
+"Upper Tanana,Tanacross",64.0,-142.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,99,-6.1,241,other,other,other
+Tutchone,61.8,-137.5,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,94,-4.5,250,other,other,other
+Tagish,60.0,-134.0,Western North America & Subarctic,B4,T1,,132,-0.5,323,other,other,other
+Inland Tlingit,60.0,-132.0,Western North America & Subarctic,B4,T5,Athabaskan-Eyak-Tlingit,76,-2.2,448,other,other,other
+Tahltan,57.5,-129.5,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,133,-0.9,676,other,other,other
+Tsetsot,55.5,-129.8,Western North America & Subarctic,B4,T1,,32,5.6,1777,other,other,other
+Kaska,60.5,-129.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,100,-3.7,485,other,other,other
+Beaver,57.0,-120.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,52,0.1,457,other,other,other
+Hare,67.0,-125.0,Western North America & Subarctic,B4,T2,Athabaskan-Eyak-Tlingit,37,-7.8,253,T2,other,other
+Yellowknife,65.0,-110.0,Western North America & Subarctic,B4,T2,,22,-9.9,258,T2,other,other
+Chipewyan,60.0,-106.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,87,-5.6,394,other,other,other
+"Slavey, Dogrib",62.0,-119.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,57,-3.4,332,other,other,other
+Eyak,60.5,-144.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,60,1.7,1906,other,other,other
+Tlingit,58.0,-136.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,189,4.0,2087,other,other,other
+Haida,53.0,-132.0,Western North America & Subarctic,B4,T1,Haida,184,6.8,3315,other,other,other
+Tsimshian,54.5,-129.0,Western North America & Subarctic,B4,T1,Tsimshian,140,4.2,1843,other,other,other
+"Heiltsuk,Oowekeeno",51.7,-128.0,Western North America & Subarctic,B4,T1,Wakashan,78,8.1,3139,other,other,other
+Kwakiutl,51.0,-127.3,Western North America & Subarctic,B4,T1,Wakashan,155,8.4,1975,other,other,other
+Bella Coola,51.8,-127.0,Western North America & Subarctic,B4,T1,Salishan,174,3.9,2013,other,other,other
+"Nootka,Makah",49.0,-125.5,Western North America & Subarctic,B4,T1,Wakashan,103,9.0,3057,other,other,other
+Carrier,53.5,-123.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,149,3.5,558,other,other,other
+Chilcotin,52.0,-124.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,100,2.4,388,other,other,other
+Shuswap,52.0,-120.0,Eastern North America,B4,T1,Salishan,162,1.5,1067,other,other,other
+Thompson,50.0,-121.2,Eastern North America,B4,T1,Salishan,184,2.7,775,other,other,other
+Lillooet,50.5,-122.8,Eastern North America,B4,T1,Salishan,105,4.1,943,other,other,other
+"Okanagon,Sanpoil",49.0,-118.5,Western North America & Subarctic,B4,T1,Salishan,105,4.7,603,other,other,other
+"Kalispel,Coeur d'Alene",47.5,-117.0,Western North America & Subarctic,B4,T1,Salishan,103,7.8,640,other,other,other
+"Chelan, Wenatchi",47.5,-120.0,Western North America & Subarctic,B1,T1,Salishan,3,9.4,231,other,other,other
+Flathead,47.5,-113.5,Western North America & Subarctic,B4,T2,Salishan,27,1.8,595,T2,other,other
+Comox,50.0,-125.0,Western North America & Subarctic,B4,T1,Salishan,91,9.8,1226,other,other,other
+"Halkomelem,Sechelt,Pentl",49.0,-123.3,Western North America & Subarctic,B4,T1,Salishan,107,9.8,852,other,other,other
+Lushootseed,48.0,-122.0,Western North America & Subarctic,B4,T1,,186,10.1,1513,other,other,other
+Twana,47.6,-123.3,Western North America & Subarctic,B4,T2,Salishan,36,5.4,2588,T2,other,other
+"Klallam,Lkungen",48.1,-123.7,Western North America & Subarctic,B4,T1,Salishan,60,7.5,2086,other,other,other
+"Chehalis, Cowlitz",47.0,-123.5,Western North America & Subarctic,B4,T1,Salishan,156,9.9,1942,other,other,other
+Quinault,47.2,-124.0,Western North America & Subarctic,B4,T1,Salishan,91,9.8,2964,other,other,other
+"Quileute, Chemakum",47.6,-124.0,Western North America & Subarctic,B4,T1,Chimakuan,81,8.1,3158,other,other,other
+Western Sahaptin,46.0,-120.5,Western North America & Subarctic,B4,T1,Sahaptian,164,8.3,366,other,other,other
+Nez Perce,46.0,-117.0,Western North America & Subarctic,B4,T1,Sahaptian,119,8.2,482,other,other,other
+Upper Chinook,45.6,-122.0,Western North America & Subarctic,B4,T1,Chinookan,177,8.1,2023,other,other,other
+Lower Chinook,46.0,-123.0,Western North America & Subarctic,B4,T1,Chinookan,55,10.1,1526,other,other,other
+Tillamook,45.5,-124.0,Western North America & Subarctic,B4,T1,Salishan,116,10.2,2357,other,other,other
+Coos,43.4,-124.2,Western North America & Subarctic,B4,T1,Coosan,96,11.5,1652,other,other,other
+Alsea,44.5,-123.9,Western North America & Subarctic,B4,T3,,35,10.0,2376,other,other,other
+Kalapuya,44.6,-123.0,Western North America & Subarctic,B4,T1,,63,11.5,1128,other,other,other
+Takelma,42.4,-123.5,Western North America & Subarctic,B4,T1,,54,12.2,975,other,other,other
+"Umpqua,Coquille,Tututni",42.5,-124.5,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,99,11.7,2045,other,other,other
+"Klamath, Modoc",43.5,-122.0,Western North America & Subarctic,B4,T1,,112,5.2,911,other,other,other
+Kutenai,50.0,-116.0,Western North America & Subarctic,B4,T1,,109,2.5,651,other,other,other
+Winnebago,44.0,-89.0,Western North America & Subarctic,B4,T1,Siouan,93,7.3,802,other,other,other
+Menomini,45.5,-88.5,Western North America & Subarctic,B4,T1,Algic,186,5.0,780,other,other,other
+Northern Saulteaux,52.5,-95.0,Western North America & Subarctic,B4,T1,Algic,31,-0.3,593,other,other,other
+Northern Ojibwa,53.0,-90.0,Western North America & Subarctic,B4,T1,Algic,93,-1.6,668,other,other,other
+Ojibwa (Western),48.0,-89.0,Western North America & Subarctic,B4,T1,Algic,222,3.8,735,other,other,other
+Ojibwa (Eastern),47.0,-80.0,Western North America & Subarctic,B4,T1,,85,2.7,910,other,other,other
+Ottawa,44.0,-81.0,Western North America & Subarctic,B4,T2,Algic,20,6.1,1070,T2,other,other
+Algonkian proper,47.0,-77.0,Western North America & Subarctic,B4,T1,,34,2.0,985,other,other,other
+"Fox,Sauk,Kikapoo",42.7,-84.0,Western North America & Subarctic,B4,T1,,128,8.2,765,other,other,other
+Potawatomi,44.5,-85.0,Western North America & Subarctic,B4,T1,Algic,46,6.3,772,other,other,other
+"Miami, Illini",40.0,-87.5,Western North America & Subarctic,B4,T1,Algic,17,11.2,1038,other,other,other
+Attikamek,47.5,-74.0,Western North America & Subarctic,B4,T1,,13,1.6,946,other,other,other
+Montagnais,51.0,-67.0,Western North America & Subarctic,B4,T1,Algic,89,-1.7,1082,other,other,other
+Naskapi,56.5,-70.0,Western North America & Subarctic,B4,T1,Algic,91,-5.5,608,other,other,other
+Eastern Cree,52.0,-75.0,Western North America & Subarctic,B4,T1,,35,-1.5,864,other,other,other
+Swampy Cree (Eastern),54.0,-84.0,Western North America & Subarctic,B4,T1,,78,-3.3,562,other,other,other
+Swampy Cree (Western),58.0,-94.0,Western North America & Subarctic,B4,T1,Algic,94,-5.8,422,other,other,other
+Western Wood Cree,56.0,-112.0,Western North America & Subarctic,B4,T1,,20,-0.3,494,other,other,other
+Plains Cree,54.0,-109.0,Western North America & Subarctic,B4,T1,Algic,148,1.0,420,other,other,other
+Plains Ojibwa,49.5,-98.0,Western North America & Subarctic,B4,T1,Algic,63,3.1,545,other,other,other
+Micmac,46.0,-63.0,Western North America & Subarctic,B4,T1,Algic,121,5.8,1168,other,other,other
+"Maliseet,Passamaquoddy",46.5,-67.5,Western North America & Subarctic,B4,T1,,83,3.8,1101,other,other,other
+"Abenaki,Penobscot",44.5,-70.5,Western North America & Subarctic,B4,T1,Algic,64,6.0,1141,other,other,other
+Lenape,40.5,-74.5,Western North America & Subarctic,B4,T2,Algic,76,11.6,1220,T2,other,other
+Mahican,42.5,-73.5,Western North America & Subarctic,B2,T1,,4,7.2,1062,other,other,other
+"Huron, Wyandot",44.0,-79.0,Western North America & Subarctic,B4,T1,Iroquoian,65,7.5,874,other,other,other
+Five Nations Iroquois,42.7,-76.0,Western North America & Subarctic,B4,T1,Iroquoian,181,6.7,1076,other,other,other
+Tuscarora,36.0,-77.0,Western North America & Subarctic,B4,T1,,36,15.8,1221,other,other,other
+Yurok,41.5,-124.0,Western North America & Subarctic,B4,T1,Algic,109,11.4,1748,other,other,other
+Wiyot,40.5,-124.2,Western North America & Subarctic,B4,T1,Algic,36,11.3,1846,other,other,other
+Karok,42.0,-123.5,Western North America & Subarctic,B4,T1,,90,9.8,1288,other,other,other
+"Shasta,Chimariko",42.0,-122.8,Western North America & Subarctic,B4,T1,Shastan,68,9.4,712,other,other,other
+"Hupa,Chilula",41.0,-123.5,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,44,10.4,1252,other,other,other
+"Lassik,Catho",40.5,-124.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,64,12.0,1526,other,other,other
+Yuki,39.5,-123.0,Western North America & Subarctic,B4,T2,Yuki-Wappo,53,11.9,1078,T2,other,other
+Yana,40.3,-122.0,Western North America & Subarctic,B4,T5,,48,15.0,913,other,other,other
+Achomavi,40.14,-120.5,Western North America & Subarctic,B4,T2,Palaihnihan,53,7.0,579,T2,other,other
+Atsugevi,40.08,-121.0,Western North America & Subarctic,B1,T2,Palaihnihan,31,9.1,874,T2,other,B1→T2
+Pomo,38.5,-123.5,Western North America & Subarctic,B4,T1,Pomoan,114,12.2,1056,other,other,other
+Wappo,38.2,-122.5,Western North America & Subarctic,B4,T3,Yuki-Wappo,29,15.1,761,other,other,other
+Wintu,39.5,-122.5,Western North America & Subarctic,B4,T1,Wintuan,121,15.8,533,other,other,other
+Maidu,39.0,-121.5,Western North America & Subarctic,B4,T1,Maiduan,114,16.5,538,other,other,other
+Sierra Miwok,37.8,-121.0,Western North America & Subarctic,B4,T5,Miwok-Costanoan,55,16.3,352,other,other,other
+Lake Miwok,38.5,-122.7,Western North America & Subarctic,B1,T4,Miwok-Costanoan,5,14.6,869,other,T4,B1→T4
+Coast Miwok,38.0,-122.8,Western North America & Subarctic,B4,T5,Miwok-Costanoan,32,13.3,1134,other,other,other
+Costanoan,36.8,-122.0,Western North America & Subarctic,B1,T2,,12,14.0,692,T2,other,B1→T2
+Yokuts,36.5,-120.0,Western North America & Subarctic,B4,T4,Yokutsan,49,16.9,187,other,T4,other
+NorthernFoothillsYokuts,36.8,-119.5,Western North America & Subarctic,B4,T5,Yokutsan,29,17.5,406,other,other,other
+Salinan,35.6,-121.0,Western North America & Subarctic,B4,T4,,21,13.7,563,other,T4,other
+Monache,36.8,-119.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,33,8.8,844,other,other,other
+Tubatulabal,36.0,-118.2,Western North America & Subarctic,B4,T5,Uto-Aztecan,25,7.8,556,other,other,other
+Kawaiisu,36.5,-118.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,60,15.6,151,other,other,other
+Chumash,34.5,-120.0,Western North America & Subarctic,B4,T1,Chumashan,58,15.6,462,other,other,other
+Kitanemuk,35.0,-117.3,Western North America & Subarctic,B4,T3,Uto-Aztecan,19,17.9,81,other,other,other
+Serrano,34.7,-117.0,Western North America & Subarctic,B4,T3,Uto-Aztecan,36,16.6,202,other,other,other
+Gabrielino,34.0,-118.0,Western North America & Subarctic,B4,T4,Uto-Aztecan,6,18.1,398,other,T4,other
+"Luiseno, Juaneno",33.5,-117.5,Western North America & Subarctic,B1,T2,Uto-Aztecan,58,16.9,379,T2,other,B1→T2
+"Cahuilla, Cupeno",34.0,-116.0,Western North America & Subarctic,B1,T2,Uto-Aztecan,43,19.1,174,T2,other,B1→T2
+Northern Paiute,42.0,-119.0,Western North America & Subarctic,B4,T5,Uto-Aztecan,130,9.1,215,other,other,other
+Owens Valley Mono,37.2,-118.5,Western North America & Subarctic,B4,T1,Uto-Aztecan,9,8.5,305,other,other,other
+Bannock,43.0,-112.0,Western North America & Subarctic,B4,T2,Uto-Aztecan,10,4.9,422,T2,other,other
+Washo,39.0,-120.0,Western North America & Subarctic,B1,T2,,24,5.7,697,T2,other,B1→T2
+Eastern Shohone,43.0,-109.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,24,5.0,291,other,other,other
+Northern Shoshone,44.0,-114.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,80,1.8,403,other,other,other
+"Western Shoshoni,Gosiute",40.0,-115.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,130,6.9,326,other,other,other
+Panamint,36.5,-117.2,Western North America & Subarctic,B1,T2,Uto-Aztecan,13,13.9,171,T2,other,B1→T2
+Ute,39.0,-109.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,160,7.7,392,other,other,other
+Southern Paiute,37.0,-114.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,88,18.0,197,other,other,other
+Chemehuevi,34.7,-115.3,Western North America & Subarctic,B4,T1,Uto-Aztecan,67,21.0,130,other,other,other
+Hopi,36.5,-110.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,125,9.9,292,other,other,other
+Zuni,35.0,-109.0,Western North America & Subarctic,B4,T1,,101,10.2,301,other,other,other
+Western Keres,35.0,-108.0,Western North America & Subarctic,B4,T1,Keresan,75,9.5,300,other,other,other
+Eastern Keres,35.5,-107.0,Western North America & Subarctic,B4,T1,Keresan,70,12.0,306,other,other,other
+"Tiwa,Tewa,Towa",35.0,-106.5,Western North America & Subarctic,B4,T1,Kiowa-Tanoan,134,11.0,385,other,other,other
+Navajo,36.0,-108.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,178,9.9,243,other,other,other
+Jicarilla Apache,36.5,-104.0,Western North America & Subarctic,B4,T4,Athabaskan-Eyak-Tlingit,123,10.0,402,other,T4,other
+Chiricahua Apache,33.0,-108.0,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,70,10.3,443,other,other,other
+Mescalero Apache,32.8,-105.0,Western North America & Subarctic,B4,T3,Athabaskan-Eyak-Tlingit,26,15.1,360,other,other,other
+Western Apache,33.5,-110.5,Western North America & Subarctic,B4,T1,Athabaskan-Eyak-Tlingit,100,17.6,425,other,other,other
+Lipan Apache,30.0,-100.0,Western North America & Subarctic,B4,T5,Athabaskan-Eyak-Tlingit,98,18.2,680,other,other,other
+"Walapai,Havasupai,Yavapai",34.5,-113.0,Western North America & Subarctic,B4,T1,Cochimi-Yuman,114,15.8,407,other,other,other
+Diegueno,32.6,-116.5,Western North America & Subarctic,B1,T2,Cochimi-Yuman,48,15.4,357,T2,other,B1→T2
+Cocopa,32.2,-115.0,Western North America & Subarctic,B1,T2,Cochimi-Yuman,21,21.8,68,T2,other,B1→T2
+"Yuma,Mohave,Maricopa",33.0,-114.6,Western North America & Subarctic,B4,T1,Cochimi-Yuman,82,23.9,98,other,other,other
+Paipai,31.8,-115.8,Western North America & Subarctic,B1,T2,Cochimi-Yuman,9,13.7,311,T2,other,B1→T2
+Kiliwa,31.0,-115.4,Western North America & Subarctic,B1,T2,Cochimi-Yuman,19,10.1,374,T2,other,B1→T2
+Pima,32.8,-112.0,Western North America & Subarctic,B4,T2,Uto-Aztecan,71,21.3,223,T2,other,other
+Papago,32.0,-113.0,Western North America & Subarctic,B4,T1,Uto-Aztecan,46,21.6,188,other,other,other
+Seri,29.0,-112.5,Western North America & Subarctic,B4,T2,,33,21.2,138,T2,other,other
+Blackfoot,51.0,-112.5,Eastern North America,B4,T1,Algic,180,4.0,356,other,other,other
+Sarsi,52.5,-116.0,Eastern North America,B4,T1,Athabaskan-Eyak-Tlingit,114,1.4,614,other,other,other
+GrosVentre,50.0,-109.0,Eastern North America,B4,T1,Algic,106,4.2,423,other,other,other
+Assiniboine,50.0,-104.5,Eastern North America,B4,T1,Siouan,166,3.9,418,other,other,other
+Crow,47.0,-109.0,Eastern North America,B4,T1,Siouan,130,6.2,421,other,other,other
+Hidatsa,47.0,-102.0,Eastern North America,B4,T1,Siouan,66,5.6,438,other,other,other
+Mandan,46.5,-101.5,Eastern North America,B4,T2,Siouan,72,5.9,422,T2,other,other
+Arikara,45.0,-100.5,Eastern North America,B4,T1,Caddoan,110,7.8,427,other,other,other
+Teton,44.0,-102.0,Eastern North America,B4,T1,Siouan,110,8.6,430,other,other,other
+Yankton,45.5,-98.0,Eastern North America,B4,T3,,22,6.4,499,other,other,other
+Santee,45.0,-92.5,Eastern North America,B4,T1,Siouan,112,6.4,798,other,other,other
+"Osage, Kansa",37.3,-93.7,Eastern North America,B4,T1,,70,13.2,1121,other,other,other
+Qwapaw,33.3,-91.4,Eastern North America,B4,T2,,13,17.6,1367,T2,other,other
+"Omaha, Ponka",42.5,-98.0,Eastern North America,B4,T1,Siouan,95,9.2,573,other,other,other
+Oto,42.0,-96.3,Eastern North America,B4,T1,Siouan,39,9.7,737,other,other,other
+Iowa,41.5,-94.0,Eastern North America,B4,T1,Siouan,108,9.7,854,other,other,other
+Arapaho,40.0,-103.0,Eastern North America,B4,T1,Algic,153,9.7,403,other,other,other
+Cheyenne,43.0,-104.0,Eastern North America,B4,T1,Algic,92,8.3,388,other,other,other
+Pawnee,41.0,-99.0,Eastern North America,B4,T1,Caddoan,154,9.8,649,other,other,other
+Wichita,33.0,-97.0,Eastern North America,B4,T1,Caddoan,115,18.8,919,other,other,other
+Caddo,33.0,-95.0,Eastern North America,B4,T1,Caddoan,81,17.7,1130,other,other,other
+Kiowa-Apache,36.0,-98.0,Eastern North America,B4,T1,Athabaskan-Eyak-Tlingit,53,15.5,815,other,other,other
+Kiowa,35.0,-100.0,Eastern North America,B4,T1,Kiowa-Tanoan,80,15.8,604,other,other,other
+Comanche,32.0,-102.0,Eastern North America,B4,T1,Uto-Aztecan,34,17.5,406,other,other,other
+Tonkawa,30.0,-97.0,Eastern North America,B1,T1,,22,20.2,983,other,other,other
+Shawnee,40.0,-83.0,Eastern North America,B4,T2,Algic,24,11.3,967,T2,other,other
+Yuchi,30.5,-81.5,Eastern North America,B4,T2,,47,20.5,1292,T2,other,other
+Tunica,32.8,-91.2,Eastern North America,B2,T4,,24,18.0,1418,other,T4,other
+Natchez,31.4,-91.4,Eastern North America,B4,T1,,66,18.6,1574,other,other,other
+Chitimacha,28.5,-89.9,Eastern North America,B4,T2,,13,21.0,1442,T2,other,other
+Biloxi,30.5,-89.0,Eastern North America,B4,T1,,31,19.8,1613,other,other,other
+"Creek, Seminole",33.0,-86.0,Eastern North America,B4,T1,Muskogean,96,16.9,1457,other,other,other
+"Alabama,Koasati",32.0,-87.0,Eastern North America,B4,T1,,117,18.0,1423,other,other,other
+Hitchiti,31.5,-85.0,Eastern North America,B2,T1,,18,18.7,1386,other,other,other
+"Choktaw,Chichasaw",33.0,-88.5,Eastern North America,B4,T4,Muskogean,42,17.2,1392,other,T4,other
+Catawba,36.0,-79.5,Eastern North America,B2,T5,Siouan,19,14.7,1156,other,other,other
+Cherokee,35.0,-83.5,Eastern North America,B4,T1,Iroquoian,130,12.8,1825,other,other,other
+"Tarahumara,Warihio",27.5,-107.6,Mesoamerica & Central America,B1,T4,Uto-Aztecan,48,16.1,825,other,T4,B1→T4
+Opata,30.5,-109.5,Mesoamerica & Central America,B1,T2,Uto-Aztecan,2,19.7,446,T2,other,B1→T2
+"Yaqui,Mayo,Sinaloa",26.5,-109.0,Mesoamerica & Central America,B1,T2,Uto-Aztecan,30,24.5,501,T2,other,B1→T2
+Huichol,22.5,-104.5,Mesoamerica & Central America,B1,T2,Uto-Aztecan,65,22.0,811,T2,other,B1→T2
+Cora,22.0,-104.8,Mesoamerica & Central America,B1,T2,Uto-Aztecan,43,25.3,1111,T2,other,B1→T2
+"Tepecano,Tepehuan",23.0,-104.0,Mesoamerica & Central America,B1,T5,,13,15.6,561,other,other,other
+Durango Nahua,22.7,-104.6,Mesoamerica & Central America,B1,T2,,20,18.4,817,T2,other,B1→T2
+Tarascan,19.0,-102.0,Mesoamerica & Central America,B1,T2,,15,25.3,775,T2,other,B1→T2
+Aztec,19.5,-99.0,Mesoamerica & Central America,B1,T2,Uto-Aztecan,68,16.4,601,T2,other,B1→T2
+Puebla & Huasteca Nahua,19.0,-98.0,Mesoamerica & Central America,B1,T2,Mayan,72,16.3,654,T2,other,B1→T2
+Tlapanec; Popoloca,17.5,-99.0,Mesoamerica & Central America,B1,T2,,30,20.1,1346,T2,other,B1→T2
+"Otomi,Pame,Jonaz",20.5,-99.5,Mesoamerica & Central America,B1,T2,Otomanguean,38,16.6,473,T2,other,B1→T2
+Huastec,21.5,-98.0,Mesoamerica & Central America,B1,T2,Mayan,37,23.9,1216,T2,other,B1→T2
+"Totonac, Tepehua",20.0,-97.0,Mesoamerica & Central America,B1,T2,Totonacan,99,22.6,1872,T2,other,B1→T2
+Veracruz Nahuatl,17.8,-94.0,Mesoamerica & Central America,B1,T2,,47,26.2,2365,T2,other,B1→T2
+Popoluca,18.0,-95.0,Mesoamerica & Central America,B1,T2,Mixe-Zoque,72,25.6,1803,T2,other,B1→T2
+"Chinantec,Mazatec",17.0,-97.5,Mesoamerica & Central America,B1,T2,Otomanguean,98,21.4,1305,T2,other,B1→T2
+"Mixtec,Trique",16.7,-98.0,Mesoamerica & Central America,B1,T2,Otomanguean,64,23.6,1636,T2,other,B1→T2
+"Zapotec,Chatino",16.5,-96.5,Mesoamerica & Central America,B1,T2,Otomanguean,42,21.8,554,T2,other,B1→T2
+Oaxaca Mixe,17.0,-95.5,Mesoamerica & Central America,B1,T2,Mixe-Zoque,40,23.5,1417,T2,other,B1→T2
+Tequstlatec,16.6,-95.8,Mesoamerica & Central America,B1,T2,Tequistlatecan,32,20.9,812,T2,other,B1→T2
+Huave,16.4,-94.7,Mesoamerica & Central America,B1,T2,Huavean,12,27.3,969,T2,other,B1→T2
+Chontal,18.0,-93.0,Mesoamerica & Central America,B1,T2,Mayan,21,26.6,2053,T2,other,B1→T2
+Zoque,16.5,-92.5,Mesoamerica & Central America,B1,T1,Mixe-Zoque,56,20.3,1243,other,other,other
+Soconuzco Mestizos,14.5,-92.4,Mesoamerica & Central America,B1,T2,,7,27.8,1381,T2,other,B1→T2
+Tzotzil,17.0,-93.0,Mesoamerica & Central America,B1,T4,Mayan,98,20.2,1229,other,T4,B1→T4
+Tseltal,16.5,-92.6,Mesoamerica & Central America,B1,T2,,48,23.9,1313,T2,other,B1→T2
+Chol,17.7,-91.5,Mesoamerica & Central America,B1,T2,Mayan,41,26.9,1769,T2,other,B1→T2
+Chorti,15.2,-89.0,Mesoamerica & Central America,B1,T1,Mayan,36,23.9,1961,other,other,other
+"Yucatec, Itza",20.0,-88.5,Mesoamerica & Central America,B1,T2,Mayan,62,25.9,1161,T2,other,B1→T2
+Lacandon,17.2,-91.5,Mesoamerica & Central America,B1,T4,Mayan,68,25.6,2348,other,T4,B1→T4
+Kekchi; Mopan,16.5,-89.8,Mesoamerica & Central America,B1,T1,Mayan,81,25.1,2996,other,other,other
+Tzutujil,14.5,-91.7,Mesoamerica & Central America,B1,T1,Mayan,24,27.7,1869,other,other,other
+"Quiche,Pocomam",15.0,-91.0,Mesoamerica & Central America,B1,T1,Mayan,88,17.6,1864,other,other,other
+"Kanjobal,Chuj,Mocho",16.0,-92.0,Mesoamerica & Central America,B1,T2,Mayan,57,24.2,1525,T2,other,B1→T2
+"Mam, Ixil",15.5,-92.5,Mesoamerica & Central America,B1,T1,Mayan,25,17.9,1706,other,other,other
+Pipil,13.5,-89.5,Mesoamerica & Central America,B1,T2,Uto-Aztecan,16,26.3,1818,T2,other,B1→T2
+Lenca,14.2,-87.5,Mesoamerica & Central America,B1,T2,Lencan,6,19.2,1182,T2,other,B1→T2
+Jicaque,15.1,-88.0,Mesoamerica & Central America,B1,T2,Jicaquean,32,25.9,1648,T2,other,B1→T2
+"Paya,Sumu,Misquito",14.0,-85.0,Mesoamerica & Central America,B1,T2,Misumalpan,53,24.5,2297,T2,other,B1→T2
+"Rama,Guatuso",10.7,-84.5,Mesoamerica & Central America,B1,T4,,24,25.9,3174,other,T4,B1→T4
+"Bribri,Cabecar",9.5,-83.4,Mesoamerica & Central America,B1,T4,Chibchan,69,12.2,2677,other,T4,B1→T4
+Boruca,8.9,-83.3,Mesoamerica & Central America,B1,T4,,4,24.2,3019,other,T4,B1→T4
+"Guaymi,Bocota",8.5,-82.5,Mesoamerica & Central America,B1,T2,Chibchan,21,26.6,3036,T2,other,B1→T2
+Kuna,3.5,-78.0,Mesoamerica & Central America,B1,T4,,88,26.2,4590,other,T4,B1→T4
+Choco,7.0,-77.0,Mesoamerica & Central America,B1,T4,Chocoan,100,28.0,4513,other,T4,B1→T4
+Kogi,11.0,-74.0,Mesoamerica & Central America,B1,T2,Chibchan,80,12.0,1676,T2,other,B1→T2
+Ijka,10.5,-73.5,Mesoamerica & Central America,B1,T2,,14,26.0,1394,T2,other,B1→T2
+Guajiro,12.0,-72.0,Mesoamerica & Central America,B1,T1,Arawakan,80,28.9,493,other,other,other
+Chimila,9.5,-74.5,Mesoamerica & Central America,B1,T2,,20,27.8,1569,T2,other,B1→T2
+Yukpa,9.5,-76.0,Mesoamerica & Central America,B1,T4,Cariban,86,27.5,1452,other,T4,B1→T4
+Bari,9.5,-73.0,Mesoamerica & Central America,B1,T2,Cariban,19,26.4,2092,T2,other,B1→T2
+Tunebo,6.8,-72.3,Mesoamerica & Central America,B1,T2,Chibchan,8,11.7,2118,T2,other,B1→T2
+Muisca,5.3,-73.5,Mesoamerica & Central America,B1,T4,Chibchan,48,15.1,1484,other,T4,B1→T4
+"Paez,Guambia",2.5,-76.5,Mesoamerica & Central America,B1,T4,,24,11.0,1778,other,T4,B1→T4
+"Kamsa, Ingano",1.0,-77.0,Mesoamerica & Central America,B1,T4,,19,18.0,2983,other,T4,B1→T4
+Cayapa (Chachi),1.0,-79.0,Mesoamerica & Central America,B1,T2,Barbacoan,18,25.5,2519,T2,other,B1→T2
+Colorado (Tsachila),-0.4,-79.0,Mesoamerica & Central America,B1,T4,,67,18.1,2291,other,T4,B1→T4
+Highland Ecuador,-1.0,-78.5,Mesoamerica & Central America,B1,T1,,39,7.3,1049,other,other,other
+Northern Peru: Costa,-7.0,-79.8,Mesoamerica & Central America,B1,T2,,42,21.9,25,T2,other,B1→T2
+Northern Peru: Sierra,-8.5,-77.3,Mesoamerica & Central America,B1,T1,,69,14.3,772,other,other,other
+Lima dep.,-11.8,-77.0,Mesoamerica & Central America,B1,T1,,56,17.1,65,other,other,other
+"Pasco,Junin,Huancavelica dep.",-11.7,-76.8,Mesoamerica & Central America,B1,T1,,65,12.1,267,other,other,other
+Ica dep.,-14.0,-75.0,Mesoamerica & Central America,B1,T4,,6,8.4,522,other,T4,B1→T4
+Ayacucho dep.,-14.0,-74.3,Mesoamerica & Central America,B1,T1,,24,5.9,819,other,other,other
+"Kechua: South Peru, Bolivia",-14.0,-71.5,Mesoamerica & Central America,B1,T4,,102,7.4,824,other,T4,B1→T4
+Aimara,-16.5,-69.0,Mesoamerica & Central America,B1,T4,,50,8.3,715,other,T4,B1→T4
+Chipaya,-18.5,-67.0,Mesoamerica & Central America,B1,T1,,15,8.7,384,other,other,other
+Atacameno,-23.5,-70.0,Mesoamerica & Central America,B1,T2,,8,16.8,0,T2,other,B1→T2
+Yaruro,6.0,-69.0,Amazonia & Northern South America,B1,T4,,42,27.7,2451,other,T4,B1→T4
+Sicuani,5.0,-69.0,Amazonia & Northern South America,B1,T4,,159,27.5,2799,other,T4,B1→T4
+Cuiva,8.0,-72.0,Amazonia & Northern South America,B1,T4,,37,15.0,1832,other,T4,B1→T4
+Guayabero,2.2,-73.0,Amazonia & Northern South America,B1,T4,,34,26.8,2624,other,T4,B1→T4
+Makiritare,5.5,-65.0,Amazonia & Northern South America,B1,T4,,85,25.5,2813,other,T4,B1→T4
+Piaroa,5.0,-67.5,Amazonia & Northern South America,B1,T4,Saliban,31,24.8,2645,other,T4,B1→T4
+Saliva,5.0,-71.3,Amazonia & Northern South America,B1,T4,,7,26.8,2576,other,T4,B1→T4
+Yabarana,5.5,-66.3,Amazonia & Northern South America,B1,T2,Cariban,17,26.7,2516,T2,other,B1→T2
+Panare (E'napa),7.0,-66.0,Amazonia & Northern South America,B1,T2,Cariban,13,27.1,1942,T2,other,B1→T2
+Hoti,5.5,-65.5,Amazonia & Northern South America,B1,T2,,4,21.8,2338,T2,other,B1→T2
+Yanomamo,2.0,-64.5,Amazonia & Northern South America,B1,T4,Yanomamic,100,24.4,2606,other,T4,B1→T4
+Sanema,4.3,-64.5,Amazonia & Northern South America,B1,T4,Yanomamic,75,24.3,2964,other,T4,B1→T4
+Cuba Mestizos,18.5,-71.0,Amazonia & Northern South America,B1,T4,,6,25.8,774,other,T4,B1→T4
+Taino,21.0,-77.0,Amazonia & Northern South America,B1,T4,Arawakan,12,25.9,1111,other,T4,B1→T4
+Warao,9.0,-61.5,Amazonia & Northern South America,B1,T4,,164,26.3,1804,other,T4,B1→T4
+Pemon,6.0,-62.3,Amazonia & Northern South America,B1,T4,Cariban,138,25.0,2003,other,T4,B1→T4
+Akawai,7.0,-60.0,Amazonia & Northern South America,B1,T4,Cariban,31,25.9,1840,other,T4,B1→T4
+Locono,6.0,-57.0,Amazonia & Northern South America,B1,T4,Arawakan,89,27.2,1852,other,T4,B1→T4
+Palikur,4.0,-51.8,Amazonia & Northern South America,B1,T2,Arawakan,6,25.9,3363,T2,other,B1→T2
+Island Caribs,16.0,-62.0,Amazonia & Northern South America,B1,T2,Arawakan,30,25.4,1558,T2,other,B1→T2
+"Karina, Galibi",5.0,-59.0,Amazonia & Northern South America,B1,T4,Cariban,140,26.3,2079,other,T4,B1→T4
+Orinoco Caribs,8.0,-64.0,Amazonia & Northern South America,B1,T4,,37,27.6,1294,other,T4,B1→T4
+Makuxi,4.5,-59.6,Amazonia & Northern South America,B1,T4,,83,24.6,1878,other,T4,B1→T4
+Wapishana,3.0,-59.0,Amazonia & Northern South America,B1,T4,Arawakan,88,26.6,1667,other,T4,B1→T4
+Trio,2.0,-56.0,Amazonia & Northern South America,B1,T4,Cariban,103,25.9,1856,other,T4,B1→T4
+Akuriyo,3.2,-55.4,Amazonia & Northern South America,B1,T2,Cariban,11,26.0,2277,T2,other,B1→T2
+Waiwai,-0.5,-58.0,Amazonia & Northern South America,B1,T4,Cariban,60,26.6,2347,other,T4,B1→T4
+Hixkaryana,-1.0,-59.0,Amazonia & Northern South America,B1,T4,,39,26.6,2273,other,T4,B1→T4
+Kaxuyana,1.0,-57.5,Amazonia & Northern South America,B1,T4,,27,25.8,2004,other,T4,B1→T4
+"Wayana, Aparai",3.0,-54.0,Amazonia & Northern South America,B1,T4,Cariban,119,25.6,2419,other,T4,B1→T4
+"Wayampi, Emerillon",3.0,-52.0,Amazonia & Northern South America,B1,T4,Tupian,110,25.6,2775,other,T4,B1→T4
+"Siona,Coreguaje",0.5,-75.5,Amazonia & Northern South America,B1,T4,Tucanoan,125,25.4,3059,other,T4,B1→T4
+Mai Huna (Coto),-1.0,-74.0,Amazonia & Northern South America,B1,T4,Tucanoan,60,25.9,2819,other,T4,B1→T4
+Cofan,0.3,-77.0,Amazonia & Northern South America,B1,T4,,73,24.8,3285,other,T4,B1→T4
+"Napo,Kanelo",-2.0,-76.0,Amazonia & Northern South America,B1,T4,,158,25.6,3178,other,T4,B1→T4
+Waorani,-1.1,-77.0,Amazonia & Northern South America,B1,T4,,20,24.8,3799,other,T4,B1→T4
+Candoshi,-4.0,-77.0,Amazonia & Northern South America,B1,T4,,18,26.9,2266,other,T4,B1→T4
+Zaparo,-2.5,-75.0,Amazonia & Northern South America,B1,T4,,14,25.7,3096,other,T4,B1→T4
+"Shuar,Achuar,Huambiza",-3.0,-77.0,Amazonia & Northern South America,B1,T4,Chicham,160,26.1,2557,other,T4,B1→T4
+Aguaruna,-5.0,-78.5,Amazonia & Northern South America,B1,T4,,115,24.0,1880,other,T4,B1→T4
+Carijona,0.0,-72.0,Amazonia & Northern South America,B1,T4,,74,26.0,2816,other,T4,B1→T4
+"Barasana,Taibano,Makuna",0.2,-70.4,Amazonia & Northern South America,B1,T4,Tucanoan,131,25.7,3135,other,T4,B1→T4
+"Desana,Siriano,Tatuyo,Bara",0.3,-70.0,Amazonia & Northern South America,B1,T4,Tucanoan,101,25.6,3229,other,T4,B1→T4
+"Uanano,Tucano proper,Arapaso",-0.2,-69.0,Amazonia & Northern South America,B1,T4,Tucanoan,43,25.5,3372,other,T4,B1→T4
+"Letuama,Ufaina,Yahuna",-0.6,-69.7,Amazonia & Northern South America,B1,T4,,70,25.6,3112,other,T4,B1→T4
+Cubeo,1.3,-70.4,Amazonia & Northern South America,B1,T4,Tucanoan,37,25.8,3182,other,T4,B1→T4
+Tariana,1.0,-69.5,Amazonia & Northern South America,B1,T4,Arawakan,64,25.5,3360,other,T4,B1→T4
+"Yucuna, Kabiyari",-1.0,-70.0,Amazonia & Northern South America,B1,T4,Arawakan,84,26.0,3081,other,T4,B1→T4
+Macu,-1.0,-68.0,Amazonia & Northern South America,B1,T4,,26,25.8,3171,other,T4,B1→T4
+Puinave,2.8,-68.5,Amazonia & Northern South America,B1,T4,,12,26.3,3308,other,T4,B1→T4
+"Baniwa, Bare, Piapoco",1.5,-68.5,Amazonia & Northern South America,B1,T4,Arawakan,91,26.0,3550,other,T4,B1→T4
+"Witoto,Ocaina",-2.0,-73.0,Amazonia & Northern South America,B1,T4,Huitotoan,122,26.0,2849,other,T4,B1→T4
+Bora,-2.5,-72.0,Amazonia & Northern South America,B1,T4,,45,26.2,2972,other,T4,B1→T4
+Andoque,-0.5,-73.5,Amazonia & Northern South America,B1,T4,,54,25.9,2724,other,T4,B1→T4
+Ticuna,-4.0,-70.5,Amazonia & Northern South America,B1,T4,Ticuna-Yuri,120,26.5,2863,other,T4,B1→T4
+Yagua,-3.0,-71.5,Amazonia & Northern South America,B1,T4,Peba-Yagua,89,26.3,3019,other,T4,B1→T4
+"Omagua, Cocama",-4.0,-64.5,Amazonia & Northern South America,B1,T2,,7,26.5,2265,T2,other,B1→T2
+Chayahuita,-5.8,-77.0,Amazonia & Northern South America,B1,T4,,51,22.2,1611,other,T4,B1→T4
+Urarina,-4.2,-75.7,Amazonia & Northern South America,B1,T4,,18,26.6,2279,other,T4,B1→T4
+"Katawishi,Manao etc.",-3.0,-62.0,Amazonia & Northern South America,B1,T4,Arawakan,91,26.5,2683,other,T4,B1→T4
+Mura,-5.0,-60.0,Amazonia & Northern South America,B1,T4,,12,27.0,2291,other,T4,B1→T4
+Mawe,-3.5,-57.0,Amazonia & Northern South America,B1,T4,Tupian,52,26.8,2275,other,T4,B1→T4
+Juruna,-7.0,-52.0,Amazonia & Northern South America,B1,T1,,37,24.9,1984,other,other,other
+Shipaya,-4.5,-54.0,Amazonia & Northern South America,B1,T4,,97,25.4,1717,other,T4,B1→T4
+Anambe,-2.5,-49.5,Amazonia & Northern South America,B1,T3,Tupian,5,26.5,2469,other,other,other
+"Asurini,Paracana.",-5.0,-51.5,Amazonia & Northern South America,B1,T2,Tupian,14,25.1,1769,T2,other,B1→T2
+Lower Amazon,-2.0,-53.0,Amazonia & Northern South America,B1,T1,,7,26.1,1856,other,other,other
+Tenetehara,-3.0,-48.0,Amazonia & Northern South America,B1,T4,Tupian,84,26.2,2027,other,T4,B1→T4
+Urubu (Kaapor),-3.0,-45.0,Amazonia & Northern South America,B1,T4,Tupian,94,26.9,1817,other,T4,B1→T4
+Tupinamba,-23.0,-42.2,Amazonia & Northern South America,B1,T4,Tupian,1,22.9,1108,other,T4,B1→T4
+Amuesha,-9.5,-75.5,Amazonia & Northern South America,B1,T1,Arawakan,37,25.7,3139,other,other,other
+Ashaninca,-11.5,-74.4,Amazonia & Northern South America,B1,T2,Quechuan,56,21.5,1713,T2,other,B1→T2
+Machiguenga,-11.5,-72.9,Amazonia & Northern South America,B1,T4,Arawakan,76,25.0,1828,other,T4,B1→T4
+Piro,-12.0,-70.0,Amazonia & Northern South America,B1,T4,Arawakan,30,24.8,2543,other,T4,B1→T4
+"Culina,Ipurina",-11.0,-71.0,Amazonia & Northern South America,B1,T4,,21,24.5,2080,other,T4,B1→T4
+Kanamari,-7.0,-68.0,Amazonia & Northern South America,B1,T2,,16,25.5,2298,T2,other,B1→T2
+Shipibo-Conibo,-7.0,-75.0,Amazonia & Northern South America,B1,T4,Pano-Tacanan,104,26.4,1834,other,T4,B1→T4
+Cashibo,-8.8,-75.5,Amazonia & Northern South America,B1,T2,,34,26.6,4084,T2,other,B1→T2
+Marubo,-6.0,-72.5,Amazonia & Northern South America,B1,T4,,10,25.7,2585,other,T4,B1→T4
+"Cashinahua,Mayoruna",-8.0,-72.5,Amazonia & Northern South America,B1,T4,,107,25.0,2086,other,T4,B1→T4
+Harakmbet,-12.0,-71.0,Amazonia & Northern South America,B1,T2,,45,24.7,2978,T2,other,B1→T2
+Tacana,-14.0,-68.0,Amazonia & Northern South America,B1,T4,,115,24.4,1907,other,T4,B1→T4
+"Moseten,Chimane",-15.5,-67.5,Amazonia & Northern South America,B1,T4,,46,23.9,1744,other,T4,B1→T4
+Yuracare,-17.0,-67.0,Amazonia & Northern South America,B1,T2,,18,14.3,837,T2,other,B1→T2
+Chiriguano,-17.0,-64.0,Amazonia & Northern South America,B1,T1,Tupian,122,24.8,1938,other,other,other
+Chacobo,-12.0,-66.0,Amazonia & Northern South America,B1,T4,Pano-Tacanan,47,26.6,1568,other,T4,B1→T4
+Ese'ejja,-12.0,-68.5,Amazonia & Northern South America,B1,T2,,28,25.4,1753,T2,other,B1→T2
+Siriono,-14.0,-65.0,Amazonia & Northern South America,B1,T2,Tupian,12,26.1,1627,T2,other,B1→T2
+"Mojo,Manasi,etc.",-16.0,-64.0,Amazonia & Northern South America,B1,T4,,23,25.5,2002,other,T4,B1→T4
+Parintintin,-9.0,-62.0,Amazonia & Northern South America,B1,T4,Tupian,35,25.3,2281,other,T4,B1→T4
+"Tupari,Makurap,Ajuru",-13.0,-64.0,Amazonia & Northern South America,B1,T4,,32,26.1,1454,other,T4,B1→T4
+"Itene,Wari,other Rondonia",-11.0,-63.0,Amazonia & Northern South America,B1,T4,Chapacuran,41,24.6,1729,other,T4,B1→T4
+"Surui,Zoro,Arua,Cinta Larga",-11.0,-61.0,Amazonia & Northern South America,B1,T4,,83,24.7,2024,other,T4,B1→T4
+Mundurucu,-11.0,-58.0,Amazonia & Northern South America,B1,T1,,118,25.1,1968,other,other,other
+Kamaiura,-12.5,-54.0,Amazonia & Northern South America,B1,T4,Tupian,101,24.5,1721,other,T4,B1→T4
+Bakairi,-14.0,-55.0,Amazonia & Northern South America,B1,T2,Cariban,32,23.7,1705,T2,other,B1→T2
+"Kalapalo, Kuikuru",-13.5,-54.5,Amazonia & Northern South America,B1,T4,Cariban,69,23.5,1727,other,T4,B1→T4
+"Waura,Mehinaku",-13.0,-54.0,Amazonia & Northern South America,B1,T4,Arawakan,88,24.2,1684,other,T4,B1→T4
+Trumai,-13.5,-53.5,Amazonia & Northern South America,B1,T4,,53,24.2,1634,other,T4,B1→T4
+Rikbaktsa,-13.0,-57.0,Amazonia & Northern South America,B1,T4,,78,24.4,2051,other,T4,B1→T4
+Kayabi,-12.0,-55.5,Amazonia & Northern South America,B1,T1,Tupian,65,24.7,1885,other,other,other
+Iranxe,-13.0,-57.5,Amazonia & Northern South America,B1,T1,,101,24.5,2052,other,other,other
+Nambikwara,-14.0,-59.0,Amazonia & Northern South America,B1,T4,Nambiquaran,71,23.5,1865,other,T4,B1→T4
+Paresi,-15.0,-55.5,Amazonia & Northern South America,B1,T4,Arawakan,164,23.7,1540,other,T4,B1→T4
+Bororo,-15.5,-54.0,Amazonia & Northern South America,B1,T4,Bororoan,69,22.0,1751,other,T4,B1→T4
+Umotina,-16.0,-58.5,Amazonia & Northern South America,B1,T1,Bororoan,40,26.4,1449,other,other,other
+Karaja,-10.5,-50.5,Amazonia & Northern South America,B1,T4,Nuclear-Macro-Je,61,26.6,1742,other,T4,B1→T4
+Tapirape,-12.5,-51.5,Amazonia & Northern South America,B1,T2,Tupian,33,26.1,1600,T2,other,B1→T2
+Cayapo,-8.0,-51.0,Amazonia & Northern South America,B1,T4,Nuclear-Macro-Je,102,25.2,1953,other,T4,B1→T4
+"Suya,Txukarramae",-13.0,-52.0,Amazonia & Northern South America,B1,T4,,35,25.1,1550,other,T4,B1→T4
+"Ramkokamekra,Apaniekra",-6.5,-44.5,Amazonia & Northern South America,B1,T4,,50,25.7,1351,other,T4,B1→T4
+Craho,-8.3,-48.0,Amazonia & Northern South America,B1,T4,,57,25.6,1658,other,T4,B1→T4
+Crenye,-4.0,-45.0,Amazonia & Northern South America,B1,T2,,11,27.5,1678,T2,other,B1→T2
+Apinaye,-6.0,-48.0,Amazonia & Northern South America,B1,T4,Nuclear-Macro-Je,68,25.3,1589,other,T4,B1→T4
+Shavante,-14.0,-51.7,Amazonia & Northern South America,B1,T4,Nuclear-Macro-Je,26,25.5,1533,other,T4,B1→T4
+Sherente,-10.5,-48.0,Amazonia & Northern South America,B1,T4,Nuclear-Macro-Je,31,24.0,1564,other,T4,B1→T4
+Kariri,-11.5,-40.3,Amazonia & Northern South America,B4,T4,,7,23.3,764,other,T4,other
+Ofaie,-22.0,-53.0,Amazonia & Northern South America,B1,T5,,23,22.5,1264,other,other,other
+Guarani,-25.5,-54.0,Amazonia & Northern South America,B1,T1,Tupian,81,19.7,1766,other,other,other
+Ache,-25.0,-55.5,Amazonia & Northern South America,B1,T2,Tupian,17,21.8,1582,T2,other,B1→T2
+Kaingang,-24.5,-50.0,Amazonia & Northern South America,B1,T4,,26,16.6,1526,other,T4,B1→T4
+Sheta,-25.5,-51.5,Amazonia & Northern South America,B4,T2,Tupian,6,15.8,1701,T2,other,other
+Botocudo,-17.0,-41.0,Amazonia & Northern South America,B1,T2,Nuclear-Macro-Je,37,23.7,965,T2,other,B1→T2
+Kamakan,-14.5,-40.5,Amazonia & Northern South America,B1,T2,,13,19.6,606,T2,other,B1→T2
+Maxakali,-18.0,-42.0,Amazonia & Northern South America,B1,T2,,12,22.8,1093,T2,other,B1→T2
+Caduveo,-22.0,-57.0,Southern South America,B1,T4,Guaicuruan,50,23.5,1354,other,T4,B1→T4
+Tereno,-19.5,-57.0,Southern South America,B1,T4,,15,25.5,1196,other,T4,B1→T4
+Ayoreo,-20.0,-60.0,Southern South America,B1,T4,,40,26.0,663,other,T4,B1→T4
+Chamacoco,-21.0,-59.0,Southern South America,B1,T4,Zamucoan,107,25.5,816,other,T4,B1→T4
+Nivakle,-23.0,-60.5,Southern South America,B1,T1,,104,23.8,625,other,other,other
+Chorote,-21.5,-62.0,Southern South America,B1,T4,Mataguayan,91,24.3,492,other,T4,B1→T4
+Mataco,-23.3,-63.0,Southern South America,B1,T1,Mataguayan,126,23.2,855,other,other,other
+Makka,-23.5,-59.0,Southern South America,B1,T1,,80,23.6,917,other,other,other
+"Lengua, Sanapana",-24.0,-59.5,Southern South America,B1,T4,Lengua-Mascoy,36,23.3,916,other,T4,B1→T4
+Toba,-26.0,-59.0,Southern South America,B1,T4,Guaicuruan,132,22.1,1165,other,T4,B1→T4
+Mocovi,-27.5,-62.0,Southern South America,B1,T2,,86,20.9,784,T2,other,B1→T2
+Vilela,-24.5,-64.5,Southern South America,B1,T1,,11,19.1,712,other,other,other
+Mapuche,-39.0,-72.5,Southern South America,B1,T4,Araucanian,36,11.3,2146,other,T4,B1→T4
+Puelche,-42.0,-67.5,Southern South America,B1,T2,,9,10.3,196,T2,other,B1→T2
+Tehuelche,-47.0,-69.0,Southern South America,B4,T4,Chonan,58,10.8,232,other,T4,other
+Selknam,-54.5,-68.5,Southern South America,B1,T2,Chonan,32,4.2,487,T2,other,B1→T2
+Yamana,-55.0,-71.0,Southern South America,B1,T4,,43,4.3,1395,other,T4,B1→T4

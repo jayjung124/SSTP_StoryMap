@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Macroarea composition of the B1 split | The Shape of Myth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storymap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <script src="mythdata.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#geography">Skip to figure</a>
+<main class="wrap">
+  <header class="figure-head">
+    <p class="kicker">Contextual audit · Figure 5</p>
+    <h1 class="chart-title">The B1 reorganization is geographically patterned</h1>
+    <p class="chart-sub">Among B1 entries, <strong>B1∩T4 (n=148)</strong> is more geographically concentrated: 90 records (60.8%) have catalogue locations in Amazonia and Northern South America. <strong>B1∩T2 (n=162)</strong> is distributed across several macroareas. This pattern does not establish origin, migration, borrowing, or independent recurrence.</p>
+  </header>
+
+  <section class="controls" aria-label="Geography chart controls">
+    <div class="control-group">
+      <span class="control-label" id="geo-view-label">View</span>
+      <div class="seg" id="geo-controls" role="group" aria-labelledby="geo-view-label">
+        <button type="button" data-value="share" aria-pressed="true">Composition within each subset</button>
+        <button type="button" data-value="residual" aria-pressed="false">Adjusted residual</button>
+      </div>
+    </div>
+  </section>
+
+  <figure class="figure-frame">
+    <div id="geography" class="plot"></div>
+    <figcaption class="sr-only">Interactive macroarea comparison of B1 entries assigned to T2 and T4.</figcaption>
+  </figure>
+  <div class="legend">
+    <span class="it"><span class="sw" style="background:var(--T2)"></span>B1∩T2 (n=162)</span>
+    <span class="it"><span class="sw" style="background:var(--T4)"></span>B1∩T4 (n=148)</span>
+  </div>
+  <p class="figure-note"><strong>Scope and uncertainty.</strong> The chart uses the 310 B1 records in the two principal split cells—not all of T2 (n=204) or all of T4 (n=164). The 12×2 composition association is large descriptively (χ²=94.53, df=11; Cramér’s V=0.552). Residual magnitudes near or above 2 are exploratory cell diagnostics, not multiplicity-corrected tests. Recorded-motif counts also differ (means 35.3 vs 61.1), so geography, catalogue coverage, and representation remain entangled.</p>
+  <div class="data-row"><a href="data/traditions.csv" download>Download row-level data (CSV)</a><a href="data/audit_manifest.json">Read the verification manifest</a></div>
+  <details class="data-details"><summary>Accessible table of macroarea counts and shares</summary><div class="table-wrap"><table class="data-table" id="geo-table"><caption>Composition of B1∩T2 and B1∩T4 by macroarea</caption><thead><tr><th>Macroarea</th><th>B1∩T2 count</th><th>B1∩T2 share</th><th>B1∩T4 count</th><th>B1∩T4 share</th><th>T4 residual</th></tr></thead><tbody></tbody></table></div></details>
+</main>
+
+<script>
+'use strict';
+const D=window.MYTHDATA;
+const SOURCE=D.macro.slice();
+let view='share';
+
+function wrapLabel(label){
+  if(!window.matchMedia('(max-width:700px)').matches)return label;
+  const words=label.split(' ');let first='',second='';
+  words.forEach(word=>{if(first.length+word.length<19)first+=(first?' ':'')+word;else second+=(second?' ':'')+word;});
+  return `${first}<br>${second}`;
+}
+function draw(){
+  const rows=SOURCE.slice();
+  if(view==='share')rows.sort((a,b)=>(b.T2s+b.T4s)-(a.T2s+a.T4s));
+  else rows.sort((a,b)=>b.T4res-a.T4res);
+  const y=rows.map(row=>wrapLabel(row.area));
+  let traces,title,shapes=[];
+  if(view==='share'){
+    traces=[
+      {type:'bar',orientation:'h',name:'B1∩T2',y,x:rows.map(r=>-r.T2s),marker:{color:D.cpal.T2},customdata:rows.map(r=>[r.T2c,r.T2s]),hovertemplate:'<b>B1∩T2 · %{y}</b><br>%{customdata[0]} records · %{customdata[1]:.1%}<extra></extra>'},
+      {type:'bar',orientation:'h',name:'B1∩T4',y,x:rows.map(r=>r.T4s),marker:{color:D.cpal.T4},customdata:rows.map(r=>[r.T4c,r.T4s]),hovertemplate:'<b>B1∩T4 · %{y}</b><br>%{customdata[0]} records · %{customdata[1]:.1%}<extra></extra>'}
+    ];title='← share of B1∩T2   |   share of B1∩T4 →';
+  }else{
+    traces=[{type:'bar',orientation:'h',y,x:rows.map(r=>r.T4res),marker:{color:rows.map(r=>r.T4res>=0?D.cpal.T4:D.cpal.T2)},customdata:rows.map(r=>[r.T2c,r.T4c]),hovertemplate:'<b>%{y}</b><br>adjusted residual %{x:.2f}<br>B1∩T2 %{customdata[0]} · B1∩T4 %{customdata[1]}<extra></extra>',showlegend:false}];
+    title='← enriched toward B1∩T2   |   enriched toward B1∩T4 →';
+    shapes=[-2,2].map(value=>({type:'line',x0:value,x1:value,y0:-.5,y1:rows.length-.5,line:{dash:'dot',width:1,color:'#8e877b'}}));
+  }
+  const mobile=window.matchMedia('(max-width:700px)').matches;
+  Plotly.react('geography',traces,{height:mobile?650:590,barmode:view==='share'?'overlay':'relative',bargap:.28,margin:{l:mobile?150:245,r:25,t:8,b:50},paper_bgcolor:'#fffefd',plot_bgcolor:'#fffefd',xaxis:{title,tickformat:view==='share'?'.0%':'.1f',tickvals:view==='share'?[-.6,-.4,-.2,0,.2,.4,.6]:undefined,ticktext:view==='share'?['60%','40%','20%','0','20%','40%','60%']:undefined,gridcolor:'#e7e0d5',zeroline:true,zerolinecolor:'#6f6b64',range:view==='residual'?[-10,10]:undefined},yaxis:{autorange:'reversed',tickfont:{size:mobile?9:11}},shapes,showlegend:false,hoverlabel:{bgcolor:'#20201e',font:{color:'#fff'}}},STORYMAP.plotConfig);
+}
+
+STORYMAP.bindSegment(document.getElementById('geo-controls'),button=>{view=button.dataset.value;draw();});
+document.querySelector('#geo-table tbody').innerHTML=SOURCE.map(row=>`<tr><td>${STORYMAP.escape(row.area)}</td><td>${row.T2c}</td><td>${(row.T2s*100).toFixed(1)}%</td><td>${row.T4c}</td><td>${(row.T4s*100).toFixed(1)}%</td><td>${row.T4res.toFixed(2)}</td></tr>`).join('');
+STORYMAP.ariaPlot('geography','Interactive macroarea composition chart for the B1 to T2 and T4 split');
+draw();
+window.addEventListener('resize',draw,{passive:true});
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Latitude distributions | The Shape of Myth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storymap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <script src="mythdata.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#latitudes">Skip to figure</a>
+<main class="wrap">
+  <header class="figure-head">
+    <p class="kicker">Spatial distribution · Figure 7</p>
+    <h1 class="chart-title">The partitions occupy different latitude bands</h1>
+    <p class="chart-sub">These ridgelines summarize the latitude of all catalogue reference points in each community. In the topic partition, T2 is broadly distributed while T4 is concentrated nearer the equator. This is a spatial association with the classification, not a history of transmission.</p>
+  </header>
+
+  <section class="controls" aria-label="Latitude chart controls">
+    <div class="control-group">
+      <span class="control-label" id="latitude-network-label">Partition</span>
+      <div class="seg" id="partition-controls" role="group" aria-labelledby="latitude-network-label">
+        <button type="button" data-value="topic" aria-pressed="true">Topic communities</button>
+        <button type="button" data-value="binary" aria-pressed="false">Binary communities</button>
+      </div>
+    </div>
+    <div class="control-group"><label class="control-label" for="bandwidth">Smoothing bandwidth</label><select class="select" id="bandwidth"><option value="4">4°</option><option value="6" selected>6°</option><option value="10">10°</option></select></div>
+  </section>
+
+  <figure class="figure-frame">
+    <div id="latitudes" class="plot"></div>
+    <figcaption class="sr-only">Ridgeline density distributions of catalogue latitude by topic or binary community.</figcaption>
+  </figure>
+  <p class="figure-note"><strong>How it is calculated.</strong> Each ridge is a Gaussian kernel density estimate using the selected bandwidth. All ridges share one density scale, so a narrower distribution can form a taller peak. The dashed line marks the equator. The points are catalogue reference locations; they are not origins, homelands, or complete areas of cultural practice.</p>
+  <div class="data-row"><a href="data/traditions.csv" download>Download plotted coordinates (CSV)</a><a href="data/audit_manifest.json">Read the verification manifest</a></div>
+  <details class="data-details"><summary>Accessible table of community latitude summaries</summary><div class="table-wrap"><table class="data-table" id="latitude-table"><caption>Community size and median reference-point latitude</caption><thead><tr><th>Community</th><th>Records</th><th>Median latitude</th><th>Mean temperature</th><th>Mean precipitation</th></tr></thead><tbody></tbody></table></div></details>
+</main>
+
+<script>
+'use strict';
+const D=window.MYTHDATA;
+const N=D.nodes;
+let partition='topic';
+let bandwidth=6;
+const grid=[];for(let value=-58;value<=82;value+=1.2)grid.push(value);
+
+function median(values){
+  const sorted=values.slice().sort((a,b)=>a-b),middle=Math.floor(sorted.length/2);
+  return sorted.length%2?sorted[middle]:(sorted[middle-1]+sorted[middle])/2;
+}
+function kde(values){
+  const inverse=1/(bandwidth*Math.sqrt(2*Math.PI));
+  return grid.map(point=>values.reduce((sum,value)=>{const z=(point-value)/bandwidth;return sum+Math.exp(-.5*z*z);},0)*inverse/values.length);
+}
+function draw(){
+  const isTopic=partition==='topic';
+  const prefix=isTopic?'T':'B';
+  const keys=isTopic?[1,2,3,4,5]:[1,2,3,4];
+  const groups=keys.map(key=>{const values=N.filter(d=>(isTopic?d.t:d.b)===key).map(d=>d.lat);const density=kde(values);return {key,label:`${prefix}${key}`,values,density,median:median(values),n:values.length,max:Math.max(...density)};}).sort((a,b)=>b.median-a.median);
+  const scale=.9/Math.max(...groups.map(g=>g.max));
+  const traces=[],ticks=[],labels=[];
+  groups.forEach((group,index)=>{
+    const base=(groups.length-1-index);
+    const x=grid.concat(grid.slice().reverse());
+    const y=group.density.map(value=>base+value*scale).concat(grid.map(()=>base).reverse());
+    const color=D.cpal[group.label];
+    traces.push({type:'scatter',mode:'lines',x,y,fill:'toself',fillcolor:STORYMAP.hexAlpha(color,.7),line:{color,width:1.3},hoverinfo:'skip',showlegend:false});
+    traces.push({type:'scatter',mode:'markers',x:[group.median],y:[base+.3],marker:{size:14,color:'rgba(0,0,0,0)'},customdata:[[group.label,group.n,group.median]],hovertemplate:'<b>%{customdata[0]}</b><br>n=%{customdata[1]}<br>median %{customdata[2]:.1f}°<extra></extra>',showlegend:false});
+    ticks.push(base);labels.push(`${group.label} · n=${group.n}`);
+  });
+  const mobile=window.matchMedia('(max-width:700px)').matches;
+  Plotly.react('latitudes',traces,{height:mobile?470:560,margin:{l:mobile?82:105,r:18,t:8,b:50},paper_bgcolor:'#fffefd',plot_bgcolor:'#fffefd',xaxis:{title:'Latitude of catalogue reference point',range:[-58,82],gridcolor:'#e7e0d5',zeroline:false,tickvals:[-40,-20,0,20,40,60,80],ticktext:['40°S','20°S','0°','20°N','40°N','60°N','80°N']},yaxis:{tickvals:ticks,ticktext:labels,range:[-.35,groups.length+.05],tickfont:{size:mobile?9.5:11,family:'Georgia'},zeroline:false},shapes:[{type:'line',x0:0,x1:0,y0:-.35,y1:groups.length,line:{dash:'dot',width:1.2,color:'#8f2d1d'}}],showlegend:false,hoverlabel:{bgcolor:'#20201e',font:{color:'#fff'}}},STORYMAP.plotConfig);
+}
+
+STORYMAP.bindSegment(document.getElementById('partition-controls'),button=>{partition=button.dataset.value;draw();});
+document.getElementById('bandwidth').addEventListener('change',event=>{bandwidth=Number(event.target.value);draw();});
+const topicRows=[1,2,3,4,5].map(k=>({key:`T${k}`,...D.latStats[k]}));
+const binaryRows=[1,2,3,4].map(k=>({key:`B${k}`,...D.binStats[`B${k}`]}));
+document.querySelector('#latitude-table tbody').innerHTML=topicRows.concat(binaryRows).map(row=>`<tr><td>${row.key}</td><td>${row.n}</td><td>${row.medLat>0?`${row.medLat.toFixed(1)}°N`:`${Math.abs(row.medLat).toFixed(1)}°S`}</td><td>${row.temp.toFixed(1)}°C</td><td>${Math.round(row.precip)} mm</td></tr>`).join('');
+STORYMAP.ariaPlot('latitudes','Interactive latitude-density ridgelines by topic or binary community');
+draw();
+window.addEventListener('resize',draw,{passive:true});
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+family,metric,value,direction,range,chance_baseline,recommended_role,interpretation
+Pair counting,Rand index,0.7558344521627459,symmetric,0 to 1,0.6215106024077098,descriptive,Agreement on same-together and different-apart pairs; inflated by the many different-apart pairs.
+Pair counting,Adjusted Rand index,0.3548946168889256,symmetric,chance baseline 0; maximum 1,0.0,primary effect size,Chance-corrected pair agreement under fixed community sizes.
+Pair counting,z-Rand,151.1127162449348,symmetric,unbounded z score,0.0,primary standardized test statistic,Standardized excess of same-community pairs under the fixed-margin null; not an agreement percentage.
+Pair counting,Pair Jaccard,0.3462699816828062,symmetric,0 to 1,,supporting,Overlap among pairs coassigned by at least one partition; excludes different-apart pairs.
+Pair counting,Fowlkes-Mallows,0.5186991138376222,symmetric,0 to 1,,supporting,Geometric mean of directional coassignment precision and recall.
+Pair counting,Pair Dice,0.5144138789308468,symmetric,0 to 1,,supporting,Harmonic mean of directional coassignment precision and recall.
+Pair counting,Binary-pair retention in topic,0.45592907824769935,binary to topic,0 to 1,,directional interpretation,Fraction of binary-coassigned pairs that remain together in the topic partition.
+Pair counting,Topic-pair confirmation by binary,0.5901110140418913,topic to binary,0 to 1,,directional interpretation,Fraction of topic-coassigned pairs that are also together in the binary partition.
+Information theory,Mutual information (nats),0.5626283174643183,symmetric,0 to min entropy,0.006527796789408675,supporting,Shared information between the two labelings.
+Information theory,NMI (arithmetic),0.3915607093533514,symmetric,0 to 1,,requested descriptive effect,2I/(H_B+H_T); normalization is stated because NMI has multiple variants.
+Information theory,AMI (arithmetic),0.3887839458076653,symmetric,chance baseline 0; maximum 1,0.0,primary effect size,NMI-like agreement corrected for expected mutual information under fixed margins.
+Information theory,Variation of information (nats),1.7485164685754353,symmetric distance,0 identical; larger is more different,0.0,primary distance,Information lost and gained when moving between partitions; a true metric.
+Information theory,Normalized VI,0.756558602099349,symmetric distance,0 identical to 1,0.0,supporting distance,VI divided by joint entropy.
+Information theory,Normalized information distance,0.6384352783205605,symmetric distance,0 identical to 1,0.0,supporting distance,"1-I/max(H_B,H_T)."
+Information theory,Topic homogeneity wrt binary,0.4269839836454188,topic to binary,0 to 1,,directional interpretation,Whether each topic community contains mainly one binary label.
+Information theory,Topic completeness wrt binary,0.36156472167943954,binary to topic,0 to 1,,directional interpretation,Whether each binary community is kept within one topic community.
+Information theory,V-measure,0.39156070935335147,symmetric,0 to 1,,redundancy check,Harmonic mean of homogeneity and completeness; exactly equals arithmetic NMI here.
+Element averaged,BCubed precision,0.6145902898168186,topic to binary,0 to 1,,primary directional,Average per-tradition precision of topic clusters against binary labels.
+Element averaged,BCubed recall,0.4709349672140386,binary to topic,0 to 1,,primary directional,Average per-tradition recovery of binary cluster mates in the topic partition.
+Element averaged,BCubed F1,0.5332571602739273,symmetric summary,0 to 1,,supporting effect,Harmonic mean of BCubed precision and recall.
+Cluster matching,Topic to binary purity,0.7570194384449244,topic to binary,0 to 1,,descriptive only,Each topic community is mapped independently to its dominant binary community; biased upward by more clusters.
+Cluster matching,Binary to topic purity,0.5971922246220303,binary to topic,0 to 1,,descriptive only,Each binary community is mapped independently to its dominant topic community.
+Cluster matching,Optimal one-to-one matched share,0.5971922246220303,one-to-one,0 to 1,,supporting,Maximum share retained after a rectangular Hungarian label match; one topic community remains unmatched.

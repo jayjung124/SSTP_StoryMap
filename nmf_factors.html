@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Theme contrasts within the B1 split | The Shape of Myth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storymap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <script src="mythdata.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#factors">Skip to figure</a>
+<main class="wrap">
+  <header class="figure-head">
+    <p class="kicker">Principal divergence · Figure 4</p>
+    <h1 class="chart-title">The B1 split is clearer at the level of broad themes</h1>
+    <p class="chart-sub">This comparison is restricted to <strong>B1∩T2 (n=162)</strong> and <strong>B1∩T4 (n=148)</strong>. T2 has larger mean shares for Sun, Moon, and world-structure factors; T4 has larger shares for first beings and landscape factors. These are post-clustering descriptions, not independent confirmation.</p>
+  </header>
+
+  <section class="controls" aria-label="Theme chart controls">
+    <div class="control-group">
+      <span class="control-label" id="theme-view-label">Measure</span>
+      <div class="seg" id="view-controls" role="group" aria-labelledby="theme-view-label">
+        <button type="button" data-value="shares" aria-pressed="true">Mean factor share</button>
+        <button type="button" data-value="clr" aria-pressed="false">CLR contrast</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="control-label" id="theme-sort-label">Order</span>
+      <div class="seg" id="sort-controls" role="group" aria-labelledby="theme-sort-label">
+        <button type="button" data-value="effect" aria-pressed="true">Largest contrast</button>
+        <button type="button" data-value="factor" aria-pressed="false">Factor number</button>
+      </div>
+    </div>
+  </section>
+
+  <figure class="figure-frame">
+    <div id="factors" class="plot"></div>
+    <figcaption class="sr-only">Interactive comparison of 15 semantic-factor profiles for B1 entries assigned to T2 and T4.</figcaption>
+  </figure>
+  <div class="legend">
+    <span class="it"><span class="sw" style="background:var(--T2)"></span>B1∩T2 (n=162)</span>
+    <span class="it"><span class="sw" style="background:var(--T4)"></span>B1∩T4 (n=148)</span>
+    <span class="it">◆ Holm-significant under all three permutation schemes (4 factors)</span>
+    <span class="it">○ joint-restricted BH q&lt;.05 only (2 additional factors)</span>
+  </div>
+  <p class="figure-note"><strong>Robustness matters more than a star.</strong> Four factors—F3, F5, F9, and F10—remain Holm-significant under unrestricted, macroarea-restricted, and macroarea × documentation-quartile permutations. F13 and F14 meet the joint-restricted BH threshold but not that stricter all-schemes standard. At the individual-motif level, BH-significant contrasts fall from 232 without restriction to 8 within macroarea and 0 within macroarea × documentation quartile. This supports a stable aggregate-theme distinction while warning against strong claims about particular motifs. Factor labels are analyst summaries of English catalogue title-and-gloss terms.</p>
+  <div class="data-row"><a href="data/traditions.csv" download>Download row-level assignments (CSV)</a><a href="data/audit_manifest.json">Read the verification manifest</a></div>
+  <details class="data-details"><summary>Accessible table of all 15 factor contrasts</summary><div class="table-wrap"><table class="data-table" id="factor-table"><caption>Mean shares, CLR contrasts, and robustness status</caption><thead><tr><th>Factor</th><th>Label</th><th>B1∩T2 mean</th><th>B1∩T4 mean</th><th>CLR Δ T2−T4</th><th>Status</th></tr></thead><tbody></tbody></table></div></details>
+</main>
+
+<script>
+'use strict';
+const D=window.MYTHDATA;
+const SOURCE=D.theme.slice();
+let view='shares';
+let order='effect';
+
+function status(row){return row.robustAllHolm?'◆':row.jointBHOnly?'○':'';}
+function tickLabel(row){
+  const marker=status(row);
+  const label=`F${row.f} ${row.lab}`;
+  if(!window.matchMedia('(max-width:700px)').matches) return `${label}${marker?`  ${marker}`:''}`;
+  const words=label.split(' ');let first='',second='';
+  words.forEach(word=>{if(first.length+word.length<20) first+=(first?' ':'')+word;else second+=(second?' ':'')+word;});
+  return `${first}<br>${second}${marker?` ${marker}`:''}`;
+}
+function rows(){
+  const result=SOURCE.slice();
+  if(order==='factor') result.sort((a,b)=>a.f-b.f);
+  else result.sort((a,b)=>Math.abs(b.clrDiff)-Math.abs(a.clrDiff));
+  return result;
+}
+function draw(){
+  const data=rows();
+  const y=data.map(tickLabel);
+  let traces,axisTitle;
+  if(view==='shares'){
+    traces=[
+      {type:'bar',orientation:'h',name:'B1∩T2',y,x:data.map(r=>r.sT2),marker:{color:D.cpal.T2},customdata:data.map(r=>[r.f,r.lab]),hovertemplate:'<b>F%{customdata[0]} %{customdata[1]}</b><br>B1∩T2 mean share %{x:.3f}<extra></extra>'},
+      {type:'bar',orientation:'h',name:'B1∩T4',y,x:data.map(r=>r.sT4),marker:{color:D.cpal.T4},customdata:data.map(r=>[r.f,r.lab]),hovertemplate:'<b>F%{customdata[0]} %{customdata[1]}</b><br>B1∩T4 mean share %{x:.3f}<extra></extra>'}
+    ];axisTitle='Mean factor share';
+  }else{
+    traces=[{type:'bar',orientation:'h',y,x:data.map(r=>r.clrDiff),marker:{color:data.map(r=>r.clrDiff>=0?D.cpal.T2:D.cpal.T4)},customdata:data.map(r=>[r.f,r.lab,r.qJoint,r.pHolmJoint]),hovertemplate:'<b>F%{customdata[0]} %{customdata[1]}</b><br>CLR difference %{x:.3f}<br>joint BH q=%{customdata[2]:.3g}<br>joint Holm p=%{customdata[3]:.3g}<extra></extra>',showlegend:false}];axisTitle='CLR difference: B1∩T2 − B1∩T4';
+  }
+  const mobile=window.matchMedia('(max-width:700px)').matches;
+  Plotly.react('factors',traces,{height:mobile?680:650,barmode:'group',bargap:.26,bargroupgap:.1,margin:{l:mobile?150:245,r:18,t:8,b:48},paper_bgcolor:'#fffefd',plot_bgcolor:'#fffefd',xaxis:{title:axisTitle,tickformat:view==='shares'?'.0%':'.2f',gridcolor:'#e7e0d5',zeroline:view==='clr',zerolinecolor:'#6f6b64'},yaxis:{autorange:'reversed',tickfont:{size:mobile?9.5:11}},showlegend:false,hoverlabel:{bgcolor:'#20201e',font:{color:'#fff'}}},STORYMAP.plotConfig);
+}
+
+STORYMAP.bindSegment(document.getElementById('view-controls'),button=>{view=button.dataset.value;draw();});
+STORYMAP.bindSegment(document.getElementById('sort-controls'),button=>{order=button.dataset.value;draw();});
+document.querySelector('#factor-table tbody').innerHTML=SOURCE.map(row=>`<tr><td>F${row.f}</td><td>${STORYMAP.escape(row.lab)}</td><td>${(row.sT2*100).toFixed(2)}%</td><td>${(row.sT4*100).toFixed(2)}%</td><td>${row.clrDiff.toFixed(3)}</td><td>${row.robustAllHolm?'Robust under all Holm schemes':row.jointBHOnly?'Joint-restricted BH only':'Not highlighted'}</td></tr>`).join('');
+STORYMAP.ariaPlot('factors','Interactive theme-factor comparison for the B1 to T2 and T4 split');
+draw();
+window.addEventListener('resize',draw,{passive:true});
+</script>
+</body>
+</html>

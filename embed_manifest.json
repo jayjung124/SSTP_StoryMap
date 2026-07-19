@@ -1,0 +1,14 @@
+{
+  "host": "https://jayjung124.github.io/SSTP_StoryMap/",
+  "embed_query": "?embed=1",
+  "figures": [
+    {"order": 1, "label": "Catalogue locations", "file": "map_traditions.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/map_traditions.html?embed=1", "title": "Interactive map of 926 catalogue reference locations", "scope": "926 catalogue records; points are reference locations, not origins", "size": "large"},
+    {"order": 2, "label": "Paired network explorer", "file": "network_explorer.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/network_explorer.html?embed=1", "title": "Interactive exact-motif and semantic-topic network explorer", "scope": "same 926 nodes; representation, graph construction, and Leiden resolution differ", "size": "large"},
+    {"order": 3, "label": "Partition overlap", "file": "overlap_heatmap.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/overlap_heatmap.html?embed=1", "title": "Interactive cross-tabulation of binary and topic communities", "scope": "all 926 records", "size": "large"},
+    {"order": 4, "label": "Theme contrasts", "file": "nmf_factors.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/nmf_factors.html?embed=1", "title": "Interactive 15-factor comparison of the principal B1 split", "scope": "B1 intersection T2 n=162 versus B1 intersection T4 n=148", "size": "large"},
+    {"order": 5, "label": "Macroarea audit", "file": "geo_divergence.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/geo_divergence.html?embed=1", "title": "Interactive macroarea composition of the principal B1 split", "scope": "B1 intersection T2 n=162 versus B1 intersection T4 n=148", "size": "large"},
+    {"order": 6, "label": "Modern climate context", "file": "climate_scatter.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/climate_scatter.html?embed=1", "title": "Interactive modern temperature and precipitation context", "scope": "default highlights full T2 n=204 and full T4 n=164", "size": "large"},
+    {"order": 7, "label": "Latitude distributions", "file": "latitude_ridgelines.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/latitude_ridgelines.html?embed=1", "title": "Interactive latitude distributions by analytical community", "scope": "full communities; catalogue reference points", "size": "large"},
+    {"order": 8, "label": "Community profiles", "file": "community_profiles.html", "url": "https://jayjung124.github.io/SSTP_StoryMap/community_profiles.html?embed=1", "title": "Interactive profiles of the nine analytical communities", "scope": "full B1-B4 or provisional T1-T5 communities", "size": "large"}
+  ]
+}

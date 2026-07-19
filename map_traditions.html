@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catalogue locations of 926 traditions | The Shape of Myth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storymap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <script src="mythdata.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#map">Skip to figure</a>
+<main class="wrap">
+  <header class="figure-head">
+    <p class="kicker">Archive coverage · Figure 1</p>
+    <h1 class="chart-title">One catalogue, 926 reference locations</h1>
+    <p class="chart-sub">The points locate <strong>catalogue entries</strong>, not cultural origins or homelands. Recolor the same 926 records by broad macroarea or by either network partition. Community labels are analytical groupings, not cultural identities.</p>
+  </header>
+
+  <section class="controls" aria-label="Map controls">
+    <div class="control-group">
+      <span class="control-label" id="color-label">Color by</span>
+      <div class="seg" id="color-controls" role="group" aria-labelledby="color-label">
+        <button type="button" data-mode="area" aria-pressed="true">Macroarea (16)</button>
+        <button type="button" data-mode="binary" aria-pressed="false">Binary community</button>
+        <button type="button" data-mode="topic" aria-pressed="false">Topic community</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="tradition-search">Find a catalogue label</label>
+      <input class="select" id="tradition-search" list="tradition-list" placeholder="Type a label" autocomplete="off">
+      <datalist id="tradition-list"></datalist>
+    </div>
+  </section>
+
+  <figure class="figure-frame">
+    <div id="map" class="plot"></div>
+    <figcaption class="sr-only">A world map of the 926 catalogue reference locations. Controls switch among macroarea, binary-community, and topic-community colors.</figcaption>
+  </figure>
+  <div class="legend" id="legend" aria-label="Map legend"></div>
+  <p class="figure-note"><strong>Interpretive limit.</strong> Coordinates are reference points associated with catalogue records. They can reflect a named group, collection area, literary corpus, or editorial convention and should not be read as precise sites of origin. Uneven coverage and archival mediation remain part of the evidence.</p>
+  <div class="data-row"><a href="data/traditions.csv" download>Download the 926-row figure data (CSV)</a><a href="data/audit_manifest.json">Read the verification manifest</a></div>
+  <details class="data-details"><summary>Text summary of archive coverage</summary><div class="table-wrap"><table class="data-table" id="area-table"><caption>Catalogue records by broad macroarea</caption><thead><tr><th>Macroarea</th><th>Records</th><th>Share</th></tr></thead><tbody></tbody></table></div></details>
+</main>
+
+<script>
+'use strict';
+const D=window.MYTHDATA;
+const N=D.nodes;
+const AREA=D.areas;
+const CP=D.cpal;
+let mode='area';
+let selected=null;
+
+function groupsFor(current){
+  if(current==='area') return Object.keys(AREA).map(key=>({label:AREA[key].name,hex:AREA[key].hex,test:d=>String(d.a)===key}));
+  if(current==='binary') return [1,2,3,4].map(k=>({label:`B${k}`,hex:CP[`B${k}`],test:d=>d.b===k}));
+  return [1,2,3,4,5].map(k=>({label:`T${k}`,hex:CP[`T${k}`],test:d=>d.t===k}));
+}
+
+function draw(){
+  const groups=groupsFor(mode);
+  const traces=groups.map(group=>{
+    const points=N.filter(group.test);
+    return {
+      type:'scattergeo',mode:'markers',name:group.label,
+      lon:points.map(d=>d.lon),lat:points.map(d=>d.lat),
+      text:points.map(d=>`<b>${STORYMAP.escape(d.n)}</b><br>${STORYMAP.escape(AREA[d.a].name)}<br>Binary B${d.b} · Topic T${d.t}<br>${d.nm} recorded motifs${d.lf?`<br>Language family: ${STORYMAP.escape(d.lf)}`:''}`),
+      hovertemplate:'%{text}<extra></extra>',
+      marker:{size:6.7,color:group.hex,opacity:.83,line:{width:.45,color:'rgba(25,25,25,.55)'}}
+    };
+  });
+  if(selected){
+    traces.push({type:'scattergeo',mode:'markers',lon:[selected.lon],lat:[selected.lat],text:[`<b>${STORYMAP.escape(selected.n)}</b>`],hovertemplate:'%{text}<extra></extra>',showlegend:false,marker:{size:15,color:'#fff',line:{width:3,color:'#20201e'},symbol:'circle-open'}});
+  }
+  const height=STORYMAP.plotHeight(560,430);
+  Plotly.react('map',traces,{
+    height,
+    geo:{projection:{type:'natural earth'},showland:true,landcolor:'#ece6da',showocean:true,oceancolor:'#edf2f3',showcountries:true,countrycolor:'#d7d0c4',coastlinecolor:'#bbb3a6',showframe:false,bgcolor:'#fffefd',lataxis:{range:[-58,82]}},
+    margin:{l:0,r:0,t:4,b:0},paper_bgcolor:'#fffefd',showlegend:false,
+    hoverlabel:{bgcolor:'#20201e',bordercolor:'#20201e',font:{color:'#fff',size:12}}
+  },STORYMAP.plotConfig);
+  document.getElementById('legend').innerHTML=groups.map(g=>`<span class="it"><span class="sw" style="background:${g.hex}"></span>${STORYMAP.escape(g.label)}</span>`).join('');
+}
+
+STORYMAP.bindSegment(document.getElementById('color-controls'),button=>{mode=button.dataset.mode;draw();});
+const search=document.getElementById('tradition-search');
+document.getElementById('tradition-list').innerHTML=N.map(d=>`<option value="${STORYMAP.escape(d.n)}"></option>`).join('');
+search.addEventListener('change',()=>{
+  const query=search.value.trim().toLocaleLowerCase();
+  selected=query?N.find(d=>d.n.toLocaleLowerCase()===query)||N.find(d=>d.n.toLocaleLowerCase().includes(query)):null;
+  draw();
+});
+
+const counts={};N.forEach(d=>{counts[d.a]=(counts[d.a]||0)+1;});
+document.querySelector('#area-table tbody').innerHTML=Object.keys(AREA).map(key=>`<tr><td>${STORYMAP.escape(AREA[key].name)}</td><td>${counts[key]||0}</td><td>${((counts[key]||0)/N.length*100).toFixed(1)}%</td></tr>`).join('');
+STORYMAP.ariaPlot('map','Interactive world map of 926 catalogue reference locations');
+draw();
+window.addEventListener('resize',()=>draw(),{passive:true});
+</script>
+</body>
+</html>
