@@ -175,6 +175,21 @@ All excerpts below are 25 words or fewer.
 - **Curatorial context used:** The Met identifies the scene as a moment from Tulsidas’s *Ramcharitmanas* and notes his use of vernacular Awadhi rather than Sanskrit.
 - **Interpretive use:** shows narrative moving through vernacular poetry, devotion, and popular print.
 
+### Vishnu Narayana on the divine serpent Shesha print
+
+- **Title:** *Vishnu Narayana on the divine serpent Shesha (Shri Sheshanarayana)*
+- **Culture and geography:** India, Mumbai, Maharashtra
+- **Date:** 1886
+- **Material:** chromolithographic print on paper
+- **Object number:** 2012.523.5
+- **Holding institution:** The Metropolitan Museum of Art
+- **Item record:** <https://www.metmuseum.org/art/collection/search/78252>
+- **Direct image:** <https://images.metmuseum.org/CRDImages/as/original/DP-37142-001.jpg>
+- **Local file:** `assets/history/vishnu-shesha.jpg`
+- **Rights:** Public Domain; The Met Open Access
+- **Curatorial context used:** The Met identifies Vishnu stirring on the coils of the primordial sea serpent Shesha, a lotus bearing Brahma, and attendants including Lakshmi, Narada, Garuda, Hanuman, and Hayagriva.
+- **Interpretive use:** shows a cosmological scene of primordial water and first beings circulating through nineteenth-century color print. The story explicitly labels the object as modern and does not treat it as a universal creation image or as evidence used in the network analysis.
+
 ## Historical comparison and catalogue sources
 
 - Indiana University Department of Folklore and Ethnomusicology, [Folk 100 Initiative](https://folklore.indiana.edu/news-events/folk100/index.html). Used to verify that Thompson’s expanded English translation of Aarne appeared in 1928, that the *Motif-Index* first appeared in six volumes in the 1930s, and that Thompson revised it in the 1950s.
