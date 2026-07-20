@@ -54,12 +54,11 @@ button,a,summary{touch-action:manipulation}
 .story-section{padding:clamp(44px,4.5vw,72px) clamp(20px,4.5vw,76px);background:var(--surface);border-bottom:1px solid var(--rule)}
 .section-wrap{width:min(1460px,100%);margin:auto}
 .section-head{display:block;width:min(1280px,100%);margin:0 auto 48px;padding:0;text-align:center}
-.section-label{display:flex;align-items:center;gap:13px;margin:0 0 25px;text-align:left}
+.section-label{position:relative;left:50%;display:flex;align-items:center;gap:13px;width:min(1280px,calc(100vw - clamp(40px,9vw,152px)));margin:0 0 25px;transform:translateX(-50%);text-align:left}
 .section-label::after{content:"";flex:1;height:1px;background:currentColor;opacity:.45}
 .section-head h2{max-width:none;margin:0;font:700 clamp(1.2rem,1.75vw,1.85rem)/1.14 var(--heading);letter-spacing:-.025em}
 .section-head h2.section-label--only{margin:0;color:var(--rust-dark);font:850 .72rem/1.2 var(--body);letter-spacing:.14em;text-align:left;text-transform:uppercase}
 .section-body{width:min(880px,100%);margin:0 auto}
-.story-section--research .section-head{width:min(880px,100%)}
 .section-body--research{text-align:left}
 .section-body--research>p{text-align:left}
 .section-body--after-visual{margin-top:50px}
@@ -141,7 +140,7 @@ button,a,summary{touch-action:manipulation}
 .story-section--manifesto{background:var(--rust-dark);border-color:#9b5d28;color:#fff8ed}
 .story-section--manifesto .section-label{color:#f0cfaa}
 .story-section--manifesto .section-label::after{background:#f0cfaa}
-.story-section--manifesto .section-head{width:min(1120px,100%);text-align:left}
+.story-section--manifesto .section-head{width:min(1280px,100%);text-align:left}
 .story-section--manifesto .section-head h2{max-width:1100px;color:#fff8ed;font-size:clamp(2.8rem,5.8vw,5.4rem);line-height:.96;white-space:normal}
 .story-section--manifesto .section-body{width:min(1000px,100%)}
 .story-section--manifesto .lead{color:#f4e5d4}
@@ -235,7 +234,7 @@ button,a,summary{touch-action:manipulation}
   .hero-source{margin-top:24px}
   .story-section{padding:48px 18px}
   .section-head{width:100%;margin-bottom:36px;text-align:left}
-  .section-label{margin-bottom:17px}
+  .section-label{left:auto;width:100%;margin-bottom:17px;transform:none}
   .section-head h2{font-size:clamp(1.52rem,7vw,2.15rem);line-height:1.13}
   .story-section--manifesto .section-head h2{font-size:clamp(2.65rem,12.5vw,4.4rem);line-height:.98}
   .section-body{width:100%;margin-inline:0}
@@ -267,7 +266,7 @@ button,a,summary{touch-action:manipulation}
   .site-hero{background-image:none!important}
   .hero-panel{box-shadow:none}
   .section-head{display:block;margin-bottom:24px}
-  .section-label{margin-bottom:9px}
+  .section-label{left:auto;width:100%;margin-bottom:9px;transform:none}
   .section-head h2{white-space:normal}
   .section-body,.network-chapter{width:100%;margin:0;transform:none}
   .network-chapter{display:block}
