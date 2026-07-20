@@ -10,6 +10,14 @@ The historical photographs and museum objects are **contextual counterpoints**, 
 
 Public-domain or no-known-restrictions status concerns copyright and reuse. It does not settle cultural authority, appropriate use, provenance, or community permission. The story therefore retains item-level attribution, avoids using cultural objects beside algorithmic cluster descriptions, and links readers to [Local Contexts Traditional Knowledge Labels](https://localcontexts.org/labels/traditional-knowledge-labels/), the [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/careprinciples), the [American Folklore Society ethics statement](https://americanfolkloresociety.org/our-work/position-statement-ethics/), and the Smithsonian Center for Folklife and Cultural Heritage’s work on [shared stewardship and ethical returns](https://folklife.si.edu/archives/shared-stewardship-ethical-returns).
 
+## Living heritage framing
+
+- UNESCO, [What Is Intangible Cultural Heritage?](https://ich.unesco.org/en/what-is-intangible-heritage-00003). Used for the opening distinction between a fixed cultural product and knowledge, skills, meaning, identity, continuity, and belonging sustained through living transmission.
+- UNESCO, [Oral Traditions and Expressions](https://ich.unesco.org/en/oral-traditions-and-expressions-00053) and [Transmission](https://ich.unesco.org/en/transmission-00078). Used for the claims that oral traditions vary in performance, that transmission continuously recreates them, and that documentation can support safeguarding without replacing person-to-person practice.
+- Smithsonian Center for Folklife and Cultural Heritage, [Smithsonian Folklife and Oral History Interviewing Guide](https://folklife.si.edu/the-smithsonian-folklife-and-oral-history-interviewing-guide/smithsonian) and [Glossary of Key Terms](https://folklife.si.edu/the-smithsonian-folklife-and-oral-history-interviewing-guide/a-glossary-of-key-terms/smithsonian). Used to frame expressive culture as learned through oral communication, imitation, observation, and performance.
+
+These sources support the story’s broad public-humanities framing. They are not inputs to the networks, do not establish one universal function of myth, and do not turn the linked individuals or communities into representatives of the catalogue’s algorithmic groups.
+
 ## Direct quotations
 
 All excerpts below are 25 words or fewer.
@@ -35,6 +43,7 @@ All excerpts below are 25 words or fewer.
 
 - Speaker: Juana Batz Puac, identified by the Smithsonian’s National Museum of the American Indian as a K’iche’ Maya Day Keeper.
 - Source: [“Creation Story of the Maya,” *Living Maya Time*](https://maya.nmai.si.edu/the-maya/creation-story-maya), National Museum of the American Indian.
+- Contemporary-media note: the source page provides English and Spanish navigation, embedded video, and a downloadable transcript. The story uses it as a concrete example of digital mediation that retains a named speaker and institutional source, not as a substitute for community transmission.
 - Boundary: this is a specific named community voice, not a universal statement about mythology and not evidence used in the network analysis.
 
 ### Michel-Rolph Trouillot
@@ -175,7 +184,8 @@ All excerpts below are 25 words or fewer.
 
 ## Heritage and ethics sources
 
-- UNESCO, [Oral Traditions and Expressions](https://ich.unesco.org/en/oral-traditions-and-expressions-00053). Used for the distinction between living processes of performance and static products.
+- UNESCO, [What Is Intangible Cultural Heritage?](https://ich.unesco.org/en/what-is-intangible-heritage-00003), [Oral Traditions and Expressions](https://ich.unesco.org/en/oral-traditions-and-expressions-00053), and [Transmission](https://ich.unesco.org/en/transmission-00078). Used for the distinction between living transmission and static products, and for the careful claim that documentation can support but cannot replace living practice.
+- Smithsonian Center for Folklife and Cultural Heritage, [Smithsonian Folklife and Oral History Interviewing Guide](https://folklife.si.edu/the-smithsonian-folklife-and-oral-history-interviewing-guide/smithsonian). Used to connect expressive culture with people, relationships, and performance rather than treating it as detached data.
 - Smithsonian Center for Folklife and Cultural Heritage, [A Glossary of Key Terms](https://folklife.si.edu/the-smithsonian-folklife-and-oral-history-interviewing-guide/a-glossary-of-key-terms/smithsonian). Used for its descriptions of community, culture, folklore/folklife, fieldwork, and tradition.
 - Smithsonian Center for Folklife and Cultural Heritage, [Shared Stewardship and Ethical Returns](https://folklife.si.edu/archives/shared-stewardship-ethical-returns). Used as an ethical orientation toward consultation, correction, and stewardship; it does not imply Smithsonian affiliation or endorsement.
 

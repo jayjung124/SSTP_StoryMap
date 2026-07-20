@@ -3,9 +3,8 @@
 
   const progressBar=document.querySelector('.reading-progress span');
   const navLinks=[...document.querySelectorAll('.chapter-links a[href^="#"]')];
-  const sections=navLinks
-    .map(link=>document.querySelector(link.getAttribute('href')))
-    .filter(Boolean);
+  const sections=[...document.querySelectorAll('main > section.chapter[id]')];
+  const chapterAliases={divergence:'backbone'};
   const frames=[...document.querySelectorAll('.interactive iframe')];
   const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -27,8 +26,9 @@
   }
 
   function markChapter(id){
+    const navId=chapterAliases[id]||id;
     navLinks.forEach(link=>{
-      const selected=link.getAttribute('href')===`#${id}`;
+      const selected=link.getAttribute('href')===`#${navId}`;
       link.classList.toggle('is-active',selected);
       if(selected)link.setAttribute('aria-current','location');
       else link.removeAttribute('aria-current');
