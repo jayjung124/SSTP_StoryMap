@@ -76,9 +76,8 @@ function draw(){
   if(selected){
     traces.push({type:'scattergeo',mode:'markers',lon:[selected.lon],lat:[selected.lat],text:[`<b>${STORYMAP.escape(selected.n)}</b>`],hovertemplate:'%{text}<extra></extra>',showlegend:false,marker:{size:15,color:'#fff',line:{width:3,color:'#20201e'},symbol:'circle-open'}});
   }
-  const height=STORYMAP.plotHeight(560,300);
   Plotly.react('map',traces,{
-    height,
+    autosize:true,
     geo:{projection:{type:'natural earth'},showland:true,landcolor:'#ece6da',showocean:true,oceancolor:'#edf2f3',showcountries:true,countrycolor:'#d7d0c4',coastlinecolor:'#bbb3a6',showframe:false,bgcolor:plotBackground,lataxis:{range:[-58,82]}},
     margin:{l:0,r:0,t:4,b:0},paper_bgcolor:plotBackground,plot_bgcolor:plotBackground,showlegend:false,uirevision:'traditions-map',
     hoverlabel:{bgcolor:'#20201e',bordercolor:'#20201e',font:{color:'#fff',size:12}}
@@ -99,10 +98,6 @@ const counts={};N.forEach(d=>{counts[d.a]=(counts[d.a]||0)+1;});
 document.querySelector('#area-table tbody').innerHTML=Object.keys(AREA).map(key=>`<tr><td>${STORYMAP.escape(AREA[key].name)}</td><td>${counts[key]||0}</td><td>${((counts[key]||0)/N.length*100).toFixed(1)}%</td></tr>`).join('');
 STORYMAP.ariaPlot('map','Interactive world map of 926 catalogue reference locations');
 draw();
-const plotBreakpoint=window.matchMedia('(max-width:700px)');
-const breakpointRedraw=()=>draw();
-if(plotBreakpoint.addEventListener)plotBreakpoint.addEventListener('change',breakpointRedraw);
-else plotBreakpoint.addListener(breakpointRedraw);
 </script>
 </body>
 </html>
