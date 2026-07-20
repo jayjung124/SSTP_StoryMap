@@ -180,7 +180,7 @@ The following images are retained here for provenance but are not used in the cu
 - **Curatorial context used:** The Met describes the manuscript as a collection of animal fables based on the ancient Indian *Panchatantra*. The tales spread widely through the Middle East; the folio is attributed to Gujarat, probably after an Egyptian model, and the manuscript also bears a Devanagari inscription.
 - **Interpretive use:** accompanies the literature-review passage because the object’s layered textual and geographic history makes translation, adaptation, and cross-cultural transmission materially visible. It is not presented as evidence used in the network analysis.
 
-## Additional archived visual candidates
+## Additional visual sources used in the current main narrative
 
 ### Maya vessel
 
@@ -195,9 +195,9 @@ The following images are retained here for provenance but are not used in the cu
 - **Direct image:** <https://images.metmuseum.org/CRDImages/ao/web-large/DP-576-001.jpg>
 - **Local file:** `assets/history/maya-vessel.jpg`
 - **Rights:** Public Domain; The Met Open Access
-- **Interpretive use:** makes clear that narrative may be painted on a used object rather than preserved as prose.
+- **Interpretive use:** makes clear that narrative may be painted on a ceramic vessel rather than preserved as prose.
 
-### Rama, Lakshmana, and Hanuman print — archived visual candidate
+### Rama, Lakshmana, and Hanuman print
 
 - **Title:** *Rama, Lakshmana, and Hanuman*
 - **Culture and geography:** India, Mumbai, Maharashtra
@@ -231,6 +231,7 @@ The following images are retained here for provenance but are not used in the cu
 
 ## Historical comparison and catalogue sources
 
+- Antti Aarne, [*Verzeichnis der Märchentypen*](https://www.deutsche-digitale-bibliothek.de/item/I2QH7RXL5IIRVCPGWFQOCE4A57MARAQ4) (Helsinki: Suomalainen Tiedeakatemia, 1910), digitized by the Hamburg State and University Library. Used to verify the timeline’s 1910 publication milestone; the story presents it as one selected point in a longer history of classification.
 - Robert M. Ross, Simon J. Greenhill, and Quentin D. Atkinson, [“Population structure and cultural geography of a folktale in Europe”](https://pmc.ncbi.nlm.nih.gov/articles/PMC3574383/), *Proceedings of the Royal Society B* 280 (2013), article 20123065. Used for the study of 700 variants of “The Kind and the Unkind Girls” from 31 European ethnolinguistic populations and its finding that geographic distance and ethnolinguistic identity independently predicted tale variation.
 - Sara Graça da Silva and Jamshid J. Tehrani, [“Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales”](https://pmc.ncbi.nlm.nih.gov/articles/PMC4736946/), *Royal Society Open Science* 3 (2016), article 150645. Used for the finding that the distribution of the studied Tales of Magic correlated strongly with linguistic phylogeny but not geographic proximity, supporting a substantial role for inheritance in their transmission.
 - Marc Thuillard, Jean-Loïc Le Quellec, Julien d’Huy, and Yuri Berezkin, [“A Large-Scale Study of World Myths”](https://kirj.ee/public/trames_pdf/2018/issue_4/Trames-2018-4-407-424.pdf), *Trames* 22, no. 4 (2018), 407–424, [doi:10.3176/tr.2018.4.05](https://doi.org/10.3176/tr.2018.4.05). Used for the finding that world mythologies exhibit geographic structure, while lateral cultural transmission makes a single line-of-descent model inadequate for the whole dataset. The story does not treat this as proof of a particular migration, shared ancestry, or causal history.
