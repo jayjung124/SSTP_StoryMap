@@ -158,9 +158,12 @@ button,a,summary{touch-action:manipulation}
 .story-section--manifesto .lead{color:#f4e5d4}
 .society-lead{max-width:880px;margin:0;color:#f4e5d4;font:400 clamp(1.08rem,1.35vw,1.28rem)/1.62 var(--heading);text-align:left!important;-webkit-hyphens:none!important;hyphens:none!important}
 .society-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:34px;border-top:1px solid rgba(240,207,170,.3)}
-.society-grid p{margin:0;padding:23px 0;color:#fff8ed;font-size:.96rem;line-height:1.68;text-align:left;overflow-wrap:break-word;border-bottom:1px solid rgba(240,207,170,.3)}
-.society-grid p:nth-child(odd){padding-right:30px}
-.society-grid p:nth-child(even){padding-left:30px;border-left:1px solid rgba(240,207,170,.3)}
+.society-point{padding:23px 0;border-bottom:1px solid rgba(240,207,170,.3)}
+.society-point:nth-child(odd){padding-right:30px}
+.society-point:nth-child(even){padding-left:30px;border-left:1px solid rgba(240,207,170,.3)}
+.society-point h3{display:flex;align-items:baseline;gap:12px;margin:0 0 12px;color:#f3d1a8;font:600 clamp(1.08rem,1.35vw,1.25rem)/1.25 var(--heading);letter-spacing:-.012em}
+.society-point h3 span{flex:0 0 auto;color:#f0cfaa;font:800 .68rem/1 var(--body);letter-spacing:.13em}
+.society-point p{margin:0;color:#fff8ed;font-size:.96rem;line-height:1.68;text-align:left;overflow-wrap:break-word}
 .story-section--manifesto .society-coda{width:min(900px,100%);margin:42px 0 0;padding:0 0 0 27px;transform:none;border-left:3px solid #f3d1a8}
 .story-section--manifesto .society-coda p{margin:0;color:#f3d1a8;font:600 clamp(1.25rem,1.8vw,1.75rem)/1.36 var(--heading);letter-spacing:-.016em;text-align:left}
 .story-section--manifesto .society-coda strong{font-weight:600}
@@ -241,6 +244,8 @@ button,a,summary{touch-action:manipulation}
   .methods-flow__step+.methods-flow__step{border-left:0}
   .methods-flow__step:not(:last-child)::after{display:none}
   .methods-flow__caveat{margin-top:18px!important;padding-top:0}
+  .society-grid{grid-template-columns:1fr}
+  .society-point,.society-point:nth-child(odd),.society-point:nth-child(even){padding-right:0;padding-left:0;border-left:0}
 }
 
 @media(max-width:760px){
@@ -267,8 +272,9 @@ button,a,summary{touch-action:manipulation}
   .section-body{width:100%;margin-inline:0}
   .artifact-caveat{width:100%;margin:24px 0 38px!important;transform:none}
   .society-lead{font-size:1.08rem;line-height:1.58}
-  .society-grid{grid-template-columns:1fr;margin-top:26px}
-  .society-grid p,.society-grid p:nth-child(odd),.society-grid p:nth-child(even){padding:19px 0;border-left:0}
+  .society-grid{margin-top:26px}
+  .society-point,.society-point:nth-child(odd),.society-point:nth-child(even){padding:19px 0;border-left:0}
+  .society-point h3{margin-bottom:10px;font-size:1.18rem}
   .section-body--after-visual{margin-top:42px}
   .interactive-bar{align-items:flex-start;font-size:.62rem}
   .interactive-bar span{max-width:64%}
@@ -320,9 +326,10 @@ button,a,summary{touch-action:manipulation}
   .methods-flow__step::after{display:none!important}
   .methods-boundary{width:100%;margin:20px 0 0;background:#fff;border-color:#555}
   .media-figure,.artifact-card,.interactive{break-inside:avoid}
-  .story-section--manifesto .section-label,.story-section--manifesto .section-head h2,.story-section--manifesto .lead,.story-section--manifesto .section-body>p,.story-section--manifesto .society-grid p,.society-coda p{color:#000!important}
+  .story-section--manifesto .section-label,.story-section--manifesto .section-head h2,.story-section--manifesto .lead,.story-section--manifesto .section-body>p,.story-section--manifesto .society-grid p,.story-section--manifesto .society-point h3,.story-section--manifesto .society-point h3 span,.society-coda p{color:#000!important}
   .society-grid{display:block;border-color:#777}
-  .society-grid p,.society-grid p:nth-child(even){padding:10px 0;border-color:#aaa;border-left:0}
+  .society-point,.society-point:nth-child(odd),.society-point:nth-child(even){padding:10px 0;border-color:#aaa;border-left:0}
+  .society-point,.story-section--manifesto .society-coda{break-inside:avoid}
   .story-section--manifesto .society-coda{border-color:#555}
   .interactive{width:100%;margin:32px 0;padding:0;background:#fff!important;color:#000!important}
   .interactive iframe{display:none}
