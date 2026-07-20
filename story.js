@@ -4,7 +4,7 @@
   const progressBar=document.querySelector('.reading-progress span');
   const navLinks=[...document.querySelectorAll('.nav-links a[href^="#"]')];
   const sections=[...document.querySelectorAll('main > section[id]')];
-  const frames=[...document.querySelectorAll('.interactive iframe')];
+  const frames=[...document.querySelectorAll('.interactive[data-autofit] iframe')];
 
   function updateProgress(){
     if(!progressBar)return;

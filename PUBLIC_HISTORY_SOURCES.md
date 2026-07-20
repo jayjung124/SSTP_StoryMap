@@ -88,6 +88,10 @@ All excerpts below are 25 words or fewer.
 - **Rights:** the Library states that Geography and Map Division digitized content is free to use and reuse unless a contrary Rights Advisory is present; none is present for this item
 - **Interpretive use:** a historically situated early-modern European attempt to order the world. It is not presented as neutral geography. The surrounding personifications and costume images are part of the map’s representational history.
 
+## Archived visual candidates
+
+The following images are retained here for provenance but are not used in the current main narrative.
+
 ### Zora Neale Hurston, Rochelle French, and Gabriel Brown in Eatonville
 
 - **Current title:** “[Zora Neale Hurston, Rochelle French, and Gabriel Brown, Eatonville, Florida]”
@@ -132,6 +136,8 @@ All excerpts below are 25 words or fewer.
 - **Metadata correction:** the title formerly described Densmore recording Mountain Chief. The Library notes that Densmore annotated newspaper reproductions to correct the error and that the horn shown is for playback. The current public description therefore says they are listening.
 - **Interpretive use:** shows that captions and metadata do not merely label an encounter; they mediate later historical understanding.
 
+## Visual sources used in the current main narrative
+
 ### Atra-hasis cuneiform tablet
 
 - **Title:** *Cuneiform tablet: Atra-hasis, Babylonian flood myth*
@@ -160,7 +166,7 @@ All excerpts below are 25 words or fewer.
 - **Rights:** Public Domain; The Met Open Access
 - **Interpretive use:** makes clear that narrative may be painted on a used object rather than preserved as prose.
 
-### Rama, Lakshmana, and Hanuman print
+### Rama, Lakshmana, and Hanuman print — archived visual candidate
 
 - **Title:** *Rama, Lakshmana, and Hanuman*
 - **Culture and geography:** India, Mumbai, Maharashtra
@@ -174,6 +180,8 @@ All excerpts below are 25 words or fewer.
 - **Rights:** Public Domain; The Met Open Access
 - **Curatorial context used:** The Met identifies the scene as a moment from Tulsidas’s *Ramcharitmanas* and notes his use of vernacular Awadhi rather than Sanskrit.
 - **Interpretive use:** shows narrative moving through vernacular poetry, devotion, and popular print.
+
+## Continuation of visual sources used in the current main narrative
 
 ### Vishnu Narayana on the divine serpent Shesha print
 
