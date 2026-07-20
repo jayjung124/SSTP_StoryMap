@@ -164,7 +164,23 @@ The following images are retained here for provenance but are not used in the cu
 - **Local file:** `assets/history/persephone-ascension-krater.jpg`
 - **Rights:** Public Domain; The Met Open Access
 - **Curatorial context used:** The Met identifies the obverse as Persephone’s ascension from the underworld. Persephone rises at left; Hermes and torch-bearing Hekate guide her toward Demeter at right and the renewal associated with her return.
-- **Interpretive use:** illustrates the Greek example in the value-of-myth passage. The caption explicitly states that this single Attic object does not represent the Korean or Māori traditions discussed beside it.
+- **Interpretive use:** illustrates the Greek example in the role-of-myth passage. The caption explicitly states that this single Attic object does not represent the Korean or Māori traditions discussed beside it.
+
+### Painted folio from *Kalila wa Dimna*
+
+- **Title:** *“The Monkey Tells the Story of the Fox Luring the Ass to Its Death by the Lion,” Folio from a Kalila wa Dimna*
+- **Date and geography:** second quarter of the sixteenth century; attributed to India, Gujarat, probably based on an Egyptian original
+- **Material:** ink and opaque watercolor on paper
+- **Object number:** 1981.373.78
+- **Holding institution:** The Metropolitan Museum of Art
+- **Item record:** <https://www.metmuseum.org/art/collection/search/453130>
+- **Direct image:** <https://images.metmuseum.org/CRDImages/is/web-large/DP300776.jpg>
+- **Local file:** `assets/history/kalila-dimna-storytelling-folio.jpg`
+- **Rights:** Public Domain; The Met Open Access
+- **Curatorial context used:** The Met describes the manuscript as a collection of animal fables based on the ancient Indian *Panchatantra*. The tales spread widely through the Middle East; the folio is attributed to Gujarat, probably after an Egyptian model, and the manuscript also bears a Devanagari inscription.
+- **Interpretive use:** accompanies the literature-review passage because the object’s layered textual and geographic history makes translation, adaptation, and cross-cultural transmission materially visible. It is not presented as evidence used in the network analysis.
+
+## Additional archived visual candidates
 
 ### Maya vessel
 
@@ -196,9 +212,9 @@ The following images are retained here for provenance but are not used in the cu
 - **Curatorial context used:** The Met identifies the scene as a moment from Tulsidas’s *Ramcharitmanas* and notes his use of vernacular Awadhi rather than Sanskrit.
 - **Interpretive use:** shows narrative moving through vernacular poetry, devotion, and popular print.
 
-## Continuation of visual sources used in the current main narrative
+## Additional archived visual candidates (continued)
 
-### Vishnu Narayana on the divine serpent Shesha print
+### Vishnu Narayana on the divine serpent Shesha print — archived visual candidate
 
 - **Title:** *Vishnu Narayana on the divine serpent Shesha (Shri Sheshanarayana)*
 - **Culture and geography:** India, Mumbai, Maharashtra
@@ -215,6 +231,9 @@ The following images are retained here for provenance but are not used in the cu
 
 ## Historical comparison and catalogue sources
 
+- Robert M. Ross, Simon J. Greenhill, and Quentin D. Atkinson, [“Population structure and cultural geography of a folktale in Europe”](https://pmc.ncbi.nlm.nih.gov/articles/PMC3574383/), *Proceedings of the Royal Society B* 280 (2013), article 20123065. Used for the study of 700 variants of “The Kind and the Unkind Girls” from 31 European ethnolinguistic populations and its finding that geographic distance and ethnolinguistic identity independently predicted tale variation.
+- Sara Graça da Silva and Jamshid J. Tehrani, [“Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales”](https://pmc.ncbi.nlm.nih.gov/articles/PMC4736946/), *Royal Society Open Science* 3 (2016), article 150645. Used for the finding that the distribution of the studied Tales of Magic correlated strongly with linguistic phylogeny but not geographic proximity, supporting a substantial role for inheritance in their transmission.
+- Marc Thuillard, Jean-Loïc Le Quellec, Julien d’Huy, and Yuri Berezkin, [“A Large-Scale Study of World Myths”](https://kirj.ee/public/trames_pdf/2018/issue_4/Trames-2018-4-407-424.pdf), *Trames* 22, no. 4 (2018), 407–424, [doi:10.3176/tr.2018.4.05](https://doi.org/10.3176/tr.2018.4.05). Used for the finding that world mythologies exhibit geographic structure, while lateral cultural transmission makes a single line-of-descent model inadequate for the whole dataset. The story does not treat this as proof of a particular migration, shared ancestry, or causal history.
 - The Metropolitan Museum of Art, [*Terracotta bell-krater (bowl for mixing wine and water)*](https://www.metmuseum.org/art/collection/search/252973). Used for the Attic example of Persephone’s return toward Demeter and the renewal associated with her ascent.
 - National Folk Museum of Korea, *Encyclopedia of Korean Folk Literature* (Seoul, 2014), entry on solar and lunar eclipse; [encyclopedia portal](https://folkency.nfm.go.kr/). Used for the Bulgae tale in which fire dogs from a dark realm attempt to seize the sun and moon.
 - Te Ahukaramū Charles Royal, [“Te Waonui a Tāne—forest mythology”](https://teara.govt.nz/en/te-waonui-a-tane-forest-mythology/print), *Te Ara—The Encyclopedia of New Zealand*. Used for the carefully qualified statement that, in many Māori creation traditions, Tāne separates Ranginui and Papatūānuku and brings the world of light into being.
