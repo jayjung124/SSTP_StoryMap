@@ -41,7 +41,7 @@ button,a,summary{touch-action:manipulation}
 .nav-links a:hover,.nav-links a.is-active,.nav-links a[aria-current="location"]{color:var(--rust)}
 .nav-links a.is-active::after,.nav-links a[aria-current="location"]::after{background:var(--rust)}
 
-.site-hero{position:relative;isolation:isolate;min-height:calc(100svh - 64px);display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(70px,10vh,120px) clamp(20px,6vw,90px) 0;background-color:#bda47e;background-image:url("assets/history/visscher-world-map-1652.jpg");background-position:center;background-size:cover;border-top:8px solid var(--rust-dark);border-bottom:1px solid var(--rule-dark)}
+.site-hero{position:relative;isolation:isolate;min-height:calc(100svh - 64px);display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(70px,10vh,120px) clamp(20px,6vw,90px) 0;background-color:#bda47e;background-image:url("assets/history/visscher-world-map-1652.jpg");background-position:center;background-size:cover;border-top:8px solid var(--rust-dark)}
 .hero-shade{position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(33,26,17,.24),rgba(33,26,17,.03) 62%,rgba(33,26,17,.2)),linear-gradient(0deg,rgba(33,26,17,.27),transparent 45%)}
 .hero-panel{width:min(1110px,100%);padding:clamp(28px,4vw,52px);background:rgba(251,248,239,.94);border-top:7px solid var(--rust);box-shadow:0 20px 55px rgba(29,22,13,.27)}
 .eyebrow,.section-label,.movement-label{margin:0;color:var(--rust-dark);font-size:.72rem;font-weight:850;letter-spacing:.14em;text-transform:uppercase}
@@ -51,7 +51,7 @@ button,a,summary{touch-action:manipulation}
 .hero-source{align-self:flex-end;width:min(1110px,100%);margin:28px 0 0;padding:10px 14px;background:rgba(35,29,22,.9);color:#eee5d8;font-size:12px;line-height:1.52}
 .hero-source a{color:#fff9ec}
 
-.story-section{padding:clamp(44px,4.5vw,72px) clamp(20px,4.5vw,76px);background:var(--surface);border-bottom:1px solid var(--rule)}
+.story-section{padding:clamp(44px,4.5vw,72px) clamp(20px,4.5vw,76px);background:var(--surface)}
 .section-wrap{width:min(1460px,100%);margin:auto}
 .section-head{display:block;width:min(1280px,100%);margin:0 auto 48px;padding:0;text-align:center}
 .section-label{position:relative;left:50%;display:flex;align-items:center;gap:13px;width:min(1280px,calc(100vw - clamp(40px,9vw,152px)));margin:0 0 25px;transform:translateX(-50%);text-align:left}
@@ -149,7 +149,7 @@ button,a,summary{touch-action:manipulation}
 .catalogue-timeline__copy>p:not(.catalogue-timeline__stage),
 .interactive details p{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto}
 
-.story-section--manifesto{background:var(--rust-dark);border-color:#9b5d28;color:#fff8ed}
+.story-section--manifesto{background:var(--rust-dark);color:#fff8ed}
 .story-section--manifesto .section-label{color:#f0cfaa}
 .story-section--manifesto .section-label::after{background:#f0cfaa}
 .story-section--manifesto .section-head{width:min(1280px,100%);text-align:left}
