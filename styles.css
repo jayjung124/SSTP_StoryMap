@@ -61,11 +61,17 @@ details.data-details{margin-top:10px}
 details.data-details summary{cursor:pointer;color:var(--accent-dark);font-size:.76rem;font-weight:650}
 .scope-chip{display:inline-block;border:1px solid currentColor;padding:1px 5px;font-size:.66rem;font-weight:750;letter-spacing:.04em;text-transform:uppercase;vertical-align:1px}
 
-/* Embed mode removes prose already supplied by the StoryMap but retains an accessible name. */
-html.embed .wrap{max-width:none;padding:8px 10px 12px}
-html.embed .figure-head,html.embed .figure-note,html.embed .data-row{display:none}
-html.embed .controls{margin-top:0}
-html.embed .plot{min-height:360px}
+/* Embed mode removes prose already supplied by the story and inherits its paper surface. */
+html.embed{--paper:#fbf8ef;--white:#fbf8ef;background:#fbf8ef}
+html.embed body{background:#fbf8ef}
+html.embed.autofit,html.embed.autofit body{overflow:hidden}
+html.embed .wrap{width:100%;max-width:none;min-width:0;margin:0;padding:0}
+html.embed .figure-head,html.embed .figure-note,html.embed .data-row,html.embed .data-details{display:none}
+html.embed .controls{margin:0 0 10px;padding:0 0 10px;border-top:0}
+html.embed .figure-frame{min-width:0;border:0;background:transparent}
+html.embed .plot{min-width:0;min-height:360px;background:#fbf8ef}
+html.embed .legend{margin-top:10px}
+html.embed .js-plotly-plot,html.embed .plot-container,html.embed .svg-container{width:100%!important;max-width:100%}
 
 @media(max-width:700px){
   body{font-size:15px}

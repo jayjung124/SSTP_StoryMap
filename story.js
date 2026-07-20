@@ -46,20 +46,21 @@
   navLinks.forEach(link=>link.addEventListener('click',()=>markSection(link.getAttribute('href').slice(1))));
 
   function applyFrameHeight(frame,height){
-    if(!Number.isFinite(height))return;
+    if(!Number.isFinite(height)||height<200||height>5000)return;
     const mobile=window.matchMedia('(max-width: 560px)').matches;
-    const min=mobile?560:520;
-    const max=mobile?980:1080;
+    const min=Number(frame.dataset.autofitMin)||(mobile?430:520);
+    const requestedMax=Number(frame.dataset.autofitMax);
+    const max=requestedMax>0?requestedMax:Infinity;
     const bounded=Math.max(min,Math.min(max,Math.ceil(height)+2));
-    if(Math.abs(frame.getBoundingClientRect().height-bounded)>=4)frame.style.height=`${bounded}px`;
+    if(Math.abs(frame.getBoundingClientRect().height-bounded)>=2)frame.style.height=`${bounded}px`;
   }
 
   function measureFrame(frame){
     try{
       const doc=frame.contentDocument;
       if(!doc||!doc.body)return;
-      const root=doc.documentElement;
-      applyFrameHeight(frame,Math.max(doc.body.scrollHeight,doc.body.offsetHeight,root.scrollHeight,root.offsetHeight));
+      const content=doc.querySelector('.wrap')||doc.body;
+      applyFrameHeight(frame,Math.max(content.scrollHeight,content.getBoundingClientRect().height));
     }catch(_error){
       /* Keep the CSS fallback when same-origin measurement is unavailable. */
     }
@@ -71,7 +72,7 @@
       const doc=frame.contentDocument;
       if(!doc||!doc.body||!('ResizeObserver' in window))return;
       const observer=new ResizeObserver(()=>measureFrame(frame));
-      observer.observe(doc.body);
+      observer.observe(doc.querySelector('.wrap')||doc.body);
       frame._storyResizeObserver=observer;
     }catch(_error){
       /* Height messages and the CSS fallback remain available. */

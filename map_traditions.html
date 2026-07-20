@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Catalogue locations of 926 traditions | The Shape of Myth</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="storymap.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20260720-seamless">
+  <script src="storymap.js?v=20260720-seamless"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
   <script src="mythdata.js"></script>
 </head>
@@ -50,6 +50,8 @@ const D=window.MYTHDATA;
 const N=D.nodes;
 const AREA=D.areas;
 const CP=D.cpal;
+const embedded=document.documentElement.classList.contains('embed');
+const plotBackground=embedded?'#fbf8ef':'#fffefd';
 let mode='area';
 let selected=null;
 
@@ -74,11 +76,11 @@ function draw(){
   if(selected){
     traces.push({type:'scattergeo',mode:'markers',lon:[selected.lon],lat:[selected.lat],text:[`<b>${STORYMAP.escape(selected.n)}</b>`],hovertemplate:'%{text}<extra></extra>',showlegend:false,marker:{size:15,color:'#fff',line:{width:3,color:'#20201e'},symbol:'circle-open'}});
   }
-  const height=STORYMAP.plotHeight(560,430);
+  const height=STORYMAP.plotHeight(560,300);
   Plotly.react('map',traces,{
     height,
-    geo:{projection:{type:'natural earth'},showland:true,landcolor:'#ece6da',showocean:true,oceancolor:'#edf2f3',showcountries:true,countrycolor:'#d7d0c4',coastlinecolor:'#bbb3a6',showframe:false,bgcolor:'#fffefd',lataxis:{range:[-58,82]}},
-    margin:{l:0,r:0,t:4,b:0},paper_bgcolor:'#fffefd',showlegend:false,
+    geo:{projection:{type:'natural earth'},showland:true,landcolor:'#ece6da',showocean:true,oceancolor:'#edf2f3',showcountries:true,countrycolor:'#d7d0c4',coastlinecolor:'#bbb3a6',showframe:false,bgcolor:plotBackground,lataxis:{range:[-58,82]}},
+    margin:{l:0,r:0,t:4,b:0},paper_bgcolor:plotBackground,plot_bgcolor:plotBackground,showlegend:false,uirevision:'traditions-map',
     hoverlabel:{bgcolor:'#20201e',bordercolor:'#20201e',font:{color:'#fff',size:12}}
   },STORYMAP.plotConfig);
   document.getElementById('legend').innerHTML=groups.map(g=>`<span class="it"><span class="sw" style="background:${g.hex}"></span>${STORYMAP.escape(g.label)}</span>`).join('');
@@ -97,7 +99,10 @@ const counts={};N.forEach(d=>{counts[d.a]=(counts[d.a]||0)+1;});
 document.querySelector('#area-table tbody').innerHTML=Object.keys(AREA).map(key=>`<tr><td>${STORYMAP.escape(AREA[key].name)}</td><td>${counts[key]||0}</td><td>${((counts[key]||0)/N.length*100).toFixed(1)}%</td></tr>`).join('');
 STORYMAP.ariaPlot('map','Interactive world map of 926 catalogue reference locations');
 draw();
-window.addEventListener('resize',()=>draw(),{passive:true});
+const plotBreakpoint=window.matchMedia('(max-width:700px)');
+const breakpointRedraw=()=>draw();
+if(plotBreakpoint.addEventListener)plotBreakpoint.addEventListener('change',breakpointRedraw);
+else plotBreakpoint.addListener(breakpointRedraw);
 </script>
 </body>
 </html>

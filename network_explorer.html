@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Paired network explorer | The Shape of Myth</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="storymap.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20260720-seamless">
+  <script src="storymap.js?v=20260720-seamless"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
   <script src="mythdata.js"></script>
   <script src="network_edges.js"></script>
@@ -55,6 +55,8 @@ const E=window.MYTHEDGES;
 const N=D.nodes;
 const CP=D.cpal;
 const AREA=D.areas;
+const embedded=document.documentElement.classList.contains('embed');
+const plotBackground=embedded?'#fbf8ef':'#fffefd';
 let representation='binary';
 let colorMode='community';
 
@@ -85,7 +87,7 @@ function draw(){
     const points=N.filter(group.test);
     traces.push({type:'scattergl',mode:'markers',name:group.label,x:points.map(d=>xy(d)[0]),y:points.map(d=>xy(d)[1]),text:points.map(d=>`<b>${STORYMAP.escape(d.n)}</b><br>${STORYMAP.escape(AREA[d.a].name)}<br>Binary B${d.b} · Topic T${d.t}<br>${d.nm} recorded motifs`),hovertemplate:'%{text}<extra></extra>',marker:{size:7,color:group.hex,opacity:.86,line:{width:.4,color:'rgba(20,20,20,.55)'}}});
   });
-  Plotly.react('network',traces,{height:STORYMAP.plotHeight(590,455),margin:{l:8,r:8,t:8,b:8},paper_bgcolor:'#fffefd',plot_bgcolor:'#fffefd',xaxis:{visible:false,zeroline:false},yaxis:{visible:false,zeroline:false,scaleanchor:'x'},showlegend:false,hoverlabel:{bgcolor:'#20201e',bordercolor:'#20201e',font:{color:'#fff',size:12}}},STORYMAP.plotConfig);
+  Plotly.react('network',traces,{height:STORYMAP.plotHeight(590,455),margin:{l:8,r:8,t:8,b:8},paper_bgcolor:plotBackground,plot_bgcolor:plotBackground,autosize:true,uirevision:representation,xaxis:{visible:false,zeroline:false},yaxis:{visible:false,zeroline:false,scaleanchor:'x'},showlegend:false,hoverlabel:{bgcolor:'#20201e',bordercolor:'#20201e',font:{color:'#fff',size:12}}},STORYMAP.plotConfig);
   document.getElementById('legend').innerHTML=groups.map(g=>`<span class="it"><span class="sw" style="background:${g.hex}"></span>${STORYMAP.escape(g.label)}</span>`).join('');
   const spec=D.release[representation];
   document.getElementById('graph-spec').innerHTML=representation==='binary'?`<span class="scope-chip">Binary</span> 358,966 analyzed edges · displaying 4,113 actual strongest-edge links · Leiden γ=1.00 · four communities`:`<span class="scope-chip">Topic</span> 8,854 analyzed edges · displaying all 8,854 links · cosine union-kNN, k=12 · Leiden γ=0.75 · five provisional communities`;
@@ -98,7 +100,10 @@ document.getElementById('edge-toggle').addEventListener('change',draw);
 document.querySelector('#network-table tbody').innerHTML=`<tr><td>Binary exact motif</td><td>358,966</td><td>All positive Jaccard dyads</td><td>1.00</td><td>363, 123, 230, 210</td></tr><tr><td>Semantic topic</td><td>8,854</td><td>Cosine union-kNN, k=12</td><td>0.75</td><td>271, 204, 196, 164, 91</td></tr>`;
 STORYMAP.ariaPlot('network','Interactive network layout comparison for 926 catalogue entries');
 draw();
-window.addEventListener('resize',draw,{passive:true});
+const plotBreakpoint=window.matchMedia('(max-width:700px)');
+const breakpointRedraw=()=>draw();
+if(plotBreakpoint.addEventListener)plotBreakpoint.addEventListener('change',breakpointRedraw);
+else plotBreakpoint.addListener(breakpointRedraw);
 </script>
 </body>
 </html>

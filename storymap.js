@@ -1,7 +1,10 @@
 (function(){
   'use strict';
   const params=new URLSearchParams(window.location.search);
-  if(params.get('embed')==='1') document.documentElement.classList.add('embed');
+  const embedded=params.get('embed')==='1';
+  const autofit=embedded&&params.get('autofit')==='1';
+  if(embedded) document.documentElement.classList.add('embed');
+  if(autofit) document.documentElement.classList.add('autofit');
 
   window.STORYMAP={
     plotConfig:{displayModeBar:false,responsive:true,scrollZoom:false},
@@ -39,13 +42,20 @@
     }
   };
 
-  if(params.get('embed')==='1'){
+  if(embedded){
+    let heightFrame=0;
+    let lastHeight=0;
+
     const reportHeight=()=>{
-      const root=document.documentElement;
-      const body=document.body;
-      if(!body)return;
-      const height=Math.max(body.scrollHeight,body.offsetHeight,root.scrollHeight,root.offsetHeight);
-      window.parent.postMessage({type:'shape-of-myth:height',height},window.location.origin);
+      cancelAnimationFrame(heightFrame);
+      heightFrame=requestAnimationFrame(()=>{
+        const content=document.querySelector('.wrap');
+        if(!content)return;
+        const height=Math.ceil(Math.max(content.scrollHeight,content.getBoundingClientRect().height));
+        if(Math.abs(height-lastHeight)<1)return;
+        lastHeight=height;
+        window.parent.postMessage({type:'shape-of-myth:height',height},window.location.origin);
+      });
     };
     window.addEventListener('load',reportHeight);
     window.addEventListener('resize',reportHeight,{passive:true});
@@ -53,7 +63,8 @@
       reportHeight();
       if('ResizeObserver' in window){
         const observer=new ResizeObserver(reportHeight);
-        observer.observe(document.body);
+        const content=document.querySelector('.wrap');
+        if(content)observer.observe(content);
       }
     });
   }
