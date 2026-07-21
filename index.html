@@ -6,7 +6,7 @@
   <meta name="description" content="The Shape of Myth is a public-humanities story about what myths do, how living traditions become searchable records, and how representation changes cultural similarity.">
   <meta name="theme-color" content="#f3eddf">
   <title>The Shape of Myth | Similarity without sameness</title>
-  <link rel="stylesheet" href="story.css?v=20260720-results-heading">
+  <link rel="stylesheet" href="story.css?v=20260720-methods-results">
   <script defer src="story.js?v=20260720-seamless-embeds"></script>
 </head>
 <body>
@@ -197,8 +197,9 @@
       </header>
 
       <div class="section-body methods-intro">
-        <p class="lead">This research process follows a three-stage methodology beginning with a fixed dataset derived from a single, frozen English-language export of Yuri Berezkin’s catalogue—comprising 926 catalogue records, 2,138 motif IDs, and their corresponding recorded myths.</p>
-        <p>Network analysis measures resemblance through two distinct approaches: an exact-motif reading connects records sharing motif IDs, while a thematic reading extracts fifteen provisional factors from titles and descriptions to link records with similar profiles, after which Leiden community detection summarizes each network into groups of catalogue records rather than distinct peoples, identities, or complete traditions. Comparative analysis aligns the resulting four exact-motif groups against the five thematic groups across the same 926 records to test whether their agreement exceeds chance, pinpoint the primary split, and evaluate findings alongside broad geography and documentation depth—ultimately generating hypotheses rather than definitive proof of migration, ancestry, contact, origin, or cause.</p>
+        <p class="lead">A resemblance is a pattern to explain, not a history already proven. Resemblance between catalogue records may reflect shared ancestry, historical contact and borrowing, the movement of people, a common environment that invites similar stories, recurring concerns of human life, or some combination. Because cultural records are not independent, similarity is never self-explaining. A network cannot decide among these histories; it can identify patterns robust enough to deserve further explanation.</p>
+        <p>To make that comparison controlled, the study fixes one frozen English-language export of Yuri Berezkin’s catalogue: 926 heterogeneous catalogue records, 2,138 motif IDs, and the recorded assignments connecting them. The same rows and source assignments enter both analyses. The exact-motif pipeline links records that share motif IDs, retaining every positive Jaccard connection. The thematic pipeline derives fifteen provisional factors from English motif titles and descriptions, represents each record as a factor profile, and builds a sparser twelve-neighbor cosine network. Each network receives a separately selected Leiden setting appropriate to its structure.</p>
+        <p>The resulting four exact-motif groups and five thematic groups are groups of catalogue records—not peoples, identities, or complete traditions. Comparative analysis asks where the two complete pipelines agree, whether that agreement exceeds chance, where the principal split occurs, and how that split changes when broad geography and documentation depth are considered. Because representation, graph construction, and community-detection settings all differ, no difference can be attributed to representation alone. The analysis generates hypotheses; it does not prove migration, ancestry, contact, borrowing, origin, environmental cause, or direction of transmission.</p>
       </div>
 
       <figure class="interactive interactive--methodology">
@@ -219,15 +220,12 @@
         <p class="section-label">06 Results</p>
         <h2 id="findings-title">One Catalogue, Two Networks, Two Stories</h2>
       </header>
-      
-      <div class="section-body">
-        <div class="movement">
-          <p class="movement-label">What the study does</p>
-          <h3>A resemblance is a pattern to explain, not a history already proven.</h3>
-          <p>The reasoning behind the study is an old problem in the comparative study of culture. When two records resemble one another, the resemblance may reflect shared ancestry, historical contact and borrowing, the movement of people, a common environment that invites similar stories, the recurrence of concerns common to human life, or some combination that a single observation cannot untangle. Cultural records are not independent, so similarity is never self-explaining. No network of catalogue entries can resolve those histories on its own. What comparison can do is identify resemblances robust enough to deserve further explanation.</p>
-          <p>The same 926 catalogue rows and source assignments remain fixed. They are then read through two fully specified analytical pipelines. One asks whether records share the same motif IDs; the other asks whether English motif titles and descriptions yield similar thematic profiles. The graph recipes also differ: the exact-motif reading retains every positive Jaccard connection, while the thematic reading uses a sparser twelve-neighbor cosine graph. Each receives a separately selected Leiden setting appropriate to its network. The comparison therefore shows what these two complete ways of constructing resemblance hold in common and where they diverge; it cannot attribute every difference to representation alone.</p>
-        </div>
-      </div>
+
+      <aside class="results-report" aria-label="How the results are reported">
+        <p class="movement-label">Reporting the evidence</p>
+        <p class="results-report__summary"><strong>From context, to structure, to statistical comparison.</strong> The reporting begins with the reference-location map, then compares the exact-motif and thematic network structures, and finally tests which agreements and differences survive chance correction, broad geography, and documentation depth.</p>
+        <p class="results-report__boundary"><strong>Interpretive boundary:</strong> these results identify patterns that warrant explanation; they do not establish migration, borrowing, common ancestry, historical contact, environmental cause, an origin, or a direction of transmission.</p>
+      </aside>
 
       <figure class="interactive interactive--map" data-autofit>
         <div class="interactive-bar"><span>Reference-location map</span><a href="map_traditions.html" target="_blank" rel="noopener">Open full screen</a></div>

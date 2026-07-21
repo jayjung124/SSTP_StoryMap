@@ -127,6 +127,12 @@ button,a,summary{touch-action:manipulation}
 .methods-flow__caveat{margin-top:auto!important;padding-top:20px;color:var(--muted)!important;font-size:.76rem!important;line-height:1.55!important}
 .methods-flow__caveat strong{color:var(--rust-dark)}
 .methods-boundary{width:min(880px,100%);margin:30px auto 0;padding:16px 18px;background:#e8efea;border-left:4px solid var(--teal);color:#46514d;font-size:.8rem;line-height:1.6;text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto}
+.results-report{display:grid;grid-template-columns:minmax(150px,190px) minmax(0,1fr);column-gap:34px;width:min(1120px,100%);margin:0 auto;padding:22px 0 24px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.results-report>.movement-label{grid-row:1 / span 2;margin:4px 0 0}
+.results-report__summary{margin:0;color:#37332d;font-size:.91rem;line-height:1.62}
+.results-report__summary strong{font-family:var(--heading);font-size:1.08rem;letter-spacing:-.012em}
+.results-report__boundary{margin:10px 0 0;color:var(--muted);font-size:.77rem;line-height:1.58}
+.results-report__boundary strong{color:var(--rust-dark)}
 
 .section-body blockquote{margin:38px 0 16px;padding:28px 0}
 .section-body blockquote p{margin:0;color:var(--rust);font:600 clamp(1.45rem,2.25vw,2.1rem)/1.25 var(--heading)}
@@ -244,6 +250,8 @@ button,a,summary{touch-action:manipulation}
   .methods-flow__step+.methods-flow__step{border-left:0}
   .methods-flow__step:not(:last-child)::after{display:none}
   .methods-flow__caveat{margin-top:18px!important;padding-top:0}
+  .results-report{grid-template-columns:1fr;row-gap:10px}
+  .results-report>.movement-label{grid-row:auto;margin:0 0 3px}
   .society-grid{grid-template-columns:1fr}
   .society-point,.society-point:nth-child(odd),.society-point:nth-child(even){padding-right:0;padding-left:0;border-left:0}
 }
@@ -271,6 +279,9 @@ button,a,summary{touch-action:manipulation}
   .story-section--manifesto .section-head h2{max-width:100%;font-size:clamp(1.8rem,7vw,2.25rem);line-height:1.08;letter-spacing:-.025em}
   .section-body{width:100%;margin-inline:0}
   .artifact-caveat{width:100%;margin:24px 0 38px!important;transform:none}
+  .results-report{padding:18px 0 20px}
+  .results-report__summary{font-size:.9rem;line-height:1.6}
+  .results-report__boundary{font-size:.76rem}
   .society-lead{font-size:1.08rem;line-height:1.58}
   .society-grid{margin-top:26px}
   .society-point,.society-point:nth-child(odd),.society-point:nth-child(even){padding:19px 0;border-left:0}
