@@ -58,7 +58,7 @@ button,a,summary{touch-action:manipulation}
 .section-label::after{content:"";flex:1;height:1px;background:currentColor;opacity:.45}
 .section-head h2{max-width:none;margin:0;font:700 clamp(1.2rem,1.75vw,1.85rem)/1.14 var(--heading);letter-spacing:-.025em}
 .section-head h2.section-label--only{margin:0;color:var(--rust-dark);font:850 .72rem/1.2 var(--body);letter-spacing:.14em;text-align:left;text-transform:uppercase}
-#methods-title{max-width:1320px;margin:0 auto;color:#37332d;font:700 clamp(2.25rem,3.7vw,3.7rem)/1.08 var(--heading);letter-spacing:-.035em}
+#methods-title,#findings-title{max-width:1320px;margin:0 auto;color:#37332d;font:700 clamp(2.25rem,3.7vw,3.7rem)/1.08 var(--heading);letter-spacing:-.035em}
 .section-body{width:min(880px,100%);margin:0 auto}
 .section-body--research{text-align:left}
 .section-body--research>p{text-align:left}
@@ -265,7 +265,7 @@ button,a,summary{touch-action:manipulation}
   .section-head{width:100%;margin-bottom:36px;text-align:left}
   .section-label{left:auto;width:100%;margin-bottom:17px;transform:none}
   .section-head h2{font-size:clamp(1.52rem,7vw,2.15rem);line-height:1.13}
-  #methods-title{font-size:clamp(2.2rem,10vw,3.4rem);line-height:1.05}
+  #methods-title,#findings-title{font-size:clamp(2.2rem,10vw,3.4rem);line-height:1.05}
   .story-section--manifesto{padding-top:36px;padding-bottom:44px}
   .story-section--manifesto .section-head{margin-bottom:26px}
   .story-section--manifesto .section-head h2{max-width:100%;font-size:clamp(1.8rem,7vw,2.25rem);line-height:1.08;letter-spacing:-.025em}
