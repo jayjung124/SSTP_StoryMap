@@ -6,7 +6,7 @@
   <meta name="description" content="The Shape of Myth is a public-humanities story about what myths do, how living traditions become searchable records, and how representation changes cultural similarity.">
   <meta name="theme-color" content="#f3eddf">
   <title>The Shape of Myth | Similarity without sameness</title>
-  <link rel="stylesheet" href="story.css?v=20260720-methods-results">
+  <link rel="stylesheet" href="story.css?v=20260720-formal-results">
   <script defer src="story.js?v=20260720-seamless-embeds"></script>
 </head>
 <body>
@@ -218,68 +218,78 @@
     <div class="section-wrap">
       <header class="section-head">
         <p class="section-label">06 Results</p>
-        <h2 id="findings-title">One Catalogue, Two Networks, Two Stories</h2>
+        <h2 id="findings-title">One Catalogue, Two Network Representations</h2>
       </header>
 
-      <aside class="results-report" aria-label="How the results are reported">
-        <p class="movement-label">Reporting the evidence</p>
-        <p class="results-report__summary"><strong>From context, to structure, to statistical comparison.</strong> The reporting begins with the reference-location map, then compares the exact-motif and thematic network structures, and finally tests which agreements and differences survive chance correction, broad geography, and documentation depth.</p>
-        <p class="results-report__boundary"><strong>Interpretive boundary:</strong> these results identify patterns that warrant explanation; they do not establish migration, borrowing, common ancestry, historical contact, environmental cause, an origin, or a direction of transmission.</p>
+      <aside class="results-report" aria-labelledby="results-overview-title">
+        <div class="results-report__head">
+          <p class="movement-label">Results overview</p>
+          <h3 id="results-overview-title">Key findings in brief</h3>
+        </div>
+        <div class="results-report__content">
+          <ul class="results-report__list">
+            <li><strong>One archive provides two complementary views.</strong> The same 926 records form four exact-motif groups and five thematic groups.</li>
+            <li><strong>The networks share a clear common structure.</strong> Their agreement is substantially greater than expected by chance, and three large community patterns appear in both.</li>
+            <li><strong>The largest exact-motif group shows the principal reorganization.</strong> Its records are arranged mainly into a sky and world-order profile and a first-beings and land profile.</li>
+            <li><strong>The broad thematic pattern is the most stable result.</strong> Individual motif-level estimates vary with broad geography and documentation depth.</li>
+          </ul>
+          <p class="results-report__scope"><strong>Interpretive scope:</strong> the findings establish reproducible patterns within the frozen English-language catalogue and identify priorities for further research. Historical attribution—including migration, borrowing, common ancestry, contact, environmental influence, origin or homeland, and transmission direction—is evaluated through independent contextual evidence.</p>
+        </div>
       </aside>
 
       <figure class="interactive interactive--map" data-autofit>
-        <div class="interactive-bar"><span>Reference-location map</span><a href="map_traditions.html" target="_blank" rel="noopener">Open full screen</a></div>
+        <div class="interactive-bar"><span>Catalogue reference locations</span><a href="map_traditions.html" target="_blank" rel="noopener">Open full screen</a></div>
         <iframe src="map_traditions.html?embed=1&amp;autofit=1&amp;v=20260720-seamless2" title="Interactive map of 926 catalogue records" aria-describedby="caption-map" loading="lazy"></iframe>
-        <figcaption id="caption-map"><strong>Explore the archive spatially:</strong> recolor the same 926 reference points by broad region, exact-motif group, or thematic group. Coordinates are catalogue reference points—not origins, homelands, or bounded territories.</figcaption>
-        <details><summary>Text alternative</summary><p>The map displays the same 926 records using three analytical overlays: sixteen broad regions, four exact-motif groups, and five provisional thematic groups.</p></details>
+        <figcaption id="caption-map"><strong>Archive coverage:</strong> view the same 926 reference points by broad macroarea, exact-motif group, or thematic group. The coordinates represent catalogue reference locations associated with source assignments and provide spatial context for recorded coverage.</figcaption>
+        <details><summary>Text alternative</summary><p>The map displays the same 926 catalogue reference points under three analytical overlays: sixteen broad macroareas, four exact-motif groups, and five provisional thematic groups.</p></details>
       </figure>
 
       <div class="network-chapter">
         <div class="network-copy">
-          <p class="movement-label">Two ways of measuring resemblance</p>
-          <h3>The exact-motif network and the thematic network look at different scales.</h3>
-          <p>The two readings are not rival guesses at one hidden truth. They are instruments trained on different levels of the same archive—one on recorded motif IDs, the other on aggregate lexical-semantic emphasis—and their value lies in comparing what each brings into focus.</p>
-          <p>In the <strong>exact-motif network</strong>, resemblance is the proportion of two records’ combined motif lists that the records share. “Primeval sky close to earth” and “Theft of fire” remain distinct catalogue elements, and records draw together only when the same motif ID was recorded in both. This reading preserves the catalogue’s distinctions; it does not recover original wording, performance, or a complete story.</p>
-          <p>In the <strong>thematic network</strong>, an unsupervised model condenses the English motif titles and glosses into fifteen recurring lexical-semantic factors, including provisional patterns labelled “Sun, Moon and eclipses,” “first people, plants and beings,” and “water, fish and aquatic beings.” Each record receives a profile across those factors, and records connect when their profiles are similar. These labels are analytical summaries, not community-authored categories, and remain candidates for human validation.</p>
-          <p>The exact-motif pipeline resolves the archive into four connected groups; the thematic pipeline resolves the same records into five. These are emphases within the frozen archive—not peoples, cultural stages, or bounded civilizations.</p>
+          <p class="movement-label">Network representations</p>
+          <h3>The exact-motif and thematic networks operationalize resemblance at complementary analytical levels.</h3>
+          <p>The two representations examine the same frozen archive at complementary levels. The exact-motif network uses recorded motif identifiers, while the thematic network uses aggregate lexical-semantic emphasis inferred from English catalogue descriptions. Their comparison evaluates structures that recur across the two complete analytical pipelines and organization specific to each pipeline.</p>
+          <p>In the <strong>exact-motif network</strong>, resemblance is measured by Jaccard similarity: the number of motif identifiers shared by two records divided by the number present in either record. “Primeval sky close to earth” and “Theft of fire” remain distinct catalogue elements, and a shared connection arises when the same motif identifier is recorded in both records. This representation preserves catalogue-coded distinctions and measures recorded motif overlap. Original wording, performance, and complete narratives remain dimensions for separate source-based analysis.</p>
+          <p>In the <strong>thematic network</strong>, an unsupervised model condenses English motif titles and glosses into fifteen recurring lexical-semantic factors. Provisional examples include “Sun, Moon and eclipses,” “first people, plants and beings,” and “water, fish and aquatic beings.” Each record receives a profile across the fifteen factors, and similarity between those profiles determines network connections. The factor labels function as provisional analytical summaries; human validation and community-grounded interpretation provide separate sources of cultural meaning.</p>
+          <p>Leiden community detection identifies four connected communities in the exact-motif pipeline and five communities in the thematic pipeline. These communities describe organizational emphases among catalogue records within the frozen archive.</p>
         </div>
 
         <figure class="interactive interactive--network" data-autofit>
-          <div class="interactive-bar"><span>Two readings of the same archive</span><a href="network_explorer.html" target="_blank" rel="noopener">Open full screen</a></div>
+          <div class="interactive-bar"><span>Comparative network structures</span><a href="network_explorer.html" target="_blank" rel="noopener">Open full screen</a></div>
           <iframe src="network_explorer.html?embed=1&amp;autofit=1&amp;v=20260720-seamless2" title="Interactive explorer for exact-motif and thematic network layouts" aria-describedby="caption-networks" loading="lazy"></iframe>
-          <figcaption id="caption-networks"><strong>Compare the lenses:</strong> switch between exact-motif and thematic networks, then recolor by analytical group or broad region. Screen position is a visual layout—not geography or calibrated cultural distance.</figcaption>
-          <details><summary>Text alternative</summary><p>The exact-motif reading produces four connected groups. The provisional thematic reading produces five groups. Their large-scale structures overlap substantially but do not match.</p></details>
+          <figcaption id="caption-networks"><strong>Network comparison:</strong> switch between the exact-motif and thematic networks, then recolor each by analytical group or broad macroarea. Screen positions represent the network layout used for visualization; geographic position and calibrated cultural distance are separate variables.</figcaption>
+          <details><summary>Text alternative</summary><p>The exact-motif representation produces four connected groups and the provisional thematic representation produces five. Their structures exhibit substantial large-scale agreement together with localized reorganization.</p></details>
         </figure>
       </div>
 
       <div class="section-body">
         <div class="movement">
-          <p class="movement-label">What the comparison reveals</p>
-          <h3>The two readings share a nonrandom but partial backbone.</h3>
-          <p>The result falls neither at total agreement nor at total disagreement. Three large regions of the archive remain recognisable under both readings; one region does not survive the change of pipeline intact. Chance-corrected measures put the agreement in the substantial-but-incomplete middle: the adjusted Rand index is 0.3549 and adjusted mutual information is 0.3888. The two readings coassign 55,389 pairs of records, compared with 26,625.23 expected under fixed group sizes, producing an analytical z-Rand score of 151.11. None of 99,999 global permutations reached the observed agreement (<em>p</em> = 0.00001). A stricter comparison that shuffled labels within broad regions raised the expected agreement—the mean adjusted Rand index became 0.2075—but none of those permutations reached the observation either. Broad geography explains part of the backbone, not all of it.</p>
-          <p>In plain language, the two pipelines preserve some of the same structure within this frozen archive, but they do not make interchangeable classifications. Representation and graph construction matter, yet they do not dissolve everything the two readings hold in common.</p>
+          <p class="movement-label">Cross-pipeline agreement</p>
+          <h3>The two networks exhibit statistically significant structural agreement.</h3>
+          <p>Three large community correspondences recur under both representations, while a fourth is reorganized across pipelines. The adjusted Rand index is 0.3549 and adjusted mutual information is 0.3888. The networks coassign 55,389 pairs of records, compared with 26,625.23 expected under fixed group sizes, yielding an analytical z-Rand score of 151.11. The observed agreement exceeded every value from 99,999 global permutations (<em>p</em> = 0.00001). In the region-stratified permutation test, the mean adjusted Rand index increased to 0.2075, and the observed value again exceeded the complete permuted distribution. This region-stratified null permits greater expected agreement than the global null, while the observed agreement remains above its full distribution.</p>
+          <p>Within this frozen archive, the two pipelines preserve common large-scale organization alongside meaningful local reclassification. Because the complete pipelines differ in representation, graph construction, and community-detection settings, the design evaluates convergence and pipeline-specific organization at the level of the complete pipelines.</p>
         </div>
       </div>
 
       <div class="section-body section-body--after-visual">
         <div class="movement">
-          <p class="movement-label">The fault line, read closely</p>
-          <h3>One exact-motif group divides principally toward sky and world-order, or first beings and land.</h3>
-          <p>The main disagreement is concentrated in the largest exact-motif group, B1, which contains 363 records. Under the thematic reading, 162 of those records enter T2 and 148 enter T4; the remaining 53 disperse among T1, T3, and T5. This is a principal two-branch division, not a clean transformation of one group into two equal halves. The primeval-water and earth-diver concentration belongs principally to a different correspondence, B4–T1, and should not be used to define B1.</p>
-          <p>The strongest contrast is thematic. Within B1, records entering T2 show greater relative emphasis on “Sun, Moon and eclipses” and “sky, earth and world structure.” Records entering T4 show greater emphasis on “first people, plants and beings” and “trees, rocks and climbing.” Four factor differences remain after labels are shuffled within broad-region and motif-count strata. Because these factors helped form the thematic groups, they characterise the split rather than independently validate it. They are contrasts in catalogue language, not evidence for “celestial peoples” and “terrestrial peoples.”</p>
-          <p>Geography sharpens the pattern and disciplines its interpretation. Ninety of the 148 B1 records entering T4 are located in the catalogue’s combined macroarea of Amazonia and Northern South America, while the B1 records entering T2 are distributed across several macroareas. Documentation differs as well: B1∩T2 averages 35.3 recorded motifs per record, compared with 61.1 for B1∩T4. Geography, documentation depth, and thematic pattern therefore remain entangled.</p>
-          <p>The individual motif results show why that caution matters. An initial comparison produced 232 differences; controlling for broad geography reduced the list to eight, and jointly accounting for region and documentation reduced it to zero. The aggregate thematic contrast is more robust than any catalogue-level motif claim. The networks generate hypotheses that can guide historical, linguistic, archaeological, ecological, ethnographic, and community-grounded research. They do not prove migration, borrowing, common ancestry, environmental cause, direction of transmission, or an original homeland.</p>
+          <p class="movement-label">Principal thematic reorganization</p>
+          <h3>B1 is reorganized primarily into sky and world-order and first-beings and land profiles.</h3>
+          <p>The principal reorganization is concentrated within B1, the largest exact-motif group, which contains 363 records. Under the thematic representation, 162 of these records enter T2 and 148 enter T4; the remaining 53 are distributed among T1, T3, and T5. The dominant correspondence therefore comprises two branches of unequal size with residual allocation across three additional groups. The concentration of primeval-water and earth-diver motifs belongs primarily to the separate B4–T1 correspondence and characterizes a distinct part of the cross-tabulation.</p>
+          <p>The clearest B1 contrast occurs at the thematic-factor level. Records entering T2 show greater relative emphasis on “Sun, Moon and eclipses” and “sky, earth and world structure.” Records entering T4 show greater emphasis on “first people, plants and beings” and “trees, rocks and climbing.” Four factor differences remain after labels are shuffled within broad-macroarea and motif-count strata. These internal contrasts characterize the thematic partition; independent validation remains a separate research step. Their evidentiary scope is variation in English catalogue language, with population-level interpretation situated in historical and community-grounded research.</p>
+          <p>Geography and documentation depth provide further context. Ninety of the 148 B1 records entering T4 are located in the catalogue’s combined macroarea of Amazonia and Northern South America, whereas B1 records entering T2 are distributed across several macroareas. B1∩T2 records contain an average of 35.3 recorded motifs per record, compared with 61.1 for B1∩T4. Thematic emphasis, geographic composition, and documentation depth therefore covary within this comparison.</p>
+          <p>An initial record-level motif comparison identified 232 differences. Adjustment for broad geography retained eight, and the joint specification for region and documentation depth retained zero independently identified differences. Across these sensitivity analyses, the aggregate thematic contrast demonstrates greater stability, while motif-level estimates remain context-sensitive. The network results define priorities for historical, linguistic, archaeological, ecological, ethnographic, and community-grounded research.</p>
         </div>
 
         <div class="movement">
-          <p class="movement-label">What it means for scholarship</p>
-          <h3>Representation and graph construction are part of the finding.</h3>
-          <p>The central lesson is methodological, and it can extend beyond mythology. How a cultural archive is represented is not a neutral step completed before analysis begins; together with the graph recipe, it partly determines what the analysis can count as similarity. A paired design makes that claim testable rather than merely cautionary. It reveals both cross-pipeline structure and pipeline-dependent local organisation.</p>
-          <p>Substantial agreement does not make two classifications interchangeable. The places where careful measures agree in the aggregate while diverging in detail are exactly the places worth studying. The exact-motif and thematic readings are best understood as observations at two different levels of one cultural record: the catalogue’s recorded distinctions and the aggregate preoccupations inferred from its English descriptions. Neither is the culture itself.</p>
-          <p>Framed this way, the study offers a small model for responsible computational comparison in the humanities. It tests which cultural structures are stable across two specified pipelines; demonstrates that community agreement can be substantial without being interchangeable; distinguishes robust aggregate contrasts from context-sensitive individual motif results; and insists that geography and documentation depth be audited before historical claims are entertained. Its strongest conclusion is not that one method is superior. It is that a study that never questions its representation cannot know how much its conclusions depend on that choice.</p>
+          <p class="movement-label">Methodological implications</p>
+          <h3>Representation and graph construction contribute to the observed network structure.</h3>
+          <p>The representation of a cultural archive is an analytical decision that, together with the graph-construction procedure, defines the form of similarity available for measurement. The paired design evaluates this dependence directly by identifying both structure that recurs across pipelines and local organization associated with a particular pipeline.</p>
+          <p>Substantial aggregate agreement coexists with consequential classification differences, making sites of local reorganization priorities for further study. The exact-motif and thematic networks represent two analytical levels of the same cultural record: documented catalogue distinctions and aggregate lexical-semantic emphases inferred from English descriptions. Their evidentiary scope is the organization of archived records and descriptions, while cultural interpretation proceeds through historical, linguistic, ethnographic, and community-grounded inquiry.</p>
+          <p>The study provides a reproducible model for computational comparison in the humanities. It evaluates structures that remain stable across two specified pipelines, identifies pipeline-specific organization, distinguishes robust aggregate contrasts from context-sensitive motif-level results, and incorporates audits of geography and documentation depth into historical interpretation. The evidence supports comparison of the two methods and establishes analysis across multiple specified representations as a means of estimating the dependence of substantive findings on analytical choices.</p>
         </div>
 
-        <p class="explore-further"><strong>Explore further:</strong> <a href="nmf_factors.html" target="_blank" rel="noopener">theme contrasts</a>, <a href="geo_divergence.html" target="_blank" rel="noopener">geographic composition</a>, <a href="community_profiles.html" target="_blank" rel="noopener">group profiles</a>, <a href="climate_scatter.html" target="_blank" rel="noopener">climate context</a>, and <a href="latitude_ridgelines.html" target="_blank" rel="noopener">latitude distributions</a>.</p>
+        <p class="explore-further"><strong>Related analyses:</strong> <a href="nmf_factors.html" target="_blank" rel="noopener">thematic-factor contrasts</a>, <a href="geo_divergence.html" target="_blank" rel="noopener">geographic composition</a>, <a href="community_profiles.html" target="_blank" rel="noopener">group profiles</a>, <a href="climate_scatter.html" target="_blank" rel="noopener">climate context</a>, and <a href="latitude_ridgelines.html" target="_blank" rel="noopener">latitude distributions</a>.</p>
       </div>
     </div>
   </section>
